@@ -34,8 +34,11 @@ int main()
 
     LTELA;
     tela_checklist(0);
+    LTELA;
     tela_checklist(I_1);
+    LTELA;
     tela_checklist(I_2);
+    LTELA;
     tela_checklist(I_3);
     
     return 0;

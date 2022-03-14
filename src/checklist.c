@@ -12,11 +12,11 @@
  */
 void tela_checklist(int i)
 {
-    int l = 8, c = 24, bo = 1UL;
+    int l = 8, c = 16, bo = 1UL;
     static unsigned int cklst_estado = 0;
     cklst_estado |= i ; 
 
-    CKLSITEM(l++, c + 11, 0, S_UNDERL"avaliacao"S_NORM);
+    CKLSITEM(l++, c + 18, 0, S_UNDERL"avaliacao"S_NORM);
     CKLSITEM(l++, c, 0, " ");
     CKLSITEM(l++, c, cklst_estado & bo, ITEM_1); bo <<= 1;
     CKLSITEM(l++, c, cklst_estado & bo, ITEM_2); bo <<= 1;
