@@ -9,7 +9,7 @@
 #include <string.h>
 
 #include "jcurses.h"
-#include "testa_bm.h"
+#include "testa_stringset.h"
 
 void tela_testa_bm()
 {

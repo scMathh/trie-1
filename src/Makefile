@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS += -g
 
-SRCS = bm.c bm_noh.c checklist.c main.c testa_bm.c
-OBJS = bm.o bm_noh.o checklist.o main.o testa_bm.o 
+SRCS = trie.c stringset.c checklist.c main.c testa_stringset.c
+OBJS = trie.o stringset.o checklist.o main.o testa_stringset.o
 
 main: $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o rodeme

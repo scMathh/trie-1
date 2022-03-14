@@ -2,10 +2,11 @@
  * aluno: joilnen leite, daniel morais, matheus silva
  */
 
-#ifndef TESTA_ARVORE_BM_
-#define TESTA_ARVORE_BM_
+#ifndef TESTA_STRINGSET_H
+#define TESTA_STRINGSET_H
 
-#include "bm.h"
+#include "trie.h"
+#include "stringset.h"
 #include "jcurses.h"
 
 /**

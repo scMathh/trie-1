@@ -3,23 +3,22 @@
  * 
  * 
  */
-#ifndef BM_
-#define BM_
+#ifndef TRIE_H
+#define TRIE_H
 
-#include "bm_noh.h"
-
-typedef struct bm
+typedef struct trie
 {
-    struct bm_noh *raiz;
-    int mgrau, *felem;
-} bm;
+    int *chaves, nchaves;
+    int mgrau;
+    struct bm_noh **filhos;
+    struct bm_noh *pai;
+    long **dfilhos;
+    char eh_folha;
+} trie;
 
-bm *bm_inic(int i);
-void bm_escrutina(bm *b);
-bm_noh *bm_pesquisa(bm *b, int chave);
-void bm_insere(bm *b, int chave, s_artigo *art);
-bm_noh *bm_insere_nahfolha(bm_noh *raiz, int chave, s_artigo *art);
-void bm_lista(bm_noh *aux, int chave);
-void bm_geraarvore(bm *bm);
+trie *trie_inic();
+
+#define MAXFILHOS(m) 2 * m
+#define MAXCHAVES(m) MAXFILHOS(m) - 1
 
 #endif

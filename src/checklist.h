@@ -14,16 +14,16 @@
 void tela_checklist(int i);
 
 /** itens da avalicao mostrados na tela */
-#define ITEM_1 "1 impressao dos artigos"
-#define ITEM_2 "2 busca por id"
-#define ITEM_3 "3 insersao de novo artigo"
-#define ITEM_4 "4 remocao de um artigo"
-#define ITEM_5 "5 listagem de todos os art. em ordem (de um id)"
-#define ITEM_6 "6 testes"
+#define ITEM_1 "1 adicionar: adiciona uma nova"
+#define ITEM_2 "2 excluir: exclui uma string"
+#define ITEM_3 "3 contem string: verifica string está contida"
+#define ITEM_4 "4 vazio: verifica se um conjunto informado esta vazio"
+#define ITEM_5 "5 tamanho: informa o número de elementos do conjunto"
+#define ITEM_6 "6 Imprimir: imprime as strings contidas no conjuntoe"
+#define ITEM_7 "7 contem prefixo:  strinc s e conjunto pr.strings"
 
 /** usado na operacao de bits na mostra de itens da avalicao */
-enum {I_NONE, I_1, I_2, I_3, I_4, I_5, I_6, I_MAX};
+enum {I_NONE, I_1, I_2, I_3, I_4, I_5, I_6, I_7, I_MAX};
 
 #endif
-
 
