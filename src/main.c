@@ -41,5 +41,7 @@ int main()
     LTELA;
     tela_checklist(I_3);
     
+    printf("só teste");
+
     return 0;
 }
