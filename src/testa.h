@@ -5,9 +5,7 @@
 #define TESTA_H_
 
 #include "jcurses.h"
-/** #include "testa_item_2.h" */
-/** #include "testa_item_3.h" */
-#include "testa_bm.h"
+#include "testa_stringset.h"
 #include "checklist.h"
 
 #endif

@@ -11,10 +11,13 @@
 #include "stringset.h"
 
 /**
- * faz a inicialização da arvore b+
+ * faz a inicialização da arvore trie 
  * @param int i ordem da arvore
  */
 stringset *stringset_inic()
 {
-    return NULL;
+    stringset *s = (stringset *) malloc (sizeof(stringset));
+    s->raiz = trie_inic();
+    return s;
 }
+

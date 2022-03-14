@@ -7,9 +7,11 @@
 #define STRINGSET_H
 
 #include "trie.h"
+#include "erro.h"
 
 typedef struct stringset
 {
+    trie *raiz;
 
 } stringset;
 

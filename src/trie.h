@@ -8,12 +8,10 @@
 
 typedef struct trie
 {
-    int *chaves, nchaves;
-    int mgrau;
-    struct bm_noh **filhos;
-    struct bm_noh *pai;
-    long **dfilhos;
-    char eh_folha;
+    char eh_raiz;
+    char letra;
+    struct trie **prox;
+    unsigned int mprox;
 } trie;
 
 trie *trie_inic();

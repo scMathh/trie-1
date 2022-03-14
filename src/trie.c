@@ -18,6 +18,7 @@
  */
 trie *trie_inic()
 {
-    return NULL;
+    return (trie *) malloc (sizeof(trie));
 }
+
 
