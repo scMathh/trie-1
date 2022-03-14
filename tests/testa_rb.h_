@@ -1,0 +1,17 @@
+#ifndef TESTA_ARVORE_RB_
+#define TESTA_ARVORE_RB_
+
+/**
+ * aluno: joilnen leite
+ */
+
+/**
+ * declaracao da funcao de teste da 
+ * arvore vermelha e preta
+ */
+void tela_testa_rb(const char *m);
+void testa_arvore_rb(const char *m);
+
+#endif
+
+

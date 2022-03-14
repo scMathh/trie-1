@@ -1,0 +1,19 @@
+propriedades da b-tree e b+-tree
+0 - max(m / 2) filhos ou seja se é uma arvores com 4 ponteiros no noh terah
+    2 filhos
+1 - raiz tem que conter no minimo 2 filhos
+2 - todas as raizes estao no mesmo nivel
+3 - construihda de baixo pra cima
+
+do livro do Markezon
+0 - a raiz eh uma folha ou tem no minimo dois filhos
+1 - cada noh diferente da raiz e das folhas possui no minimo d + 1 filhos
+2 - cada noh tem no maximo 2d + 1 filhos
+3 - todas as folhas estao no mesmo nivel
+
+propriedade adicional para b+-tree
+    chaves ponteiros para dados apenas nas folhas
+    uma das formas de fazer eh as folhas conterem todas as chaves
+    chaves teram valores iguais em nohs intermediarios e nas folhas
+    mas soh nas folhas apontam pra dados
+

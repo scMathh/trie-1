@@ -1,0 +1,109 @@
+\hypertarget{testa__item__2_8c_source}{}\doxysection{testa\+\_\+item\+\_\+2.\+c}
+\label{testa__item__2_8c_source}\index{src/testa\_item\_2.c@{src/testa\_item\_2.c}}
+\mbox{\hyperlink{testa__item__2_8c}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00001}00001 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00002}00002 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00003}00003 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{conjunto__ordenado_8h}{conjunto\_ordenado.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{testa_8h}{testa.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00007}00007 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00008}00008 \textcolor{comment}{ * aluno: joilnen leite}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00009}00009 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00011}00011 \textcolor{keyword}{static} \textcolor{keywordtype}{void} imprime\_meu\_tipo(\textcolor{keywordtype}{void} *);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00013}\mbox{\hyperlink{structmeu__tipo2}{00013}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00014}\mbox{\hyperlink{structmeu__tipo2_ae2a0f66178bb1c4d42e2b70ec9426ccb}{00014}}     \textcolor{keywordtype}{char} *\mbox{\hyperlink{structmeu__tipo2_ae2a0f66178bb1c4d42e2b70ec9426ccb}{nome}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00015}\mbox{\hyperlink{structmeu__tipo2_a7cf25f6d6a9a9e6d257de1a237e175c0}{00015}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structmeu__tipo2_a7cf25f6d6a9a9e6d257de1a237e175c0}{milhas}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00016}00016 \} \mbox{\hyperlink{structmeu__tipo2}{meu\_tipo2}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00018}00018 \textcolor{keyword}{static} \textcolor{keywordtype}{void} adiciona\_lista\_de\_elementos(\mbox{\hyperlink{structconjord}{conjord}} *c)}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00019}00019 \{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00020}00020     \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00021}00021     srand(time(NULL));}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00022}00022     \textcolor{keywordflow}{for} (i = 0; i < 20;)}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00023}00023     \{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00031}00031         \mbox{\hyperlink{structmeu__tipo2}{meu\_tipo2}} *mt0 = (\mbox{\hyperlink{structmeu__tipo2}{meu\_tipo2}} *) malloc (\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structmeu__tipo2}{meu\_tipo2}}));}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00032}00032         mt0-\/>\mbox{\hyperlink{structmeu__tipo2_ae2a0f66178bb1c4d42e2b70ec9426ccb}{nome}} = (\textcolor{keywordtype}{char} *) malloc(\textcolor{keyword}{sizeof}(\textcolor{stringliteral}{"{}nome para teste1"{}}) + 1);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00033}00033         strncpy(mt0-\/>\mbox{\hyperlink{structmeu__tipo2_ae2a0f66178bb1c4d42e2b70ec9426ccb}{nome}}, \textcolor{stringliteral}{"{}nome para teste1"{}}, \textcolor{keyword}{sizeof}(\textcolor{stringliteral}{"{}nome para teste1"{}}) + 1);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00034}00034         mt0-\/>\mbox{\hyperlink{structmeu__tipo2_a7cf25f6d6a9a9e6d257de1a237e175c0}{milhas}} = 19;}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00035}00035         \textcolor{keywordtype}{int} chave = rand() \% 99 + 1;}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00036}00036         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{conjunto__ordenado_8c_ab4e6881f1576c10b85291df6ce78de9c}{conjord\_insere\_elemento}}(c, chave, mt0))}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00037}00037         \{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00038}00038             ++i;}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00039}00039             printf(\textcolor{stringliteral}{"{}chave:\%d \(\backslash\)t"{}}, chave);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00040}00040             printf(\textcolor{stringliteral}{"{}nome:\%s\(\backslash\)t"{}}, mt0-\/>\mbox{\hyperlink{structmeu__tipo2_ae2a0f66178bb1c4d42e2b70ec9426ccb}{nome}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00041}00041             printf(\textcolor{stringliteral}{"{}milhas:\%d\(\backslash\)n"{}}, mt0-\/>\mbox{\hyperlink{structmeu__tipo2_a7cf25f6d6a9a9e6d257de1a237e175c0}{milhas}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00042}00042         \}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00043}00043     \}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00044}00044 \}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00046}\mbox{\hyperlink{testa__item__2_8c_a924403e6eca85a2226d6ac3d122f51b6}{00046}} \textcolor{keywordtype}{void} \mbox{\hyperlink{testa__item__2_8c_a924403e6eca85a2226d6ac3d122f51b6}{testa\_item\_2}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *m)}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00047}00047 \{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00051}00051     \mbox{\hyperlink{conjunto__ordenado_8c_a42f2aa61301fb48bd719ac4267ea6c96}{conjord\_seta\_imprime\_elemento}}(imprime\_meu\_tipo);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00052}00052     \mbox{\hyperlink{structconjord}{conjord}} *cj\_a = \mbox{\hyperlink{conjunto__ordenado_8c_a4009d4582b034535ddece2b5aa59b2f9}{conjord\_cria}}(\textcolor{stringliteral}{"{}A"{}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00053}00053     \textcolor{keywordtype}{int} imp;}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00055}00055     \mbox{\hyperlink{conjunto__ordenado_8h_a129132bef90332011f2fcd3c0394bc19}{LTELA}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00056}00056     adiciona\_lista\_de\_elementos(cj\_a);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00057}00057     \mbox{\hyperlink{conjunto__ordenado_8h_ab7e64333eba48090f444ec9f36fd23ef}{INFO}}(\textcolor{stringliteral}{"{}* item 2.2 excluir todos com chave impar"{}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00058}00058     \mbox{\hyperlink{conjunto__ordenado_8h_a86496c19c29b6c83337b300bfeef9c95}{CM}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00060}00060     \textcolor{keywordflow}{for} (imp = 1; imp < 100; imp += 2)}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00061}00061         \mbox{\hyperlink{conjunto__ordenado_8c_a4b7588fc395444b79bd29ace9a70a3e2}{conjord\_deleta\_elemento}}(cj\_a, imp);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00062}00062     \mbox{\hyperlink{conjunto__ordenado_8h_a129132bef90332011f2fcd3c0394bc19}{LTELA}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00063}00063     \mbox{\hyperlink{conjunto__ordenado_8c_a117a9763ddf1f2fec032b40e433476aa}{conjord\_imprime\_conjunto}}(cj\_a);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00064}00064     \mbox{\hyperlink{conjunto__ordenado_8h_ab7e64333eba48090f444ec9f36fd23ef}{INFO}}(\textcolor{stringliteral}{"{}* item 1.4 excluir todos"{}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00065}00065     \mbox{\hyperlink{conjunto__ordenado_8h_a301ea1db1848a8638f32d9963877d05f}{INFO\_CARD}}(\mbox{\hyperlink{conjunto__ordenado_8c_a5dbae38113926b9635572bd995953cbd}{conjord\_cardinalidade}}(cj\_a));}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00066}00066     \mbox{\hyperlink{conjunto__ordenado_8h_a86496c19c29b6c83337b300bfeef9c95}{CM}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00068}00068     \mbox{\hyperlink{conjunto__ordenado_8h_a129132bef90332011f2fcd3c0394bc19}{LTELA}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00069}00069     \mbox{\hyperlink{conjunto__ordenado_8c_a19ea0690882513882ce83d28383cb3fb}{conjord\_esvazia}}(cj\_a);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00070}00070     \mbox{\hyperlink{conjunto__ordenado_8h_a301ea1db1848a8638f32d9963877d05f}{INFO\_CARD}}(\mbox{\hyperlink{conjunto__ordenado_8c_a5dbae38113926b9635572bd995953cbd}{conjord\_cardinalidade}}(cj\_a));}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00071}00071     \mbox{\hyperlink{conjunto__ordenado_8h_ab7e64333eba48090f444ec9f36fd23ef}{INFO}}(\textcolor{stringliteral}{"{}* item 1.3 conjunto vazio"{}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00072}00072     \mbox{\hyperlink{conjunto__ordenado_8h_a86496c19c29b6c83337b300bfeef9c95}{CM}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00074}00074     \mbox{\hyperlink{conjunto__ordenado_8h_a129132bef90332011f2fcd3c0394bc19}{LTELA}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00075}00075     \mbox{\hyperlink{checklist_8c_a0c0bf6c726a38cefd94572e62c80a258}{tela\_checklist}}(1 << \mbox{\hyperlink{checklist_8h_a06fc87d81c62e9abb8790b6e5713c55bae118114b96d263cd5ec726d138f9c48b}{I1\_2}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00076}00076     \mbox{\hyperlink{checklist_8c_a0c0bf6c726a38cefd94572e62c80a258}{tela\_checklist}}(1 << \mbox{\hyperlink{checklist_8h_a06fc87d81c62e9abb8790b6e5713c55ba43e0225f8866317699053e4587d3c1b3}{I1\_3}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00077}00077     \mbox{\hyperlink{checklist_8c_a0c0bf6c726a38cefd94572e62c80a258}{tela\_checklist}}(1 << \mbox{\hyperlink{checklist_8h_a06fc87d81c62e9abb8790b6e5713c55ba1202dc46b43e75d38caa12d41967af54}{I1\_4}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00078}00078     \mbox{\hyperlink{checklist_8c_a0c0bf6c726a38cefd94572e62c80a258}{tela\_checklist}}(1 << \mbox{\hyperlink{checklist_8h_a06fc87d81c62e9abb8790b6e5713c55ba971ae6094d0b50fcfa69172d2230d451}{I2\_2}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00079}00079     \mbox{\hyperlink{checklist_8c_a0c0bf6c726a38cefd94572e62c80a258}{tela\_checklist}}(1 << \mbox{\hyperlink{checklist_8h_a06fc87d81c62e9abb8790b6e5713c55ba6c656e6e9c48a51de593f92e1c765d9f}{I2\_3}});}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00080}00080     \mbox{\hyperlink{conjunto__ordenado_8h_a86496c19c29b6c83337b300bfeef9c95}{CM}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00081}00081 \}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00083}\mbox{\hyperlink{testa__item__2_8c_aad18b82f4ac1e58302ff7c4f9b5c13ef}{00083}} \textcolor{keywordtype}{void} \mbox{\hyperlink{testa__item__2_8c_aad18b82f4ac1e58302ff7c4f9b5c13ef}{tela\_item\_2}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *m)}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00084}00084 \{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00085}00085     \mbox{\hyperlink{conjunto__ordenado_8h_a129132bef90332011f2fcd3c0394bc19}{LTELA}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00086}00086     \textcolor{keywordtype}{int} l = 5, c = 24, f;}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00087}00087     \textcolor{keywordtype}{char} mens[8][45] =}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00088}00088     \{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00089}00089         \mbox{\hyperlink{jcurses_8h_a63c0176df17ae85869575c0c7147d752}{S\_UNDERL}}\textcolor{stringliteral}{"{}serah efetuado os testes:"{}}\mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\_NORM}},}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00090}00090         \textcolor{stringliteral}{"{}exclusao de elemento do conjunto"{}},}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00091}00091         \textcolor{stringliteral}{"{}verif. se elemento pertence ao conjunto"{}},}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00092}00092         \textcolor{stringliteral}{"{}cardinalide do conjunto"{}},}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00093}00093         \textcolor{stringliteral}{"{}verif. se conjunto eh vazio"{}},}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00094}00094         \textcolor{stringliteral}{"{}tornar conjunto vazio"{}},}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00095}00095         \textcolor{stringliteral}{"{}o tipo de dado do usuario aqui eh uma"{}},}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00096}00096         \textcolor{stringliteral}{"{}estrutura com uma string e um inteiro"{}}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00097}00097     \};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00098}00098     \textcolor{keywordflow}{for} (f = 0; f < 8; f++)}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00099}00099         \mbox{\hyperlink{conjunto__ordenado_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c, 0, mens[f]);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00100}00100     \mbox{\hyperlink{conjunto__ordenado_8h_a4b7602dea81a25f093571dc5bfed9a0f}{INFO\_FILE}}(\_\_FILE\_\_);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00101}00101     \mbox{\hyperlink{conjunto__ordenado_8h_a86496c19c29b6c83337b300bfeef9c95}{CM}};}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00102}00102 \}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00104}00104 \textcolor{keywordtype}{void} imprime\_meu\_tipo(\textcolor{keywordtype}{void} *n)}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00105}00105 \{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00106}00106     \textcolor{keywordflow}{if}(n)}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00107}00107     \{}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00108}00108         printf(\textcolor{stringliteral}{"{}nome: \%s \(\backslash\)t"{}}, ((\mbox{\hyperlink{structmeu__tipo2}{meu\_tipo2}} *)n)-\/>nome);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00109}00109         printf(\textcolor{stringliteral}{"{}milhas: \%d\(\backslash\)n"{}}, ((\mbox{\hyperlink{structmeu__tipo2}{meu\_tipo2}} *)n)-\/>milhas);}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00110}00110     \}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00111}00111 \}}
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{testa__item__2_8c_source_l00113}00113 }
+
+\end{DoxyCode}

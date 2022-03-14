@@ -1,0 +1,566 @@
+\hypertarget{jcurses_8h}{}\doxysection{Referência ao ficheiro src/jcurses.h}
+\label{jcurses_8h}\index{src/jcurses.h@{src/jcurses.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a3fe1517958dd482f1205bf1f354f63d1}{S\+\_\+\+LTELA}}~\char`\"{}\textbackslash{}033\mbox{[}H\textbackslash{}033\mbox{[}J\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_ab4a5d733b9944ff94a444925b856a359}{S\+\_\+\+CM}}~\char`\"{}\textbackslash{}033\mbox{[}24;62H\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a94b7242c65259d7d4080d75f97aa7b65}{S\+\_\+\+CMR}}~\char`\"{}\textbackslash{}033\mbox{[}24;58H\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a63c0176df17ae85869575c0c7147d752}{S\+\_\+\+UNDERL}}~\char`\"{}\textbackslash{}033\mbox{[}1m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a334fb0aa54e705cbbeafe975ad665736}{S\+\_\+\+PISCA}}~\char`\"{}\textbackslash{}033\mbox{[}5m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a90964bcd5877dff05e2dfe5b9aee1194}{S\+\_\+\+PISCARAP}}~\char`\"{}\textbackslash{}033\mbox{[}6m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a8dfe56077212debac1e5200c93fc3d82}{S\+\_\+\+MAGENTAB}}~\char`\"{}\textbackslash{}033\mbox{[}45m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a4d63e061a233bbc88d14c8caf2e019c1}{S\+\_\+\+PRETO}}~\char`\"{}\textbackslash{}033\mbox{[}30m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_abb175f5a20e590b6a8ebfe86b6823c8f}{S\+\_\+\+PRETOB}}~\char`\"{}\textbackslash{}033\mbox{[}40m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_acd5492b7c0ff666c7b59bc2697f74740}{S\+\_\+\+BRANCO}}~\char`\"{}\textbackslash{}033\mbox{[}37m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_ad8180ab36842a6f3b1d92dda5b6023f3}{S\+\_\+\+BRANCOB}}~\char`\"{}\textbackslash{}033\mbox{[}47m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a87fd547e0c40b7e0098fe5791ddb7e8c}{S\+\_\+\+CINZA}}~\char`\"{}\textbackslash{}033\mbox{[}36m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_aee352e52b382fba668f559c71266ebae}{S\+\_\+\+CINZAB}}~\char`\"{}\textbackslash{}033\mbox{[}46m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_aaab212afea6879d65a18303cfca951d1}{S\+\_\+\+AZUL}}~\char`\"{}\textbackslash{}033\mbox{[}34m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a7e662808fce6db39bc3e0326ca4906ea}{S\+\_\+\+AZULB}}~\char`\"{}\textbackslash{}033\mbox{[}44m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_aef00be5f3f7d9fbc9c625632c15d15a8}{S\+\_\+\+VERM}}~\char`\"{}\textbackslash{}033\mbox{[}31m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a53bd60b1c8df5c5e03e8c1b7eb473d14}{S\+\_\+\+VERMB}}~\char`\"{}\textbackslash{}033\mbox{[}41m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a6510e319e8981459d09547d8fefe32f6}{S\+\_\+\+VERD}}~\char`\"{}\textbackslash{}033\mbox{[}32m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a7294fb8a126e4e57ecc6c96e5e3a7aac}{S\+\_\+\+VERDB}}~\char`\"{}\textbackslash{}033\mbox{[}42m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_ac7f401a0ffc7b7424ee435ed645eaf7c}{S\+\_\+\+INV}}~\char`\"{}\textbackslash{}033\mbox{[}7m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}}~\char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a872662eff62ce487f9e56fe0c7b8f5c7}{S\+\_\+\+INFO}}~\char`\"{}\textbackslash{}033\mbox{[}24;0\+H\textbackslash{}033\mbox{[}7m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_ad47548202def62de6bd1c3633faf503b}{S\+\_\+\+INFO\+\_\+\+ST}}~\char`\"{}\textbackslash{}033\mbox{[}1;65H\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a47673f3227185240993f5f429be510a7}{S\+\_\+\+INFO\+\_\+\+ST\+\_\+1}}~\char`\"{}\textbackslash{}033\mbox{[}2;65H\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a0c130a1608ac05676c0a44d8834a706d}{S\+\_\+\+CARD}}~\char`\"{}\textbackslash{}033\mbox{[}0;60H\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_ad0669bbb06169b695e461e90ff2c163f}{S\+\_\+\+CHKLST}}~\char`\"{}\textbackslash{}033\mbox{[}\%d;\%dH\%s\textbackslash{}033\mbox{[}0m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a137954d7bcd2d04c0b814e4f81e82a3d}{S\+\_\+\+CHKLST\+\_\+\+DONE}}~\char`\"{}\textbackslash{}033\mbox{[}46m\textbackslash{}033\mbox{[}30m\textbackslash{}033\mbox{[}\%d;\%dH\%s\textbackslash{}033\mbox{[}0m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_aed7e0ee8c88078c9b90fe9f08b51ec81}{S\+\_\+\+INFO2}}~\char`\"{}\textbackslash{}033\mbox{[}46m\textbackslash{}033\mbox{[}30m\textbackslash{}033\mbox{[}24;0H\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a3a525e5e093d849fb1e48a21446515a3}{S\+\_\+\+LIST}}~\char`\"{}\textbackslash{}033\mbox{[}\%d;78H\%d\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a26f1c0781d7168951c50c9b0fd7247e9}{S\+\_\+\+FILEN}}~\char`\"{}\textbackslash{}033\mbox{[}0;55H\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_af1076e29a7dd9ae48f16a5fe02745cfc}{S\+\_\+\+VENN}}~\mbox{\hyperlink{jcurses_8h_ad0669bbb06169b695e461e90ff2c163f}{S\+\_\+\+CHKLST}}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a70b4c23fb13bd296ceafc47cc68ae570}{S\+\_\+\+TEST}}~\char`\"{}\textbackslash{}033\mbox{[}1m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_ac668a47e5660c3558c921f2c25f07abb}{S\+\_\+\+NADA}}~\char`\"{}\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a129132bef90332011f2fcd3c0394bc19}{LTELA}}~printf(\mbox{\hyperlink{jcurses_8h_a3fe1517958dd482f1205bf1f354f63d1}{S\+\_\+\+LTELA}})
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a9311f168d42752b9c850f2f24f21c1e3}{TIPO\+\_\+\+DE\+\_\+\+TERMINAL}}~TCOLOR
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_ab7e64333eba48090f444ec9f36fd23ef}{INFO}}(x)~printf(\char`\"{}\%s\%s\%s\char`\"{}, S\+\_\+\+INFO, x, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}})
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_af450835e839e911b04d2f98b01f95838}{INFO2}}(x)~printf(\char`\"{}\%s\%s\%s\char`\"{}, S\+\_\+\+INFO2, x, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}})
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a2a52f232195c851f7fb64343f41463bf}{INFO\+\_\+\+ST}}(x)~printf(\char`\"{}\%s\%s\%s\%s\char`\"{}, S\+\_\+\+INV, \mbox{\hyperlink{jcurses_8h_ad47548202def62de6bd1c3633faf503b}{S\+\_\+\+INFO\+\_\+\+ST}}, x, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}})
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a86496c19c29b6c83337b300bfeef9c95}{CM}}~printf(\char`\"{}\%s\char`\"{}, m); fflush(stdout); getc(stdin)
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a85cfd3b774618e2e57dab4f3a60a101e}{CMR}}(x)~printf(\char`\"{}\%s\char`\"{}, S\+\_\+\+CMR\char`\"{}q + $\ast$ tecle enter $\ast$\char`\"{}); fflush(stdout); x = getc(stdin)
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a58e254bd1b841f53f11027254e99d87c}{CMR1}}~printf(\char`\"{}\%s\char`\"{}, S\+\_\+\+CMR\char`\"{}++ tecle enter $\ast$\char`\"{}); fflush(stdout); getc(stdin)
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l,  c,  b,  x)
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_af1415ebcc621762b0ec0c7626536c488}{INFO\+\_\+\+FILE}}~printf(\char`\"{}\%s\%s\%sf\+:\%s\%s\char`\"{}, S\+\_\+\+INFO\+\_\+\+ST, \+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \mbox{\hyperlink{jcurses_8h_a47673f3227185240993f5f429be510a7}{S\+\_\+\+INFO\+\_\+\+ST\+\_\+1}}, \+\_\+\+\_\+\+FUNCTION\+\_\+\+\_\+, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}}); fflush(stdout);
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a301ea1db1848a8638f32d9963877d05f}{INFO\+\_\+\+CARD}}(x)~printf(\char`\"{}\%scardinalidade\+: \%d\%s\char`\"{}, S\+\_\+\+CARD, x, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}})
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_aa9d0458c6bcfdce85a2611990e75dd28}{S\+\_\+\+FORMAT}}~\char`\"{}\textbackslash{}033\mbox{[}\%d;\%dH\%s\%s\%s\textbackslash{}033\mbox{[}0m\char`\"{}
+\item 
+\#define \mbox{\hyperlink{jcurses_8h_a333a7f29b3da2e8a9f4aac5e1975ae0a}{PNAPOS}}(l,  c,  a1,  a2,  m)~printf(\mbox{\hyperlink{jcurses_8h_aa9d0458c6bcfdce85a2611990e75dd28}{S\+\_\+\+FORMAT}}, l, c, a1, a2, m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das macros}
+\mbox{\Hypertarget{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}\label{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}} 
+\index{jcurses.h@{jcurses.h}!CKLSITEM@{CKLSITEM}}
+\index{CKLSITEM@{CKLSITEM}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{CKLSITEM}{CKLSITEM}}
+{\footnotesize\ttfamily \#define CKLSITEM(\begin{DoxyParamCaption}\item[{}]{l,  }\item[{}]{c,  }\item[{}]{b,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Valor\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (b) printf(\mbox{\hyperlink{jcurses_8h_a137954d7bcd2d04c0b814e4f81e82a3d}{S\_CHKLST\_DONE}}, l, c, x); \(\backslash\)}
+\DoxyCodeLine{    else printf(\mbox{\hyperlink{jcurses_8h_ad0669bbb06169b695e461e90ff2c163f}{S\_CHKLST}}, l, c, x)}
+
+\end{DoxyCode}
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00059}{59}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a86496c19c29b6c83337b300bfeef9c95}\label{jcurses_8h_a86496c19c29b6c83337b300bfeef9c95}} 
+\index{jcurses.h@{jcurses.h}!CM@{CM}}
+\index{CM@{CM}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{CM}{CM}}
+{\footnotesize\ttfamily \#define CM~printf(\char`\"{}\%s\char`\"{}, m); fflush(stdout); getc(stdin)}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00056}{56}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a85cfd3b774618e2e57dab4f3a60a101e}\label{jcurses_8h_a85cfd3b774618e2e57dab4f3a60a101e}} 
+\index{jcurses.h@{jcurses.h}!CMR@{CMR}}
+\index{CMR@{CMR}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{CMR}{CMR}}
+{\footnotesize\ttfamily \#define CMR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~printf(\char`\"{}\%s\char`\"{}, S\+\_\+\+CMR\char`\"{}q + $\ast$ tecle enter $\ast$\char`\"{}); fflush(stdout); x = getc(stdin)}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00057}{57}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a58e254bd1b841f53f11027254e99d87c}\label{jcurses_8h_a58e254bd1b841f53f11027254e99d87c}} 
+\index{jcurses.h@{jcurses.h}!CMR1@{CMR1}}
+\index{CMR1@{CMR1}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{CMR1}{CMR1}}
+{\footnotesize\ttfamily \#define CMR1~printf(\char`\"{}\%s\char`\"{}, S\+\_\+\+CMR\char`\"{}++ tecle enter $\ast$\char`\"{}); fflush(stdout); getc(stdin)}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00058}{58}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_ab7e64333eba48090f444ec9f36fd23ef}\label{jcurses_8h_ab7e64333eba48090f444ec9f36fd23ef}} 
+\index{jcurses.h@{jcurses.h}!INFO@{INFO}}
+\index{INFO@{INFO}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{INFO}{INFO}}
+{\footnotesize\ttfamily \#define INFO(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~printf(\char`\"{}\%s\%s\%s\char`\"{}, S\+\_\+\+INFO, x, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}})}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00053}{53}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_af450835e839e911b04d2f98b01f95838}\label{jcurses_8h_af450835e839e911b04d2f98b01f95838}} 
+\index{jcurses.h@{jcurses.h}!INFO2@{INFO2}}
+\index{INFO2@{INFO2}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{INFO2}{INFO2}}
+{\footnotesize\ttfamily \#define INFO2(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~printf(\char`\"{}\%s\%s\%s\char`\"{}, S\+\_\+\+INFO2, x, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}})}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00054}{54}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a301ea1db1848a8638f32d9963877d05f}\label{jcurses_8h_a301ea1db1848a8638f32d9963877d05f}} 
+\index{jcurses.h@{jcurses.h}!INFO\_CARD@{INFO\_CARD}}
+\index{INFO\_CARD@{INFO\_CARD}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{INFO\_CARD}{INFO\_CARD}}
+{\footnotesize\ttfamily \#define INFO\+\_\+\+CARD(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~printf(\char`\"{}\%scardinalidade\+: \%d\%s\char`\"{}, S\+\_\+\+CARD, x, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}})}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00063}{63}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_af1415ebcc621762b0ec0c7626536c488}\label{jcurses_8h_af1415ebcc621762b0ec0c7626536c488}} 
+\index{jcurses.h@{jcurses.h}!INFO\_FILE@{INFO\_FILE}}
+\index{INFO\_FILE@{INFO\_FILE}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{INFO\_FILE}{INFO\_FILE}}
+{\footnotesize\ttfamily \#define INFO\+\_\+\+FILE~printf(\char`\"{}\%s\%s\%sf\+:\%s\%s\char`\"{}, S\+\_\+\+INFO\+\_\+\+ST, \+\_\+\+\_\+\+FILE\+\_\+\+\_\+, \mbox{\hyperlink{jcurses_8h_a47673f3227185240993f5f429be510a7}{S\+\_\+\+INFO\+\_\+\+ST\+\_\+1}}, \+\_\+\+\_\+\+FUNCTION\+\_\+\+\_\+, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}}); fflush(stdout);}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00062}{62}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a2a52f232195c851f7fb64343f41463bf}\label{jcurses_8h_a2a52f232195c851f7fb64343f41463bf}} 
+\index{jcurses.h@{jcurses.h}!INFO\_ST@{INFO\_ST}}
+\index{INFO\_ST@{INFO\_ST}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{INFO\_ST}{INFO\_ST}}
+{\footnotesize\ttfamily \#define INFO\+\_\+\+ST(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~printf(\char`\"{}\%s\%s\%s\%s\char`\"{}, S\+\_\+\+INV, \mbox{\hyperlink{jcurses_8h_ad47548202def62de6bd1c3633faf503b}{S\+\_\+\+INFO\+\_\+\+ST}}, x, \mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\+\_\+\+NORM}})}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00055}{55}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a129132bef90332011f2fcd3c0394bc19}\label{jcurses_8h_a129132bef90332011f2fcd3c0394bc19}} 
+\index{jcurses.h@{jcurses.h}!LTELA@{LTELA}}
+\index{LTELA@{LTELA}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{LTELA}{LTELA}}
+{\footnotesize\ttfamily \#define LTELA~printf(\mbox{\hyperlink{jcurses_8h_a3fe1517958dd482f1205bf1f354f63d1}{S\+\_\+\+LTELA}})}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00051}{51}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a333a7f29b3da2e8a9f4aac5e1975ae0a}\label{jcurses_8h_a333a7f29b3da2e8a9f4aac5e1975ae0a}} 
+\index{jcurses.h@{jcurses.h}!PNAPOS@{PNAPOS}}
+\index{PNAPOS@{PNAPOS}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{PNAPOS}{PNAPOS}}
+{\footnotesize\ttfamily \#define PNAPOS(\begin{DoxyParamCaption}\item[{}]{l,  }\item[{}]{c,  }\item[{}]{a1,  }\item[{}]{a2,  }\item[{}]{m }\end{DoxyParamCaption})~printf(\mbox{\hyperlink{jcurses_8h_aa9d0458c6bcfdce85a2611990e75dd28}{S\+\_\+\+FORMAT}}, l, c, a1, a2, m)}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00065}{65}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_aaab212afea6879d65a18303cfca951d1}\label{jcurses_8h_aaab212afea6879d65a18303cfca951d1}} 
+\index{jcurses.h@{jcurses.h}!S\_AZUL@{S\_AZUL}}
+\index{S\_AZUL@{S\_AZUL}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_AZUL}{S\_AZUL}}
+{\footnotesize\ttfamily \#define S\+\_\+\+AZUL~\char`\"{}\textbackslash{}033\mbox{[}34m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00030}{30}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a7e662808fce6db39bc3e0326ca4906ea}\label{jcurses_8h_a7e662808fce6db39bc3e0326ca4906ea}} 
+\index{jcurses.h@{jcurses.h}!S\_AZULB@{S\_AZULB}}
+\index{S\_AZULB@{S\_AZULB}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_AZULB}{S\_AZULB}}
+{\footnotesize\ttfamily \#define S\+\_\+\+AZULB~\char`\"{}\textbackslash{}033\mbox{[}44m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00031}{31}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_acd5492b7c0ff666c7b59bc2697f74740}\label{jcurses_8h_acd5492b7c0ff666c7b59bc2697f74740}} 
+\index{jcurses.h@{jcurses.h}!S\_BRANCO@{S\_BRANCO}}
+\index{S\_BRANCO@{S\_BRANCO}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_BRANCO}{S\_BRANCO}}
+{\footnotesize\ttfamily \#define S\+\_\+\+BRANCO~\char`\"{}\textbackslash{}033\mbox{[}37m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00026}{26}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_ad8180ab36842a6f3b1d92dda5b6023f3}\label{jcurses_8h_ad8180ab36842a6f3b1d92dda5b6023f3}} 
+\index{jcurses.h@{jcurses.h}!S\_BRANCOB@{S\_BRANCOB}}
+\index{S\_BRANCOB@{S\_BRANCOB}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_BRANCOB}{S\_BRANCOB}}
+{\footnotesize\ttfamily \#define S\+\_\+\+BRANCOB~\char`\"{}\textbackslash{}033\mbox{[}47m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00027}{27}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a0c130a1608ac05676c0a44d8834a706d}\label{jcurses_8h_a0c130a1608ac05676c0a44d8834a706d}} 
+\index{jcurses.h@{jcurses.h}!S\_CARD@{S\_CARD}}
+\index{S\_CARD@{S\_CARD}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_CARD}{S\_CARD}}
+{\footnotesize\ttfamily \#define S\+\_\+\+CARD~\char`\"{}\textbackslash{}033\mbox{[}0;60H\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00041}{41}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_ad0669bbb06169b695e461e90ff2c163f}\label{jcurses_8h_ad0669bbb06169b695e461e90ff2c163f}} 
+\index{jcurses.h@{jcurses.h}!S\_CHKLST@{S\_CHKLST}}
+\index{S\_CHKLST@{S\_CHKLST}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_CHKLST}{S\_CHKLST}}
+{\footnotesize\ttfamily \#define S\+\_\+\+CHKLST~\char`\"{}\textbackslash{}033\mbox{[}\%d;\%dH\%s\textbackslash{}033\mbox{[}0m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00042}{42}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a137954d7bcd2d04c0b814e4f81e82a3d}\label{jcurses_8h_a137954d7bcd2d04c0b814e4f81e82a3d}} 
+\index{jcurses.h@{jcurses.h}!S\_CHKLST\_DONE@{S\_CHKLST\_DONE}}
+\index{S\_CHKLST\_DONE@{S\_CHKLST\_DONE}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_CHKLST\_DONE}{S\_CHKLST\_DONE}}
+{\footnotesize\ttfamily \#define S\+\_\+\+CHKLST\+\_\+\+DONE~\char`\"{}\textbackslash{}033\mbox{[}46m\textbackslash{}033\mbox{[}30m\textbackslash{}033\mbox{[}\%d;\%dH\%s\textbackslash{}033\mbox{[}0m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00043}{43}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a87fd547e0c40b7e0098fe5791ddb7e8c}\label{jcurses_8h_a87fd547e0c40b7e0098fe5791ddb7e8c}} 
+\index{jcurses.h@{jcurses.h}!S\_CINZA@{S\_CINZA}}
+\index{S\_CINZA@{S\_CINZA}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_CINZA}{S\_CINZA}}
+{\footnotesize\ttfamily \#define S\+\_\+\+CINZA~\char`\"{}\textbackslash{}033\mbox{[}36m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00028}{28}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_aee352e52b382fba668f559c71266ebae}\label{jcurses_8h_aee352e52b382fba668f559c71266ebae}} 
+\index{jcurses.h@{jcurses.h}!S\_CINZAB@{S\_CINZAB}}
+\index{S\_CINZAB@{S\_CINZAB}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_CINZAB}{S\_CINZAB}}
+{\footnotesize\ttfamily \#define S\+\_\+\+CINZAB~\char`\"{}\textbackslash{}033\mbox{[}46m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00029}{29}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_ab4a5d733b9944ff94a444925b856a359}\label{jcurses_8h_ab4a5d733b9944ff94a444925b856a359}} 
+\index{jcurses.h@{jcurses.h}!S\_CM@{S\_CM}}
+\index{S\_CM@{S\_CM}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_CM}{S\_CM}}
+{\footnotesize\ttfamily \#define S\+\_\+\+CM~\char`\"{}\textbackslash{}033\mbox{[}24;62H\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00018}{18}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a94b7242c65259d7d4080d75f97aa7b65}\label{jcurses_8h_a94b7242c65259d7d4080d75f97aa7b65}} 
+\index{jcurses.h@{jcurses.h}!S\_CMR@{S\_CMR}}
+\index{S\_CMR@{S\_CMR}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_CMR}{S\_CMR}}
+{\footnotesize\ttfamily \#define S\+\_\+\+CMR~\char`\"{}\textbackslash{}033\mbox{[}24;58H\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00019}{19}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a26f1c0781d7168951c50c9b0fd7247e9}\label{jcurses_8h_a26f1c0781d7168951c50c9b0fd7247e9}} 
+\index{jcurses.h@{jcurses.h}!S\_FILEN@{S\_FILEN}}
+\index{S\_FILEN@{S\_FILEN}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_FILEN}{S\_FILEN}}
+{\footnotesize\ttfamily \#define S\+\_\+\+FILEN~\char`\"{}\textbackslash{}033\mbox{[}0;55H\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00046}{46}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_aa9d0458c6bcfdce85a2611990e75dd28}\label{jcurses_8h_aa9d0458c6bcfdce85a2611990e75dd28}} 
+\index{jcurses.h@{jcurses.h}!S\_FORMAT@{S\_FORMAT}}
+\index{S\_FORMAT@{S\_FORMAT}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_FORMAT}{S\_FORMAT}}
+{\footnotesize\ttfamily \#define S\+\_\+\+FORMAT~\char`\"{}\textbackslash{}033\mbox{[}\%d;\%dH\%s\%s\%s\textbackslash{}033\mbox{[}0m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00064}{64}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a872662eff62ce487f9e56fe0c7b8f5c7}\label{jcurses_8h_a872662eff62ce487f9e56fe0c7b8f5c7}} 
+\index{jcurses.h@{jcurses.h}!S\_INFO@{S\_INFO}}
+\index{S\_INFO@{S\_INFO}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_INFO}{S\_INFO}}
+{\footnotesize\ttfamily \#define S\+\_\+\+INFO~\char`\"{}\textbackslash{}033\mbox{[}24;0\+H\textbackslash{}033\mbox{[}7m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00038}{38}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_aed7e0ee8c88078c9b90fe9f08b51ec81}\label{jcurses_8h_aed7e0ee8c88078c9b90fe9f08b51ec81}} 
+\index{jcurses.h@{jcurses.h}!S\_INFO2@{S\_INFO2}}
+\index{S\_INFO2@{S\_INFO2}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_INFO2}{S\_INFO2}}
+{\footnotesize\ttfamily \#define S\+\_\+\+INFO2~\char`\"{}\textbackslash{}033\mbox{[}46m\textbackslash{}033\mbox{[}30m\textbackslash{}033\mbox{[}24;0H\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00044}{44}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_ad47548202def62de6bd1c3633faf503b}\label{jcurses_8h_ad47548202def62de6bd1c3633faf503b}} 
+\index{jcurses.h@{jcurses.h}!S\_INFO\_ST@{S\_INFO\_ST}}
+\index{S\_INFO\_ST@{S\_INFO\_ST}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_INFO\_ST}{S\_INFO\_ST}}
+{\footnotesize\ttfamily \#define S\+\_\+\+INFO\+\_\+\+ST~\char`\"{}\textbackslash{}033\mbox{[}1;65H\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00039}{39}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a47673f3227185240993f5f429be510a7}\label{jcurses_8h_a47673f3227185240993f5f429be510a7}} 
+\index{jcurses.h@{jcurses.h}!S\_INFO\_ST\_1@{S\_INFO\_ST\_1}}
+\index{S\_INFO\_ST\_1@{S\_INFO\_ST\_1}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_INFO\_ST\_1}{S\_INFO\_ST\_1}}
+{\footnotesize\ttfamily \#define S\+\_\+\+INFO\+\_\+\+ST\+\_\+1~\char`\"{}\textbackslash{}033\mbox{[}2;65H\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00040}{40}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_ac7f401a0ffc7b7424ee435ed645eaf7c}\label{jcurses_8h_ac7f401a0ffc7b7424ee435ed645eaf7c}} 
+\index{jcurses.h@{jcurses.h}!S\_INV@{S\_INV}}
+\index{S\_INV@{S\_INV}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_INV}{S\_INV}}
+{\footnotesize\ttfamily \#define S\+\_\+\+INV~\char`\"{}\textbackslash{}033\mbox{[}7m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00036}{36}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a3a525e5e093d849fb1e48a21446515a3}\label{jcurses_8h_a3a525e5e093d849fb1e48a21446515a3}} 
+\index{jcurses.h@{jcurses.h}!S\_LIST@{S\_LIST}}
+\index{S\_LIST@{S\_LIST}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_LIST}{S\_LIST}}
+{\footnotesize\ttfamily \#define S\+\_\+\+LIST~\char`\"{}\textbackslash{}033\mbox{[}\%d;78H\%d\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00045}{45}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a3fe1517958dd482f1205bf1f354f63d1}\label{jcurses_8h_a3fe1517958dd482f1205bf1f354f63d1}} 
+\index{jcurses.h@{jcurses.h}!S\_LTELA@{S\_LTELA}}
+\index{S\_LTELA@{S\_LTELA}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_LTELA}{S\_LTELA}}
+{\footnotesize\ttfamily \#define S\+\_\+\+LTELA~\char`\"{}\textbackslash{}033\mbox{[}H\textbackslash{}033\mbox{[}J\char`\"{}}
+
+marcros que criei baseado no que pesquisei sobre formatacao e codifificacao de terminal vt100 que eh a base dos emuladores de terminal do linux curses eh como chamam o tipo de software q faz isso curses e ncurses sao exemplos, aqui eh soh uma tentativa primaria que atende as necessidades apenas dessa avaliacao 
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00017}{17}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a8dfe56077212debac1e5200c93fc3d82}\label{jcurses_8h_a8dfe56077212debac1e5200c93fc3d82}} 
+\index{jcurses.h@{jcurses.h}!S\_MAGENTAB@{S\_MAGENTAB}}
+\index{S\_MAGENTAB@{S\_MAGENTAB}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_MAGENTAB}{S\_MAGENTAB}}
+{\footnotesize\ttfamily \#define S\+\_\+\+MAGENTAB~\char`\"{}\textbackslash{}033\mbox{[}45m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00023}{23}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_ac668a47e5660c3558c921f2c25f07abb}\label{jcurses_8h_ac668a47e5660c3558c921f2c25f07abb}} 
+\index{jcurses.h@{jcurses.h}!S\_NADA@{S\_NADA}}
+\index{S\_NADA@{S\_NADA}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_NADA}{S\_NADA}}
+{\footnotesize\ttfamily \#define S\+\_\+\+NADA~\char`\"{}\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00049}{49}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}\label{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}} 
+\index{jcurses.h@{jcurses.h}!S\_NORM@{S\_NORM}}
+\index{S\_NORM@{S\_NORM}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_NORM}{S\_NORM}}
+{\footnotesize\ttfamily \#define S\+\_\+\+NORM~\char`\"{}\textbackslash{}033\mbox{[}0m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00037}{37}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a334fb0aa54e705cbbeafe975ad665736}\label{jcurses_8h_a334fb0aa54e705cbbeafe975ad665736}} 
+\index{jcurses.h@{jcurses.h}!S\_PISCA@{S\_PISCA}}
+\index{S\_PISCA@{S\_PISCA}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_PISCA}{S\_PISCA}}
+{\footnotesize\ttfamily \#define S\+\_\+\+PISCA~\char`\"{}\textbackslash{}033\mbox{[}5m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00021}{21}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a90964bcd5877dff05e2dfe5b9aee1194}\label{jcurses_8h_a90964bcd5877dff05e2dfe5b9aee1194}} 
+\index{jcurses.h@{jcurses.h}!S\_PISCARAP@{S\_PISCARAP}}
+\index{S\_PISCARAP@{S\_PISCARAP}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_PISCARAP}{S\_PISCARAP}}
+{\footnotesize\ttfamily \#define S\+\_\+\+PISCARAP~\char`\"{}\textbackslash{}033\mbox{[}6m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00022}{22}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a4d63e061a233bbc88d14c8caf2e019c1}\label{jcurses_8h_a4d63e061a233bbc88d14c8caf2e019c1}} 
+\index{jcurses.h@{jcurses.h}!S\_PRETO@{S\_PRETO}}
+\index{S\_PRETO@{S\_PRETO}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_PRETO}{S\_PRETO}}
+{\footnotesize\ttfamily \#define S\+\_\+\+PRETO~\char`\"{}\textbackslash{}033\mbox{[}30m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00024}{24}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_abb175f5a20e590b6a8ebfe86b6823c8f}\label{jcurses_8h_abb175f5a20e590b6a8ebfe86b6823c8f}} 
+\index{jcurses.h@{jcurses.h}!S\_PRETOB@{S\_PRETOB}}
+\index{S\_PRETOB@{S\_PRETOB}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_PRETOB}{S\_PRETOB}}
+{\footnotesize\ttfamily \#define S\+\_\+\+PRETOB~\char`\"{}\textbackslash{}033\mbox{[}40m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00025}{25}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a70b4c23fb13bd296ceafc47cc68ae570}\label{jcurses_8h_a70b4c23fb13bd296ceafc47cc68ae570}} 
+\index{jcurses.h@{jcurses.h}!S\_TEST@{S\_TEST}}
+\index{S\_TEST@{S\_TEST}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_TEST}{S\_TEST}}
+{\footnotesize\ttfamily \#define S\+\_\+\+TEST~\char`\"{}\textbackslash{}033\mbox{[}1m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00048}{48}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a63c0176df17ae85869575c0c7147d752}\label{jcurses_8h_a63c0176df17ae85869575c0c7147d752}} 
+\index{jcurses.h@{jcurses.h}!S\_UNDERL@{S\_UNDERL}}
+\index{S\_UNDERL@{S\_UNDERL}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_UNDERL}{S\_UNDERL}}
+{\footnotesize\ttfamily \#define S\+\_\+\+UNDERL~\char`\"{}\textbackslash{}033\mbox{[}1m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00020}{20}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_af1076e29a7dd9ae48f16a5fe02745cfc}\label{jcurses_8h_af1076e29a7dd9ae48f16a5fe02745cfc}} 
+\index{jcurses.h@{jcurses.h}!S\_VENN@{S\_VENN}}
+\index{S\_VENN@{S\_VENN}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_VENN}{S\_VENN}}
+{\footnotesize\ttfamily \#define S\+\_\+\+VENN~\mbox{\hyperlink{jcurses_8h_ad0669bbb06169b695e461e90ff2c163f}{S\+\_\+\+CHKLST}}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00047}{47}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a6510e319e8981459d09547d8fefe32f6}\label{jcurses_8h_a6510e319e8981459d09547d8fefe32f6}} 
+\index{jcurses.h@{jcurses.h}!S\_VERD@{S\_VERD}}
+\index{S\_VERD@{S\_VERD}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_VERD}{S\_VERD}}
+{\footnotesize\ttfamily \#define S\+\_\+\+VERD~\char`\"{}\textbackslash{}033\mbox{[}32m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00034}{34}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a7294fb8a126e4e57ecc6c96e5e3a7aac}\label{jcurses_8h_a7294fb8a126e4e57ecc6c96e5e3a7aac}} 
+\index{jcurses.h@{jcurses.h}!S\_VERDB@{S\_VERDB}}
+\index{S\_VERDB@{S\_VERDB}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_VERDB}{S\_VERDB}}
+{\footnotesize\ttfamily \#define S\+\_\+\+VERDB~\char`\"{}\textbackslash{}033\mbox{[}42m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00035}{35}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_aef00be5f3f7d9fbc9c625632c15d15a8}\label{jcurses_8h_aef00be5f3f7d9fbc9c625632c15d15a8}} 
+\index{jcurses.h@{jcurses.h}!S\_VERM@{S\_VERM}}
+\index{S\_VERM@{S\_VERM}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_VERM}{S\_VERM}}
+{\footnotesize\ttfamily \#define S\+\_\+\+VERM~\char`\"{}\textbackslash{}033\mbox{[}31m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00032}{32}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a53bd60b1c8df5c5e03e8c1b7eb473d14}\label{jcurses_8h_a53bd60b1c8df5c5e03e8c1b7eb473d14}} 
+\index{jcurses.h@{jcurses.h}!S\_VERMB@{S\_VERMB}}
+\index{S\_VERMB@{S\_VERMB}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{S\_VERMB}{S\_VERMB}}
+{\footnotesize\ttfamily \#define S\+\_\+\+VERMB~\char`\"{}\textbackslash{}033\mbox{[}41m\char`\"{}}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00033}{33}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+
+\mbox{\Hypertarget{jcurses_8h_a9311f168d42752b9c850f2f24f21c1e3}\label{jcurses_8h_a9311f168d42752b9c850f2f24f21c1e3}} 
+\index{jcurses.h@{jcurses.h}!TIPO\_DE\_TERMINAL@{TIPO\_DE\_TERMINAL}}
+\index{TIPO\_DE\_TERMINAL@{TIPO\_DE\_TERMINAL}!jcurses.h@{jcurses.h}}
+\doxysubsubsection{\texorpdfstring{TIPO\_DE\_TERMINAL}{TIPO\_DE\_TERMINAL}}
+{\footnotesize\ttfamily \#define TIPO\+\_\+\+DE\+\_\+\+TERMINAL~TCOLOR}
+
+
+
+Definido na linha \mbox{\hyperlink{jcurses_8h_source_l00052}{52}} do ficheiro \mbox{\hyperlink{jcurses_8h_source}{jcurses.\+h}}.
+

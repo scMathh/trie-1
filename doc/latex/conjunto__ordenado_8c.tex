@@ -1,0 +1,229 @@
+\hypertarget{conjunto__ordenado_8c}{}\doxysection{Referência ao ficheiro src/conjunto\+\_\+ordenado.c}
+\label{conjunto__ordenado_8c}\index{src/conjunto\_ordenado.c@{src/conjunto\_ordenado.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}conjunto\+\_\+ordenado.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structconjord}{conjord}} $\ast$ \mbox{\hyperlink{conjunto__ordenado_8c_a4009d4582b034535ddece2b5aa59b2f9}{conjord\+\_\+cria}} (char $\ast$nome)
+\item 
+void \mbox{\hyperlink{conjunto__ordenado_8c_ab2992bebc1ccf67d98169f229309c808}{conjord\+\_\+destroi}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$c)
+\item 
+int \mbox{\hyperlink{conjunto__ordenado_8c_ab4e6881f1576c10b85291df6ce78de9c}{conjord\+\_\+insere\+\_\+elemento}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$a, int chave, void $\ast$elemento)
+\item 
+void \mbox{\hyperlink{conjunto__ordenado_8c_a4b7588fc395444b79bd29ace9a70a3e2}{conjord\+\_\+deleta\+\_\+elemento}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$a, int chave)
+\item 
+int \mbox{\hyperlink{conjunto__ordenado_8c_a5dbae38113926b9635572bd995953cbd}{conjord\+\_\+cardinalidade}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$c)
+\item 
+int \mbox{\hyperlink{conjunto__ordenado_8c_abb54a1aff818316e42300953209bc4a9}{conjord\+\_\+eh\+\_\+vazio}} (const \mbox{\hyperlink{structconjord}{conjord}} $\ast$a)
+\item 
+int \mbox{\hyperlink{conjunto__ordenado_8c_a19ea0690882513882ce83d28383cb3fb}{conjord\+\_\+esvazia}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$c)
+\item 
+void \mbox{\hyperlink{conjunto__ordenado_8c_a4e83f1764e1220d5468892ed388d40b2}{conjord\+\_\+imprime\+\_\+arvore\+\_\+rb}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$c, int s)
+\item 
+void \mbox{\hyperlink{conjunto__ordenado_8c_a8c7da2e1394d9bb7881cf671ee32f34d}{conjord\+\_\+imprime\+\_\+lista}} (int $\ast$l, int s)
+\item 
+int \mbox{\hyperlink{conjunto__ordenado_8c_a42f2aa61301fb48bd719ac4267ea6c96}{conjord\+\_\+seta\+\_\+imprime\+\_\+elemento}} (void($\ast$i)(void $\ast$n))
+\item 
+void \mbox{\hyperlink{conjunto__ordenado_8c_a117a9763ddf1f2fec032b40e433476aa}{conjord\+\_\+imprime\+\_\+conjunto}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$c)
+\item 
+void \mbox{\hyperlink{conjunto__ordenado_8c_a044912180d98e6551e826eca02f846fe}{conjord\+\_\+imprime\+\_\+venn}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$c)
+\item 
+\mbox{\hyperlink{structconjord}{conjord}} $\ast$ \mbox{\hyperlink{conjunto__ordenado_8c_a5fda25d72d7a732876b36e38c1bea11f}{conjord\+\_\+interseciona}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$a, \mbox{\hyperlink{structconjord}{conjord}} $\ast$b)
+\item 
+\mbox{\hyperlink{structconjord}{conjord}} $\ast$ \mbox{\hyperlink{conjunto__ordenado_8c_a036a8a040f40a564c831aded812c2dd6}{conjord\+\_\+une}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$a, \mbox{\hyperlink{structconjord}{conjord}} $\ast$b)
+\item 
+\mbox{\hyperlink{structconjord}{conjord}} $\ast$ \mbox{\hyperlink{conjunto__ordenado_8c_a056f87eaa191cd08f8095040bb5ac00b}{conjord\+\_\+subtrai}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$a, \mbox{\hyperlink{structconjord}{conjord}} $\ast$b)
+\item 
+int \mbox{\hyperlink{conjunto__ordenado_8c_a24293c7bb01f1fd405d267c5044b3006}{conjord\+\_\+existe\+\_\+elemento}} (\mbox{\hyperlink{structconjord}{conjord}} $\ast$a, int chave)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{conjunto__ordenado_8c_a730b152a7744bcd3c034b9f0ac3e0b04}{conjord\+\_\+imprime\+\_\+elemento}} )(void $\ast$n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{conjunto__ordenado_8c_a5dbae38113926b9635572bd995953cbd}\label{conjunto__ordenado_8c_a5dbae38113926b9635572bd995953cbd}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_cardinalidade@{conjord\_cardinalidade}}
+\index{conjord\_cardinalidade@{conjord\_cardinalidade}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_cardinalidade()}{conjord\_cardinalidade()}}
+{\footnotesize\ttfamily int conjord\+\_\+cardinalidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00075}{75}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a4009d4582b034535ddece2b5aa59b2f9}\label{conjunto__ordenado_8c_a4009d4582b034535ddece2b5aa59b2f9}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_cria@{conjord\_cria}}
+\index{conjord\_cria@{conjord\_cria}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_cria()}{conjord\_cria()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structconjord}{conjord}} $\ast$ conjord\+\_\+cria (\begin{DoxyParamCaption}\item[{char $\ast$}]{nome }\end{DoxyParamCaption})}
+
+cria conjunto ordenado e retorna o ponteiro para ele 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00012}{12}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a4b7588fc395444b79bd29ace9a70a3e2}\label{conjunto__ordenado_8c_a4b7588fc395444b79bd29ace9a70a3e2}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_deleta\_elemento@{conjord\_deleta\_elemento}}
+\index{conjord\_deleta\_elemento@{conjord\_deleta\_elemento}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_deleta\_elemento()}{conjord\_deleta\_elemento()}}
+{\footnotesize\ttfamily void conjord\+\_\+deleta\+\_\+elemento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{a,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+insere elemento no conjunto ordenado 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00062}{62}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_ab2992bebc1ccf67d98169f229309c808}\label{conjunto__ordenado_8c_ab2992bebc1ccf67d98169f229309c808}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_destroi@{conjord\_destroi}}
+\index{conjord\_destroi@{conjord\_destroi}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_destroi()}{conjord\_destroi()}}
+{\footnotesize\ttfamily void conjord\+\_\+destroi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+cria conjunto ordenado e retorna o ponteiro para ele 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00026}{26}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_abb54a1aff818316e42300953209bc4a9}\label{conjunto__ordenado_8c_abb54a1aff818316e42300953209bc4a9}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_eh\_vazio@{conjord\_eh\_vazio}}
+\index{conjord\_eh\_vazio@{conjord\_eh\_vazio}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_eh\_vazio()}{conjord\_eh\_vazio()}}
+{\footnotesize\ttfamily int conjord\+\_\+eh\+\_\+vazio (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{a }\end{DoxyParamCaption})}
+
+testa se o conjunto estah vazio 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00086}{86}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a19ea0690882513882ce83d28383cb3fb}\label{conjunto__ordenado_8c_a19ea0690882513882ce83d28383cb3fb}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_esvazia@{conjord\_esvazia}}
+\index{conjord\_esvazia@{conjord\_esvazia}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_esvazia()}{conjord\_esvazia()}}
+{\footnotesize\ttfamily int conjord\+\_\+esvazia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+deleta todos os elementos do conjunto e zera a cardinalidade 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00105}{105}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a24293c7bb01f1fd405d267c5044b3006}\label{conjunto__ordenado_8c_a24293c7bb01f1fd405d267c5044b3006}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_existe\_elemento@{conjord\_existe\_elemento}}
+\index{conjord\_existe\_elemento@{conjord\_existe\_elemento}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_existe\_elemento()}{conjord\_existe\_elemento()}}
+{\footnotesize\ttfamily int conjord\+\_\+existe\+\_\+elemento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{a,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+testa se existe elemento com a chave epecificado no conjunto ordenado 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00235}{235}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a4e83f1764e1220d5468892ed388d40b2}\label{conjunto__ordenado_8c_a4e83f1764e1220d5468892ed388d40b2}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_imprime\_arvore\_rb@{conjord\_imprime\_arvore\_rb}}
+\index{conjord\_imprime\_arvore\_rb@{conjord\_imprime\_arvore\_rb}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_imprime\_arvore\_rb()}{conjord\_imprime\_arvore\_rb()}}
+{\footnotesize\ttfamily void conjord\+\_\+imprime\+\_\+arvore\+\_\+rb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{c,  }\item[{int}]{s }\end{DoxyParamCaption})}
+
+item 3 da especificao \char`\"{}\+Imprime a arvore rubro negra nesta operacao, cada noh da arvore serah representado pela sua chave de identificacao seguida da sua cor\char`\"{} 
+\begin{DoxyParams}{Parâmetros}
+{\em c} & ponteiro para o conjunto ordenado \\
+\hline
+{\em s} & espaco entre os nohs na apresentacao da arvore \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00116}{116}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a117a9763ddf1f2fec032b40e433476aa}\label{conjunto__ordenado_8c_a117a9763ddf1f2fec032b40e433476aa}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_imprime\_conjunto@{conjord\_imprime\_conjunto}}
+\index{conjord\_imprime\_conjunto@{conjord\_imprime\_conjunto}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_imprime\_conjunto()}{conjord\_imprime\_conjunto()}}
+{\footnotesize\ttfamily void conjord\+\_\+imprime\+\_\+conjunto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00146}{146}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a8c7da2e1394d9bb7881cf671ee32f34d}\label{conjunto__ordenado_8c_a8c7da2e1394d9bb7881cf671ee32f34d}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_imprime\_lista@{conjord\_imprime\_lista}}
+\index{conjord\_imprime\_lista@{conjord\_imprime\_lista}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_imprime\_lista()}{conjord\_imprime\_lista()}}
+{\footnotesize\ttfamily void conjord\+\_\+imprime\+\_\+lista (\begin{DoxyParamCaption}\item[{int $\ast$}]{l,  }\item[{int}]{s }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00121}{121}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a044912180d98e6551e826eca02f846fe}\label{conjunto__ordenado_8c_a044912180d98e6551e826eca02f846fe}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_imprime\_venn@{conjord\_imprime\_venn}}
+\index{conjord\_imprime\_venn@{conjord\_imprime\_venn}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_imprime\_venn()}{conjord\_imprime\_venn()}}
+{\footnotesize\ttfamily void conjord\+\_\+imprime\+\_\+venn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00163}{163}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_ab4e6881f1576c10b85291df6ce78de9c}\label{conjunto__ordenado_8c_ab4e6881f1576c10b85291df6ce78de9c}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_insere\_elemento@{conjord\_insere\_elemento}}
+\index{conjord\_insere\_elemento@{conjord\_insere\_elemento}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_insere\_elemento()}{conjord\_insere\_elemento()}}
+{\footnotesize\ttfamily int conjord\+\_\+insere\+\_\+elemento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{a,  }\item[{int}]{chave,  }\item[{void $\ast$}]{elemento }\end{DoxyParamCaption})}
+
+insere elemento no conjunto ordenado 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00040}{40}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a5fda25d72d7a732876b36e38c1bea11f}\label{conjunto__ordenado_8c_a5fda25d72d7a732876b36e38c1bea11f}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_interseciona@{conjord\_interseciona}}
+\index{conjord\_interseciona@{conjord\_interseciona}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_interseciona()}{conjord\_interseciona()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structconjord}{conjord}} $\ast$ conjord\+\_\+interseciona (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+insersecciona dois conjuntos formando um terceiro como resultado desta operacao retornando seu ponteiro a seguir A intesec B = (A uniao B) -\/ \mbox{[}(A -\/ B) uniao (B -\/ A)\mbox{]} 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00179}{179}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a42f2aa61301fb48bd719ac4267ea6c96}\label{conjunto__ordenado_8c_a42f2aa61301fb48bd719ac4267ea6c96}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_seta\_imprime\_elemento@{conjord\_seta\_imprime\_elemento}}
+\index{conjord\_seta\_imprime\_elemento@{conjord\_seta\_imprime\_elemento}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_seta\_imprime\_elemento()}{conjord\_seta\_imprime\_elemento()}}
+{\footnotesize\ttfamily int conjord\+\_\+seta\+\_\+imprime\+\_\+elemento (\begin{DoxyParamCaption}\item[{void($\ast$)(void $\ast$n)}]{i }\end{DoxyParamCaption})}
+
+seta a rotina de impressao do dado criado pelo cliente 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00130}{130}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a056f87eaa191cd08f8095040bb5ac00b}\label{conjunto__ordenado_8c_a056f87eaa191cd08f8095040bb5ac00b}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_subtrai@{conjord\_subtrai}}
+\index{conjord\_subtrai@{conjord\_subtrai}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_subtrai()}{conjord\_subtrai()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structconjord}{conjord}} $\ast$ conjord\+\_\+subtrai (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+subtrai dois conjuntos formando um terceiro como resultado desta operacao retornando seu ponteiro a seguir 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00227}{227}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+\mbox{\Hypertarget{conjunto__ordenado_8c_a036a8a040f40a564c831aded812c2dd6}\label{conjunto__ordenado_8c_a036a8a040f40a564c831aded812c2dd6}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_une@{conjord\_une}}
+\index{conjord\_une@{conjord\_une}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_une()}{conjord\_une()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structconjord}{conjord}} $\ast$ conjord\+\_\+une (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structconjord}{conjord}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+une dois conjuntos formando um terceiro como resultado desta operacao retornando seu ponteiro a seguir 
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00204}{204}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+
+
+
+\doxysubsection{Documentação das variáveis}
+\mbox{\Hypertarget{conjunto__ordenado_8c_a730b152a7744bcd3c034b9f0ac3e0b04}\label{conjunto__ordenado_8c_a730b152a7744bcd3c034b9f0ac3e0b04}} 
+\index{conjunto\_ordenado.c@{conjunto\_ordenado.c}!conjord\_imprime\_elemento@{conjord\_imprime\_elemento}}
+\index{conjord\_imprime\_elemento@{conjord\_imprime\_elemento}!conjunto\_ordenado.c@{conjunto\_ordenado.c}}
+\doxysubsubsection{\texorpdfstring{conjord\_imprime\_elemento}{conjord\_imprime\_elemento}}
+{\footnotesize\ttfamily void($\ast$ conjord\+\_\+imprime\+\_\+elemento) (void $\ast$n) (\begin{DoxyParamCaption}\item[{void $\ast$}]{n }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{conjunto__ordenado_8c_source_l00128}{128}} do ficheiro \mbox{\hyperlink{conjunto__ordenado_8c_source}{conjunto\+\_\+ordenado.\+c}}.
+

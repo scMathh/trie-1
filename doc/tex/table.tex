@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage[most]{tcolorbox}
+
+\newtcolorbox[blend into=tables]{mytable}[2][]{%
+    enhanced,
+    float, 
+    every float=\centering,
+    capture=hbox, 
+    title = #2, 
+    attach boxed title to top left={%
+        xshift=5mm, 
+        yshift=-\tcboxedtitleheight/2, 
+        yshifttext=-1mm},
+    boxed title style={colback=blue!50, sharp corners},
+    colframe = blue!50,
+    colback = blue!20,  
+    % overlay = {\node[text=white, fill=red] at (frame.east) 
+    %     {$\clubsuit$};},
+    #1}
+
+\begin{document}
+\listoftables
+
+\noindent\hrulefill\par
+\noindent\makebox[\textwidth][c]{%
+    \begin{minipage}{1.5\textwidth}
+        \hrulefill\par
+    \end{minipage}}
+
+\begin{table}
+\centering
+\begin{tabular}{|r|l|}
+  \hline
+  7C0 & hexadecimal \\
+  3700 & octal \\ \cline{2-2}
+  11111000000 & binary \\
+  \hline \hline
+  1984 & decimal \\
+  \hline
+\end{tabular}
+\caption{First table}
+\end{table}
+
+\begin{mytable}{Second table}
+\begin{tabular}{rl}
+  7C0 & hexadecimal \\
+  3700 & octal \\ 
+  11111000000 & binary \\
+  \midrule
+  1984 & decimal \\
+\end{tabular}
+\end{mytable}
+
+\begin{mytable}[colback=red!5]{Trird table}
+\begin{tabular}{l*{6}{c}r}
+Team              & P & W & D & L & F  & A & Pts \\
+\midrule
+Manchester United & 6 & 4 & 0 & 2 & 10 & 5 & 12  \\
+Celtic            & 6 & 3 & 0 & 3 &  8 & 9 &  9  \\
+Benfica           & 6 & 2 & 1 & 3 &  7 & 8 &  7  \\
+FC Copenhagen     & 6 & 2 & 1 & 3 &  5 & 8 &  7  \\
+\end{tabular}
+\end{mytable}
+
+\end{document}

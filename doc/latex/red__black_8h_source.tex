@@ -1,0 +1,70 @@
+\hypertarget{red__black_8h_source}{}\doxysection{red\+\_\+black.\+h}
+\label{red__black_8h_source}\index{src/red\_black.h@{src/red\_black.h}}
+\mbox{\hyperlink{red__black_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef REDBLACK\_H}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00002}00002 \textcolor{preprocessor}{\#define REDBLACK\_H}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00004}00004 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00005}00005 \textcolor{comment}{ * aluno: joilnen leite}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00006}00006 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00016}\mbox{\hyperlink{red__black_8h_a997014e5ab4be46a3036ab1f37f3ccb3af77fb67151d0c18d397069ad8c271ba3}{00016}} \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \mbox{\hyperlink{red__black_8h_a997014e5ab4be46a3036ab1f37f3ccb3}{cor\_noh}} \{\mbox{\hyperlink{red__black_8h_a997014e5ab4be46a3036ab1f37f3ccb3af77fb67151d0c18d397069ad8c271ba3}{BLACK}} = 0, \mbox{\hyperlink{red__black_8h_a997014e5ab4be46a3036ab1f37f3ccb3af80f9a890089d211842d59625e561f88}{RED}}\} \mbox{\hyperlink{red__black_8h_a997014e5ab4be46a3036ab1f37f3ccb3}{cor\_noh}};}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00022}\mbox{\hyperlink{red__black_8h_a94d62451a3b25395651927030fe239c5a488833a7828c5c916569e9ec8b24e8f7}{00022}} \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \mbox{\hyperlink{red__black_8h_a94d62451a3b25395651927030fe239c5}{tipo\_screen}} \{\mbox{\hyperlink{red__black_8h_a94d62451a3b25395651927030fe239c5a3cd25af7d1692cf0beae595cc3300810}{TMONO}}, \mbox{\hyperlink{red__black_8h_a94d62451a3b25395651927030fe239c5a488833a7828c5c916569e9ec8b24e8f7}{TCOLOR}}\} \mbox{\hyperlink{red__black_8h_a94d62451a3b25395651927030fe239c5}{tipo\_screen}};}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00024}00024 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00025}00025 \textcolor{comment}{ * rubro negra}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00026}00026 \textcolor{comment}{ * 0 -\/ todo noh eh vermelho ou preto}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00027}00027 \textcolor{comment}{ * 1 -\/ raiz sempre preta}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00028}00028 \textcolor{comment}{ * 2 -\/ noh NULL considerado noh externo preto}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00029}00029 \textcolor{comment}{ * 3 -\/ vermelhos tem filhos pretos}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00030}00030 \textcolor{comment}{ * 4 -\/ noh para suas folhas tem o mesmo numero de nohs preto}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00031}00031 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00044}\mbox{\hyperlink{structrb__n}{00044}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structrb__n}{rb\_n}} \{}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00045}\mbox{\hyperlink{structrb__n_ab66ed8e0098c0a86b458672a55a9cca9}{00045}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structrb__n_ab66ed8e0098c0a86b458672a55a9cca9}{k}};}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00046}\mbox{\hyperlink{structrb__n_a089aacf63ed94ae0e667bb8f6db3e853}{00046}}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{structrb__n_a089aacf63ed94ae0e667bb8f6db3e853}{c}}:1;}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00047}\mbox{\hyperlink{structrb__n_ac948f13dbf1ed6a8ad17f9b44a1343d1}{00047}}     \textcolor{keywordtype}{void} *\mbox{\hyperlink{structrb__n_ac948f13dbf1ed6a8ad17f9b44a1343d1}{d}};}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00048}\mbox{\hyperlink{structrb__n_a67b3bde25c933874d93fd30f06b55f65}{00048}}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{structrb__n_a67b3bde25c933874d93fd30f06b55f65}{np}};}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00049}\mbox{\hyperlink{structrb__n_a0929325b4482315f2e590901a5dd6c46}{00049}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structrb__n}{rb\_n}} *\mbox{\hyperlink{structrb__n_a0929325b4482315f2e590901a5dd6c46}{l}}, *\mbox{\hyperlink{structrb__n_abd3a78b32026188749d7e71fa46a703e}{r}}, *\mbox{\hyperlink{structrb__n_a03317ae1a0e6188b866f0b32818f591f}{p}};}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00050}\mbox{\hyperlink{red__black_8h_a9256714adccc1cf71eb9d787e9d71a92}{00050}} \} \mbox{\hyperlink{red__black_8h_a9256714adccc1cf71eb9d787e9d71a92}{rb\_n}};}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00055}00055 \textcolor{keyword}{extern} \mbox{\hyperlink{structrb__n}{rb\_n}} \mbox{\hyperlink{red__black_8h_ae59ca60842c279aea8f64b8f199b3998}{rb\_s}};}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00060}00060 \mbox{\hyperlink{structrb__n}{rb\_n}}* \mbox{\hyperlink{red__black_8h_afce8f82ca97062c73f2d8b1a3b6d9f75}{rb\_cr}}(\textcolor{keywordtype}{int} key, \textcolor{keywordtype}{void} *dado);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00066}\mbox{\hyperlink{red__black_8h_aee35515977c07d08b596bdf8f9935385}{00066}} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{red__black_8h_aee35515977c07d08b596bdf8f9935385}{rb\_nelem}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *a);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00073}00073 \textcolor{keywordtype}{int} \mbox{\hyperlink{red__black_8h_a5388af6c2b37cea04bb417d4940d4dd7}{rb\_insert}}(\mbox{\hyperlink{structrb__n}{rb\_n}} **t, \mbox{\hyperlink{structrb__n}{rb\_n}} *z);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00080}00080 \mbox{\hyperlink{structrb__n}{rb\_n}} *\mbox{\hyperlink{red__black_8h_acf957a5e48695d203009843e5a5d8c14}{rb\_search}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *t, \textcolor{keywordtype}{int} \mbox{\hyperlink{structrb__n_ab66ed8e0098c0a86b458672a55a9cca9}{k}});}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00087}00087 \textcolor{keywordtype}{int} \mbox{\hyperlink{red__black_8h_acec12830086e32975cb7388ba47e652b}{rb\_delete}}(\mbox{\hyperlink{structrb__n}{rb\_n}} **t, \mbox{\hyperlink{structrb__n}{rb\_n}} *z);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00095}\mbox{\hyperlink{red__black_8h_a6c0a102a8f06028be934fd21ff0a267b}{00095}} \textcolor{keywordtype}{int} \mbox{\hyperlink{red__black_8h_a6c0a102a8f06028be934fd21ff0a267b}{rb\_exite\_elem}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *a, \textcolor{keywordtype}{int} \mbox{\hyperlink{structrb__n_ab66ed8e0098c0a86b458672a55a9cca9}{k}});}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00103}00103 \mbox{\hyperlink{structrb__n}{rb\_n}}* \mbox{\hyperlink{red__black_8h_a65b0c1536a331a07cb7f3c32a3d90779}{rb\_intersec}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *a, \mbox{\hyperlink{structrb__n}{rb\_n}} *b);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00111}00111 \mbox{\hyperlink{structrb__n}{rb\_n}}* \mbox{\hyperlink{red__black_8h_a5b3030f7cbc079d4d201ba2a7094f3e6}{rb\_une}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *a, \mbox{\hyperlink{structrb__n}{rb\_n}} *b);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00119}00119 \mbox{\hyperlink{structrb__n}{rb\_n}}* \mbox{\hyperlink{red__black_8h_a4793ac9cd80374dfa383a30d604d1ec0}{rb\_subtrai}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *a, \mbox{\hyperlink{structrb__n}{rb\_n}} *b);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00125}00125 \textcolor{keywordtype}{int} \mbox{\hyperlink{red__black_8h_aed8caea0a928e8eb7a7bf138b9acc576}{rb\_destroi}}(\mbox{\hyperlink{structrb__n}{rb\_n}} **a);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00130}\mbox{\hyperlink{red__black_8h_ae5174d5715f939fc1779524615083515}{00130}} \textcolor{keywordtype}{int} \mbox{\hyperlink{red__black_8h_ae5174d5715f939fc1779524615083515}{rb\_troca\_cor}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *a);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00135}00135 \textcolor{keywordtype}{int} \mbox{\hyperlink{red__black_8h_a31a38f09237376bf558215a3b6e9345a}{rb\_rot\_esq}}(\mbox{\hyperlink{structrb__n}{rb\_n}} **t, \mbox{\hyperlink{structrb__n}{rb\_n}} *x);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00141}00141 \textcolor{keywordtype}{int} \mbox{\hyperlink{red__black_8h_a1c97c0ee77912a33e9fe86b128d30959}{rb\_rot\_dir}}(\mbox{\hyperlink{structrb__n}{rb\_n}} **t, \mbox{\hyperlink{structrb__n}{rb\_n}} *x);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00146}00146 \textcolor{keyword}{extern} void (*\mbox{\hyperlink{red__black_8h_a75425f0e8902e3e17a441acd05cdf3c0}{rb\_impr\_elem}})(\textcolor{keywordtype}{void} *);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00153}00153 \textcolor{keywordtype}{void} \mbox{\hyperlink{red__black_8h_a215a0ede223b82e84cce1df91dd09676}{rb\_pr}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *t, \textcolor{keywordtype}{int} s, \textcolor{keywordtype}{int} e);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00160}00160 \textcolor{keywordtype}{void} \mbox{\hyperlink{red__black_8h_a7f4c4fd8316c659c98344259e58ef1d1}{rb\_pr2}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *t, \textcolor{keywordtype}{int} s, \textcolor{keywordtype}{int} e);}
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{red__black_8h_source_l00162}00162 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

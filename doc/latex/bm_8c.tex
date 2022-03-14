@@ -1,0 +1,126 @@
+\hypertarget{bm_8c}{}\doxysection{Referência ao ficheiro src/bm.c}
+\label{bm_8c}\index{src/bm.c@{src/bm.c}}
+{\ttfamily \#include \char`\"{}bm.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structbm}{bm}} $\ast$ \mbox{\hyperlink{bm_8c_aa052076c0fe9ae523ba40122679a4f1e}{bm\+\_\+inic}} (int i)
+\item 
+void \mbox{\hyperlink{bm_8c_a373bcbcfa5572d795574759436c6a1cd}{bm\+\_\+escrutina}} (\mbox{\hyperlink{structbm}{bm}} $\ast$b)
+\item 
+\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ \mbox{\hyperlink{bm_8c_ad9fd03617507e84c379b79587c89d844}{bm\+\_\+pesquisa}} (\mbox{\hyperlink{structbm}{bm}} $\ast$b, int chave)
+\item 
+void \mbox{\hyperlink{bm_8c_a5556a7c28bcb67fc5d10a65f5c93c295}{bm\+\_\+lista}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$aux, int chave)
+\item 
+\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ \mbox{\hyperlink{bm_8c_a86a4667c4f9ff23c684919e6ca1910a4}{bm\+\_\+insere\+\_\+nahfolha}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$raiz, int chave, \mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\+\_\+artigo}} $\ast$art)
+\item 
+void \mbox{\hyperlink{bm_8c_a4a333a430b2b96ecf8aa968ea9de5f2a}{bm\+\_\+insere}} (\mbox{\hyperlink{structbm}{bm}} $\ast$b, int chave, \mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\+\_\+artigo}} $\ast$art)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{bm_8c_a373bcbcfa5572d795574759436c6a1cd}\label{bm_8c_a373bcbcfa5572d795574759436c6a1cd}} 
+\index{bm.c@{bm.c}!bm\_escrutina@{bm\_escrutina}}
+\index{bm\_escrutina@{bm\_escrutina}!bm.c@{bm.c}}
+\doxysubsubsection{\texorpdfstring{bm\_escrutina()}{bm\_escrutina()}}
+{\footnotesize\ttfamily void bm\+\_\+escrutina (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm}{bm}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+faz a impressão da arvore b+ 
+\begin{DoxyParams}{Parâmetros}
+{\em bm} & b arvore \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm_8c_source_l00028}{28}} do ficheiro \mbox{\hyperlink{bm_8c_source}{bm.\+c}}.
+
+\mbox{\Hypertarget{bm_8c_aa052076c0fe9ae523ba40122679a4f1e}\label{bm_8c_aa052076c0fe9ae523ba40122679a4f1e}} 
+\index{bm.c@{bm.c}!bm\_inic@{bm\_inic}}
+\index{bm\_inic@{bm\_inic}!bm.c@{bm.c}}
+\doxysubsubsection{\texorpdfstring{bm\_inic()}{bm\_inic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbm}{bm}} $\ast$ bm\+\_\+inic (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+faz a inicialização da arvore b+ 
+\begin{DoxyParams}{Parâmetros}
+{\em int} & i ordem da arvore \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm_8c_source_l00015}{15}} do ficheiro \mbox{\hyperlink{bm_8c_source}{bm.\+c}}.
+
+\mbox{\Hypertarget{bm_8c_a4a333a430b2b96ecf8aa968ea9de5f2a}\label{bm_8c_a4a333a430b2b96ecf8aa968ea9de5f2a}} 
+\index{bm.c@{bm.c}!bm\_insere@{bm\_insere}}
+\index{bm\_insere@{bm\_insere}!bm.c@{bm.c}}
+\doxysubsubsection{\texorpdfstring{bm\_insere()}{bm\_insere()}}
+{\footnotesize\ttfamily void bm\+\_\+insere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm}{bm}} $\ast$}]{b,  }\item[{int}]{chave,  }\item[{\mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\+\_\+artigo}} $\ast$}]{art }\end{DoxyParamCaption})}
+
+faz a inserção de uma chave na arvore b+ 
+\begin{DoxyParams}{Parâmetros}
+{\em bm} & b arvore \\
+\hline
+{\em int} & chave a ser buscada \\
+\hline
+{\em s\+\_\+artigo} & art artigo a ser armazenado \\
+\hline
+\end{DoxyParams}
+se arvore vazia
+
+se arvore nchaves vazia
+
+aloca memoria para noh raiz
+
+atualiza o numero de chaves
+
+insere chave
+
+Definido na linha \mbox{\hyperlink{bm_8c_source_l00138}{138}} do ficheiro \mbox{\hyperlink{bm_8c_source}{bm.\+c}}.
+
+\mbox{\Hypertarget{bm_8c_a86a4667c4f9ff23c684919e6ca1910a4}\label{bm_8c_a86a4667c4f9ff23c684919e6ca1910a4}} 
+\index{bm.c@{bm.c}!bm\_insere\_nahfolha@{bm\_insere\_nahfolha}}
+\index{bm\_insere\_nahfolha@{bm\_insere\_nahfolha}!bm.c@{bm.c}}
+\doxysubsubsection{\texorpdfstring{bm\_insere\_nahfolha()}{bm\_insere\_nahfolha()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ bm\+\_\+insere\+\_\+nahfolha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{raiz,  }\item[{int}]{chave,  }\item[{\mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\+\_\+artigo}} $\ast$}]{art }\end{DoxyParamCaption})}
+
+faz a inserção de uma chave na folha da arvore b+ 
+\begin{DoxyParams}{Parâmetros}
+{\em bm} & b arvore \\
+\hline
+{\em int} & chave a ser buscada \\
+\hline
+{\em s\+\_\+artigo} & art artigo a ser armazenado \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm_8c_source_l00085}{85}} do ficheiro \mbox{\hyperlink{bm_8c_source}{bm.\+c}}.
+
+\mbox{\Hypertarget{bm_8c_a5556a7c28bcb67fc5d10a65f5c93c295}\label{bm_8c_a5556a7c28bcb67fc5d10a65f5c93c295}} 
+\index{bm.c@{bm.c}!bm\_lista@{bm\_lista}}
+\index{bm\_lista@{bm\_lista}!bm.c@{bm.c}}
+\doxysubsubsection{\texorpdfstring{bm\_lista()}{bm\_lista()}}
+{\footnotesize\ttfamily void bm\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{aux,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{bm_8c_source_l00057}{57}} do ficheiro \mbox{\hyperlink{bm_8c_source}{bm.\+c}}.
+
+\mbox{\Hypertarget{bm_8c_ad9fd03617507e84c379b79587c89d844}\label{bm_8c_ad9fd03617507e84c379b79587c89d844}} 
+\index{bm.c@{bm.c}!bm\_pesquisa@{bm\_pesquisa}}
+\index{bm\_pesquisa@{bm\_pesquisa}!bm.c@{bm.c}}
+\doxysubsubsection{\texorpdfstring{bm\_pesquisa()}{bm\_pesquisa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ bm\+\_\+pesquisa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm}{bm}} $\ast$}]{b,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+faz a pesquisa de uma chave na arvore b+ 
+\begin{DoxyParams}{Parâmetros}
+{\em bm} & b arvore \\
+\hline
+{\em int} & chave a ser buscada \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm_8c_source_l00039}{39}} do ficheiro \mbox{\hyperlink{bm_8c_source}{bm.\+c}}.
+

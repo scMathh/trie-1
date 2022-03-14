@@ -1,0 +1,292 @@
+\hypertarget{red__black_8c}{}\doxysection{Referência ao ficheiro src/red\+\_\+black.c}
+\label{red__black_8c}\index{src/red\_black.c@{src/red\_black.c}}
+{\ttfamily \#include \char`\"{}jcurses.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}red\+\_\+black.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ \mbox{\hyperlink{red__black_8c_afce8f82ca97062c73f2d8b1a3b6d9f75}{rb\+\_\+cr}} (int key, void $\ast$dado)
+\item 
+int \mbox{\hyperlink{red__black_8c_a5388af6c2b37cea04bb417d4940d4dd7}{rb\+\_\+insert}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$t, \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$z)
+\item 
+int \mbox{\hyperlink{red__black_8c_acec12830086e32975cb7388ba47e652b}{rb\+\_\+delete}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$t, \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$z)
+\item 
+\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ \mbox{\hyperlink{red__black_8c_a65b0c1536a331a07cb7f3c32a3d90779}{rb\+\_\+intersec}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$a, \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$b)
+\item 
+\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ \mbox{\hyperlink{red__black_8c_a5b3030f7cbc079d4d201ba2a7094f3e6}{rb\+\_\+une}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$a, \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$b)
+\item 
+\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ \mbox{\hyperlink{red__black_8c_a4793ac9cd80374dfa383a30d604d1ec0}{rb\+\_\+subtrai}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$a, \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$b)
+\item 
+int \mbox{\hyperlink{red__black_8c_aed8caea0a928e8eb7a7bf138b9acc576}{rb\+\_\+destroi}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$a)
+\item 
+int \mbox{\hyperlink{red__black_8c_a31a38f09237376bf558215a3b6e9345a}{rb\+\_\+rot\+\_\+esq}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$t, \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$x)
+\item 
+int \mbox{\hyperlink{red__black_8c_a1c97c0ee77912a33e9fe86b128d30959}{rb\+\_\+rot\+\_\+dir}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$t, \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$x)
+\item 
+void \mbox{\hyperlink{red__black_8c_a215a0ede223b82e84cce1df91dd09676}{rb\+\_\+pr}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$t, int s, int e)
+\item 
+void \mbox{\hyperlink{red__black_8c_a7f4c4fd8316c659c98344259e58ef1d1}{rb\+\_\+pr2}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$t, int s, int e)
+\item 
+\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ \mbox{\hyperlink{red__black_8c_acf957a5e48695d203009843e5a5d8c14}{rb\+\_\+search}} (\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$t, int k)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} \mbox{\hyperlink{red__black_8c_ae59ca60842c279aea8f64b8f199b3998}{rb\+\_\+s}}
+\item 
+void($\ast$ \mbox{\hyperlink{red__black_8c_a75425f0e8902e3e17a441acd05cdf3c0}{rb\+\_\+impr\+\_\+elem}} )(void $\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{red__black_8c_afce8f82ca97062c73f2d8b1a3b6d9f75}\label{red__black_8c_afce8f82ca97062c73f2d8b1a3b6d9f75}} 
+\index{red\_black.c@{red\_black.c}!rb\_cr@{rb\_cr}}
+\index{rb\_cr@{rb\_cr}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_cr()}{rb\_cr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ rb\+\_\+cr (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{void $\ast$}]{dado }\end{DoxyParamCaption})}
+
+criacao do noh raiz 
+\begin{DoxyParams}{Parâmetros}
+{\em k} & chave escolhida \\
+\hline
+{\em dado} & especificado pelo o codigo cliente \\
+\hline
+\end{DoxyParams}
+raiz sempre colorida com preto
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00030}{30}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_acec12830086e32975cb7388ba47e652b}\label{red__black_8c_acec12830086e32975cb7388ba47e652b}} 
+\index{red\_black.c@{red\_black.c}!rb\_delete@{rb\_delete}}
+\index{rb\_delete@{rb\_delete}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_delete()}{rb\_delete()}}
+{\footnotesize\ttfamily int rb\+\_\+delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$}]{t,  }\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{z }\end{DoxyParamCaption})}
+
+deleta noh da arvore red black 
+\begin{DoxyParams}{Parâmetros}
+{\em t} & ponteiro duplo para raiz, assim pq ele pode ser alterado dentro da funcao e manter a alteracao depois do retorno da fucao \\
+\hline
+{\em z} & ponteiro para o noh a ser deletado, para deletar por chave o TAD deve passar a saida da funcao pesquisar, num arranjo funcional na chamada \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00198}{198}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_aed8caea0a928e8eb7a7bf138b9acc576}\label{red__black_8c_aed8caea0a928e8eb7a7bf138b9acc576}} 
+\index{red\_black.c@{red\_black.c}!rb\_destroi@{rb\_destroi}}
+\index{rb\_destroi@{rb\_destroi}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_destroi()}{rb\_destroi()}}
+{\footnotesize\ttfamily int rb\+\_\+destroi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$}]{a }\end{DoxyParamCaption})}
+
+deleta, e desaloca recursos de memoria para a arvore apontada por
+\begin{DoxyParams}{Parâmetros}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00327}{327}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_a5388af6c2b37cea04bb417d4940d4dd7}\label{red__black_8c_a5388af6c2b37cea04bb417d4940d4dd7}} 
+\index{red\_black.c@{red\_black.c}!rb\_insert@{rb\_insert}}
+\index{rb\_insert@{rb\_insert}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_insert()}{rb\_insert()}}
+{\footnotesize\ttfamily int rb\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$}]{t,  }\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{z }\end{DoxyParamCaption})}
+
+inclusao baseado no livro do cormen y receberah noh pai imediato do noh adicionado x eh um ponteiro temporario para iteracao feita no loop while a seguir para chegar ao noh folha
+
+itera para chegar no noh folha da posicao a ser inserido o novo noh
+
+seta noh pai para o noh adicionado
+
+se esse noh adicionado eh unico y permance nulo que neste caso apontaria para o pai que eh nulo neste cenario torna o noh adicionado raiz caso n adiciona na esquera ou diretia de acordo com o valor da chave, noh recebe RED como padrao
+
+ajuste
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00046}{46}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_a65b0c1536a331a07cb7f3c32a3d90779}\label{red__black_8c_a65b0c1536a331a07cb7f3c32a3d90779}} 
+\index{red\_black.c@{red\_black.c}!rb\_intersec@{rb\_intersec}}
+\index{rb\_intersec@{rb\_intersec}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_intersec()}{rb\_intersec()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ rb\+\_\+intersec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & noh raiz da arvore \\
+\hline
+{\em b} & noh raiz da arvore a ser operada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna ponteiro para uma nova arvore fruto da interseccao das duas arvores
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & e\\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00312}{312}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_a215a0ede223b82e84cce1df91dd09676}\label{red__black_8c_a215a0ede223b82e84cce1df91dd09676}} 
+\index{red\_black.c@{red\_black.c}!rb\_pr@{rb\_pr}}
+\index{rb\_pr@{rb\_pr}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_pr()}{rb\_pr()}}
+{\footnotesize\ttfamily void rb\+\_\+pr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{t,  }\item[{int}]{s,  }\item[{int}]{e }\end{DoxyParamCaption})}
+
+imprime arvore 
+\begin{DoxyParams}{Parâmetros}
+{\em a} & raiz \\
+\hline
+{\em t} & tipo de terminal \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00370}{370}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_a7f4c4fd8316c659c98344259e58ef1d1}\label{red__black_8c_a7f4c4fd8316c659c98344259e58ef1d1}} 
+\index{red\_black.c@{red\_black.c}!rb\_pr2@{rb\_pr2}}
+\index{rb\_pr2@{rb\_pr2}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_pr2()}{rb\_pr2()}}
+{\footnotesize\ttfamily void rb\+\_\+pr2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{t,  }\item[{int}]{s,  }\item[{int}]{e }\end{DoxyParamCaption})}
+
+imprime arvore uma segunda versao 
+\begin{DoxyParams}{Parâmetros}
+{\em a} & raiz \\
+\hline
+{\em t} & tipo de terminal \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00400}{400}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_a1c97c0ee77912a33e9fe86b128d30959}\label{red__black_8c_a1c97c0ee77912a33e9fe86b128d30959}} 
+\index{red\_black.c@{red\_black.c}!rb\_rot\_dir@{rb\_rot\_dir}}
+\index{rb\_rot\_dir@{rb\_rot\_dir}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_rot\_dir()}{rb\_rot\_dir()}}
+{\footnotesize\ttfamily int rb\+\_\+rot\+\_\+dir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$}]{t,  }\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{x }\end{DoxyParamCaption})}
+
+rotaciona subarvore a direita apartir do noh 
+\begin{DoxyParams}{Parâmetros}
+{\em a} & noh \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00351}{351}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_a31a38f09237376bf558215a3b6e9345a}\label{red__black_8c_a31a38f09237376bf558215a3b6e9345a}} 
+\index{red\_black.c@{red\_black.c}!rb\_rot\_esq@{rb\_rot\_esq}}
+\index{rb\_rot\_esq@{rb\_rot\_esq}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_rot\_esq()}{rb\_rot\_esq()}}
+{\footnotesize\ttfamily int rb\+\_\+rot\+\_\+esq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$$\ast$}]{t,  }\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{x }\end{DoxyParamCaption})}
+
+rotaciona subarvore a esquerda apartir do noh
+\begin{DoxyParams}{Parâmetros}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00332}{332}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_acf957a5e48695d203009843e5a5d8c14}\label{red__black_8c_acf957a5e48695d203009843e5a5d8c14}} 
+\index{red\_black.c@{red\_black.c}!rb\_search@{rb\_search}}
+\index{rb\_search@{rb\_search}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_search()}{rb\_search()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ rb\+\_\+search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{t,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+tch 
+\begin{DoxyParams}{Parâmetros}
+{\em a} & noh raiz da arvore \\
+\hline
+{\em b} & elemento a ser inserido \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00433}{433}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_a4793ac9cd80374dfa383a30d604d1ec0}\label{red__black_8c_a4793ac9cd80374dfa383a30d604d1ec0}} 
+\index{red\_black.c@{red\_black.c}!rb\_subtrai@{rb\_subtrai}}
+\index{rb\_subtrai@{rb\_subtrai}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_subtrai()}{rb\_subtrai()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ rb\+\_\+subtrai (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & noh raiz da arvore \\
+\hline
+{\em b} & noh raiz da arvore a ser operada retorna ponteir para uma nova arvore fruto da subtracao das duas arvores\\
+\hline
+{\em a} & e\\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00322}{322}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_a5b3030f7cbc079d4d201ba2a7094f3e6}\label{red__black_8c_a5b3030f7cbc079d4d201ba2a7094f3e6}} 
+\index{red\_black.c@{red\_black.c}!rb\_une@{rb\_une}}
+\index{rb\_une@{rb\_une}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_une()}{rb\_une()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$ rb\+\_\+une (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{structrb__n}{rb\+\_\+n}} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em a} & noh raiz da arvore \\
+\hline
+{\em b} & noh raiz da arvore a ser operada retorna ponteir para uma nova arvore fruto da uniao das duas arvores\\
+\hline
+{\em a} & e\\
+\hline
+{\em b} & \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00317}{317}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+
+
+\doxysubsection{Documentação das variáveis}
+\mbox{\Hypertarget{red__black_8c_a75425f0e8902e3e17a441acd05cdf3c0}\label{red__black_8c_a75425f0e8902e3e17a441acd05cdf3c0}} 
+\index{red\_black.c@{red\_black.c}!rb\_impr\_elem@{rb\_impr\_elem}}
+\index{rb\_impr\_elem@{rb\_impr\_elem}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_impr\_elem}{rb\_impr\_elem}}
+{\footnotesize\ttfamily void($\ast$ rb\+\_\+impr\+\_\+elem) (void $\ast$) (\begin{DoxyParamCaption}\item[{void $\ast$}]{ }\end{DoxyParamCaption})}
+
+ponteiro para funcao de impressao do tipo dado especificado pelo codigo cliente 
+\begin{DoxyParams}{Parâmetros}
+{\em void} & $\ast$ ponteiro dado especificado pelo o codigo cliente \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00023}{23}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+
+\mbox{\Hypertarget{red__black_8c_ae59ca60842c279aea8f64b8f199b3998}\label{red__black_8c_ae59ca60842c279aea8f64b8f199b3998}} 
+\index{red\_black.c@{red\_black.c}!rb\_s@{rb\_s}}
+\index{rb\_s@{rb\_s}!red\_black.c@{red\_black.c}}
+\doxysubsubsection{\texorpdfstring{rb\_s}{rb\_s}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrb__n}{rb\+\_\+n}} rb\+\_\+s}
+
+definicao do noh sentinela 
+\begin{DoxyParams}{Parâmetros}
+{\em rb\+\_\+s} & red black noh setinela \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{red__black_8c_source_l00015}{15}} do ficheiro \mbox{\hyperlink{red__black_8c_source}{red\+\_\+black.\+c}}.
+

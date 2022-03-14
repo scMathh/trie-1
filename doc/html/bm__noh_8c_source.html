@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Conjunto Ordenado: Código-Fonte de src/bm_noh.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Conjunto Ordenado
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">bm_noh.c</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bm__noh_8c.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* Grupo 11</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * alunos: joilnen leite, daniel morais, matheus silva</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="bm__noh_8h.html">bm_noh.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="erro_8h.html">erro.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#a910ea280d4f81b32bfb6770e1ae2f794">   19</a></span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm__noh_8c.html#a910ea280d4f81b32bfb6770e1ae2f794">bm_noh_inic</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">char</span> eh_folha)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *n = (<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *)malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a>));</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    n-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a> = i;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    n-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a> = (<span class="keywordtype">int</span> *)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">int</span>) * <a class="code hl_define" href="bm__noh_8h.html#ab478e043bd4994318b33f9728232c865">MAXCHAVES</a>(n-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>));</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    n-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a> = (<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> **)malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a>) * <a class="code hl_define" href="bm__noh_8h.html#ae20b4a2c59c522ed11819aae87505df3">MAXFILHOS</a>(n-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>));</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    n-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a> = (<span class="keywordtype">long</span> **)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">long</span>) * <a class="code hl_define" href="bm__noh_8h.html#ab478e043bd4994318b33f9728232c865">MAXCHAVES</a>(n-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>));</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    n-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a> = NULL;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    n-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a> = 0;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    n-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a> = eh_folha;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> n;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#a793acf1dcba02ca01f65953f5262c87d">   39</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8c.html#a793acf1dcba02ca01f65953f5262c87d">bm_noh_split</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *y, <span class="keywordtype">int</span> i)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">int</span> j;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    printf(<span class="stringliteral">&quot;\nbm_noh_split\n&quot;</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *z = <a class="code hl_function" href="bm__noh_8c.html#a910ea280d4f81b32bfb6770e1ae2f794">bm_noh_inic</a>(y-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>, y-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    z-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a> = bmn;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    y-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a> = bmn;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">//Como z é sempre um noh folha, ele tambem recebe os ponteiros de arquivo de y</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">for</span> (j = 0; j &lt; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>; j++)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        z-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j] = y-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j + bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>];</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        z-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>[j] = y-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>[j + bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>];</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        z-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>++;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    y-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a> -= z-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">for</span> (j = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>; j &gt;= i + 1; j--){</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[j + 1] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[j];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>[j] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>[j-1];</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[i + 1] = z;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">for</span> (j = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a> - 1; j &gt;= i; j--)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j + 1] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j];</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">for</span> (j = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a> - 1; j &gt;= i; j--)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j + 1] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i] = y-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>];</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>++;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    bmn = <a class="code hl_function" href="bm__noh_8c.html#ace1b620c316100f158e6b7f3a2d44926">bm_noh_split_int</a>(bmn, y, z);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#ace1b620c316100f158e6b7f3a2d44926">   78</a></span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm__noh_8c.html#ace1b620c316100f158e6b7f3a2d44926">bm_noh_split_int</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *y, <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *z)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    printf(<span class="stringliteral">&quot;\nbm_noh_split_int\n&quot;</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">int</span> j;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a> == <a class="code hl_define" href="bm__noh_8h.html#ab478e043bd4994318b33f9728232c865">MAXCHAVES</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>) + 1)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *w = <a class="code hl_function" href="bm__noh_8c.html#a910ea280d4f81b32bfb6770e1ae2f794">bm_noh_inic</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>, 0);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">for</span> (j = 1; j &lt; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>; j++)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            w-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j - 1] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j + bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>];</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            w-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>[j - 1] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>[j + bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>];</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            w-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[j - 1] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[j + bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>];</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            w-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[j] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[j + bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a> + 1];</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            w-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>++;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>--;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>--;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *noh_novo;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">if</span> (!bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a>)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            noh_novo = <a class="code hl_function" href="bm__noh_8c.html#a910ea280d4f81b32bfb6770e1ae2f794">bm_noh_inic</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>, 0);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a> = noh_novo;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[0] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>];</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[0] = bmn;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[1] = w;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            noh_novo = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">for</span> (j = 1; j &lt;= noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>; j++)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                <span class="keywordflow">if</span> (noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j] == 0)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                    noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>];</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[j] = bmn;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[j + 1] = w;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        noh_novo-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>++;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        w-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a> = noh_novo;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        y-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a> = w;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        z-&gt;<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a> = w;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <a class="code hl_function" href="bm__noh_8c.html#ace1b620c316100f158e6b7f3a2d44926">bm_noh_split_int</a>(noh_novo, bmn, w);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">return</span> bmn;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#afa33a4e99c61b8c6303d02fbd9c0e4fd">  139</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8c.html#afa33a4e99c61b8c6303d02fbd9c0e4fd">bm_noh_insere</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave)</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">int</span> i = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a> - 1, j;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>)</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">while</span> (i &gt;= 0 &amp;&amp; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i] &gt; chave)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i + 1] = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i];</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            --i;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i + 1] = chave;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>++;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">while</span> (i &gt;= 0 &amp;&amp; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i] &gt; chave)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            --i;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <a class="code hl_function" href="bm__noh_8c.html#afa33a4e99c61b8c6303d02fbd9c0e4fd">bm_noh_insere</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[i + 1], chave);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[i + 1]-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a> == <a class="code hl_define" href="bm__noh_8h.html#ab478e043bd4994318b33f9728232c865">MAXCHAVES</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>) + 1)</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <a class="code hl_function" href="bm__noh_8c.html#a793acf1dcba02ca01f65953f5262c87d">bm_noh_split</a>(bmn, bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[i + 1], i + 1);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            i = bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a> - 1;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#a97a66ce5da4031f5f2cb542653e7e291">  173</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8c.html#a97a66ce5da4031f5f2cb542653e7e291">padding</a>(<span class="keywordtype">char</span> ch, <span class="keywordtype">int</span> n)</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++)</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        putchar(ch);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#a2c6a59bf622b9a95b17b423a51fbd4cd">  185</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8c.html#a2c6a59bf622b9a95b17b423a51fbd4cd">bm_noh_escrutina</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> nivel)</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordtype">int</span> i;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">for</span> (i = 0; i &lt; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>; i++)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <a class="code hl_function" href="bm__noh_8c.html#a97a66ce5da4031f5f2cb542653e7e291">padding</a>(<span class="charliteral">&#39;\t&#39;</span>, nivel + 1);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            printf(<span class="stringliteral">&quot;%d &quot;</span>, bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i]);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <a class="code hl_function" href="bm__noh_8c.html#a2c6a59bf622b9a95b17b423a51fbd4cd">bm_noh_escrutina</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[0], nivel + 1);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordflow">for</span> (i = 0; i &lt; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>; i++)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <a class="code hl_function" href="bm__noh_8c.html#a97a66ce5da4031f5f2cb542653e7e291">padding</a>(<span class="charliteral">&#39;\t&#39;</span>, nivel);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            printf(<span class="stringliteral">&quot;%d &quot;</span>, bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i]);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            <span class="comment">//printf(&quot;%d[%d] &quot;, bmn-&gt;chaves[i], nivel);</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <a class="code hl_function" href="bm__noh_8c.html#a2c6a59bf622b9a95b17b423a51fbd4cd">bm_noh_escrutina</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[i + 1], nivel + 1);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#aa4051fed089d3ce2921e11e4a411cbdc">  217</a></span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm__noh_8c.html#aa4051fed089d3ce2921e11e4a411cbdc">bm_noh_pesquisa_folha</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave)</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>{</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keywordflow">while</span> (i &lt; bmn-&gt;nchaves &amp;&amp; chave &gt; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i])</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        i++;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i] == chave &amp;&amp; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keywordflow">return</span> bmn;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>)</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="bm__noh_8c.html#a05075105632f3754ec7c0e5b897d4aa1">bm_noh_pesquisa</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[i], chave);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#a05075105632f3754ec7c0e5b897d4aa1">  236</a></span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm__noh_8c.html#a05075105632f3754ec7c0e5b897d4aa1">bm_noh_pesquisa</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>{</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordflow">while</span> (i &lt; bmn-&gt;nchaves &amp;&amp; chave &gt; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i])</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        i++;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[i] == chave)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keywordflow">return</span> bmn;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>)</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="bm__noh_8c.html#a05075105632f3754ec7c0e5b897d4aa1">bm_noh_pesquisa</a>(bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>[i], chave);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#aa32d3f7213666234f2153a6ae3bf04d4">  248</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="bm__noh_8c.html#aa32d3f7213666234f2153a6ae3bf04d4">bm_noh_contem</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave)</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>{</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="bm__noh_8c.html#a05075105632f3754ec7c0e5b897d4aa1">bm_noh_pesquisa</a>(bmn, chave))</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>}</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#a219a566419f77040ddc3cc1b421da09a">  260</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8c.html#a219a566419f77040ddc3cc1b421da09a">bm_noh_escrevedisc</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <a class="code hl_struct" href="structartigo.html">s_artigo</a> *art)</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>{</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    FILE *parq;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordtype">int</span> j;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keywordtype">int</span> quantos_arts = 0;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keywordtype">char</span> *tmp = NULL;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordflow">if</span> (!bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>)</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <a class="code hl_function" href="erro_8h.html#a69d5a6e0bb435908529f0b2b02e861ad">erro</a>(__func__, <span class="stringliteral">&quot;arquivo: foi tentado escrever em disco pagina nao folha&quot;</span>);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    tmp = (<span class="keywordtype">char</span> *)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>) * (strlen(<a class="code hl_define" href="bm__noh_8h.html#a0b29109e51bd9d379af7362b5fa04203">NOME_ARQ</a>) + strlen(<a class="code hl_define" href="bm__noh_8h.html#a0a3e994d4dfa9846f485fa512c27323f">SUFIXO_BM</a>) + 1));</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    strcpy(tmp, <a class="code hl_define" href="bm__noh_8h.html#a0b29109e51bd9d379af7362b5fa04203">NOME_ARQ</a><span class="stringliteral">&quot;&quot;</span><a class="code hl_define" href="bm__noh_8h.html#a0a3e994d4dfa9846f485fa512c27323f">SUFIXO_BM</a>);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordflow">if</span> (!(parq = fopen(tmp, <span class="stringliteral">&quot;w+&quot;</span>)))</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        free(tmp);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <a class="code hl_function" href="erro_8h.html#a69d5a6e0bb435908529f0b2b02e861ad">erro</a>(__func__, <span class="stringliteral">&quot;arquivo: erro na criacao do arquivo .bm&quot;</span>);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    }</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    free(tmp);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    fseek(parq, 0, SEEK_END);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordflow">if</span> (ftell(parq) &gt; <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>))</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        rewind(parq);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        fread(&amp;quantos_arts, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>), 1, parq);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    }</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    fseek(parq, 0, SEEK_END);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    quantos_arts++;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    fwrite(&amp;quantos_arts, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>), 1, parq);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    fseek(parq, 0, SEEK_END);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keywordflow">for</span> (j = 0; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a> &amp;&amp; j &lt; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>; j++)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    {</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        <span class="keywordflow">if</span> (bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j] == art-&gt;<a class="code hl_variable" href="structartigo.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a>)</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        {</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>[j] = (<span class="keywordtype">long</span> *)ftell(parq);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            fwrite(art, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structartigo.html">s_artigo</a>), 1, parq);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        }</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    }</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    fclose(parq);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>}</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="bm__noh_8c.html#aa09822d7cea1a7c4153060ed908aa61f">  311</a></span><a class="code hl_struct" href="structartigo.html">s_artigo</a> *<a class="code hl_function" href="bm__noh_8c.html#aa09822d7cea1a7c4153060ed908aa61f">bm_noh_ledisc</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave)</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>{</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    FILE *parq;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    <span class="keywordtype">int</span> j;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="keywordtype">char</span> *tmp;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <span class="keywordflow">if</span> (!bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>)</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <a class="code hl_function" href="erro_8h.html#a69d5a6e0bb435908529f0b2b02e861ad">erro</a>(__func__, <span class="stringliteral">&quot;arquivo: foi tentado ler em disco pagina nao folha&quot;</span>);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    tmp =</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        (<span class="keywordtype">char</span> *)malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">char</span>) * (strlen(<a class="code hl_define" href="bm__noh_8h.html#a0b29109e51bd9d379af7362b5fa04203">NOME_ARQ</a>) + strlen(<a class="code hl_define" href="bm__noh_8h.html#a0a3e994d4dfa9846f485fa512c27323f">SUFIXO_BM</a>) + 1));</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    strcpy(tmp, <a class="code hl_define" href="bm__noh_8h.html#a0b29109e51bd9d379af7362b5fa04203">NOME_ARQ</a> <span class="stringliteral">&quot;&quot;</span> <a class="code hl_define" href="bm__noh_8h.html#a0a3e994d4dfa9846f485fa512c27323f">SUFIXO_BM</a>);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">if</span> (!(parq = fopen(tmp, <span class="stringliteral">&quot;r&quot;</span>)))</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        free(tmp);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <a class="code hl_function" href="erro_8h.html#a69d5a6e0bb435908529f0b2b02e861ad">erro</a>(__func__, <span class="stringliteral">&quot;arquivo: erro na leitura do arquivo .bm&quot;</span>);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    free(tmp);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordflow">for</span> (j = 0; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a> &amp;&amp; j &lt; bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>; j++)</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    {</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <a class="code hl_struct" href="structartigo.html">s_artigo</a> *a = (<a class="code hl_struct" href="structartigo.html">s_artigo</a> *)malloc(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structartigo.html">s_artigo</a>));</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordflow">if</span> (chave == bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>[j])</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        {</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>            rewind(parq);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>            fseek(parq, *bmn-&gt;<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>[j], SEEK_SET);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            fread(a, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structartigo.html">s_artigo</a>), 1, parq);</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>            fclose(parq);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            <span class="keywordflow">return</span> a;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        free(a);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    }</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    fclose(parq);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>}</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
+<div class="ttc" id="abm__noh_8c_html_a05075105632f3754ec7c0e5b897d4aa1"><div class="ttname"><a href="bm__noh_8c.html#a05075105632f3754ec7c0e5b897d4aa1">bm_noh_pesquisa</a></div><div class="ttdeci">bm_noh * bm_noh_pesquisa(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00236">bm_noh.c:236</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_a219a566419f77040ddc3cc1b421da09a"><div class="ttname"><a href="bm__noh_8c.html#a219a566419f77040ddc3cc1b421da09a">bm_noh_escrevedisc</a></div><div class="ttdeci">void bm_noh_escrevedisc(bm_noh *bmn, s_artigo *art)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00260">bm_noh.c:260</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_a2c6a59bf622b9a95b17b423a51fbd4cd"><div class="ttname"><a href="bm__noh_8c.html#a2c6a59bf622b9a95b17b423a51fbd4cd">bm_noh_escrutina</a></div><div class="ttdeci">void bm_noh_escrutina(bm_noh *bmn, int nivel)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00185">bm_noh.c:185</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_a793acf1dcba02ca01f65953f5262c87d"><div class="ttname"><a href="bm__noh_8c.html#a793acf1dcba02ca01f65953f5262c87d">bm_noh_split</a></div><div class="ttdeci">void bm_noh_split(bm_noh *bmn, bm_noh *y, int i)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00039">bm_noh.c:39</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_a910ea280d4f81b32bfb6770e1ae2f794"><div class="ttname"><a href="bm__noh_8c.html#a910ea280d4f81b32bfb6770e1ae2f794">bm_noh_inic</a></div><div class="ttdeci">bm_noh * bm_noh_inic(int i, char eh_folha)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00019">bm_noh.c:19</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_a97a66ce5da4031f5f2cb542653e7e291"><div class="ttname"><a href="bm__noh_8c.html#a97a66ce5da4031f5f2cb542653e7e291">padding</a></div><div class="ttdeci">void padding(char ch, int n)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00173">bm_noh.c:173</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_aa09822d7cea1a7c4153060ed908aa61f"><div class="ttname"><a href="bm__noh_8c.html#aa09822d7cea1a7c4153060ed908aa61f">bm_noh_ledisc</a></div><div class="ttdeci">s_artigo * bm_noh_ledisc(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00311">bm_noh.c:311</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_aa32d3f7213666234f2153a6ae3bf04d4"><div class="ttname"><a href="bm__noh_8c.html#aa32d3f7213666234f2153a6ae3bf04d4">bm_noh_contem</a></div><div class="ttdeci">int bm_noh_contem(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00248">bm_noh.c:248</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_aa4051fed089d3ce2921e11e4a411cbdc"><div class="ttname"><a href="bm__noh_8c.html#aa4051fed089d3ce2921e11e4a411cbdc">bm_noh_pesquisa_folha</a></div><div class="ttdeci">bm_noh * bm_noh_pesquisa_folha(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00217">bm_noh.c:217</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_ace1b620c316100f158e6b7f3a2d44926"><div class="ttname"><a href="bm__noh_8c.html#ace1b620c316100f158e6b7f3a2d44926">bm_noh_split_int</a></div><div class="ttdeci">bm_noh * bm_noh_split_int(bm_noh *bmn, bm_noh *y, bm_noh *z)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00078">bm_noh.c:78</a></div></div>
+<div class="ttc" id="abm__noh_8c_html_afa33a4e99c61b8c6303d02fbd9c0e4fd"><div class="ttname"><a href="bm__noh_8c.html#afa33a4e99c61b8c6303d02fbd9c0e4fd">bm_noh_insere</a></div><div class="ttdeci">void bm_noh_insere(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00139">bm_noh.c:139</a></div></div>
+<div class="ttc" id="abm__noh_8h_html"><div class="ttname"><a href="bm__noh_8h.html">bm_noh.h</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_a0a3e994d4dfa9846f485fa512c27323f"><div class="ttname"><a href="bm__noh_8h.html#a0a3e994d4dfa9846f485fa512c27323f">SUFIXO_BM</a></div><div class="ttdeci">#define SUFIXO_BM</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00012">bm_noh.h:12</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_a0b29109e51bd9d379af7362b5fa04203"><div class="ttname"><a href="bm__noh_8h.html#a0b29109e51bd9d379af7362b5fa04203">NOME_ARQ</a></div><div class="ttdeci">#define NOME_ARQ</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00010">bm_noh.h:10</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_ab478e043bd4994318b33f9728232c865"><div class="ttname"><a href="bm__noh_8h.html#ab478e043bd4994318b33f9728232c865">MAXCHAVES</a></div><div class="ttdeci">#define MAXCHAVES(m)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00058">bm_noh.h:58</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_ae20b4a2c59c522ed11819aae87505df3"><div class="ttname"><a href="bm__noh_8h.html#ae20b4a2c59c522ed11819aae87505df3">MAXFILHOS</a></div><div class="ttdeci">#define MAXFILHOS(m)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00057">bm_noh.h:57</a></div></div>
+<div class="ttc" id="aerro_8h_html"><div class="ttname"><a href="erro_8h.html">erro.h</a></div></div>
+<div class="ttc" id="aerro_8h_html_a69d5a6e0bb435908529f0b2b02e861ad"><div class="ttname"><a href="erro_8h.html#a69d5a6e0bb435908529f0b2b02e861ad">erro</a></div><div class="ttdeci">void erro(const char *f, const char *m)</div><div class="ttdef"><b>Definition:</b> <a href="erro_8h_source.html#l00005">erro.h:5</a></div></div>
+<div class="ttc" id="astructartigo_html"><div class="ttname"><a href="structartigo.html">artigo</a></div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00014">bm_noh.h:15</a></div></div>
+<div class="ttc" id="astructartigo_html_a7441ef0865bcb3db9b8064dd7375c1ea"><div class="ttname"><a href="structartigo.html#a7441ef0865bcb3db9b8064dd7375c1ea">artigo::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00016">bm_noh.h:16</a></div></div>
+<div class="ttc" id="astructbm__noh_html"><div class="ttname"><a href="structbm__noh.html">bm_noh</a></div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00026">bm_noh.h:27</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a0b7ef1a1628b235a59b5ac8d773e92c5"><div class="ttname"><a href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">bm_noh::chaves</a></div><div class="ttdeci">int * chaves</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00028">bm_noh.h:28</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a15429954bb4f0366b91e05dbffdf3212"><div class="ttname"><a href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">bm_noh::filhos</a></div><div class="ttdeci">struct bm_noh ** filhos</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00030">bm_noh.h:30</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a1551e7593259b48a2ee6e3b073febf37"><div class="ttname"><a href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">bm_noh::nchaves</a></div><div class="ttdeci">int nchaves</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00028">bm_noh.h:28</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a56e4c91256d02400f85ffa8ffa584471"><div class="ttname"><a href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">bm_noh::eh_folha</a></div><div class="ttdeci">char eh_folha</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00033">bm_noh.h:33</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a842fb6b0598b910a1c8f1ba6491236fd"><div class="ttname"><a href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">bm_noh::mgrau</a></div><div class="ttdeci">int mgrau</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00029">bm_noh.h:29</a></div></div>
+<div class="ttc" id="astructbm__noh_html_ab94855a79a98124a172736a233b3666b"><div class="ttname"><a href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">bm_noh::dfilhos</a></div><div class="ttdeci">long ** dfilhos</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00032">bm_noh.h:32</a></div></div>
+<div class="ttc" id="astructbm__noh_html_ad122cc995b60d27d7f0777001771a58c"><div class="ttname"><a href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">bm_noh::pai</a></div><div class="ttdeci">struct bm_noh * pai</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00031">bm_noh.h:31</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

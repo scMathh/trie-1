@@ -1,0 +1,28 @@
+\documentclass[border=10pt,multi,tikz]{standalone}
+\begin{document}
+
+\begin{forest}
+  pic dir tree,
+  pic root,
+  for tree={% folder icons by default; override using file for file icons
+    directory,
+  },
+  [system
+    [config
+    ]
+    [lib
+      [Access
+      ]
+      [Plugin
+      ]
+      [file.txt, file
+      ]
+    ]
+    [templates
+    ]
+    [tests
+    ]
+  ]
+\end{forest}
+\end{document}
+

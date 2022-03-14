@@ -1,0 +1,129 @@
+\usepackage{syntax}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[light,condensed,math]{iwona}
+\usepackage[T1]{fontenc}
+% \usepackage[usenames, dvipsnames]{xcolor}
+\usepackage[usenames, dvipsnames]{color}
+% \usepackage{tgtermes} times homan font similar
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{bbding}
+% \usepackage{pifont}
+\usepackage{makeidx}
+\makeindex
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[toc,page]{appendix}
+\usepackage{cite}
+% \usepackage{draftwatermark}
+% \SetWatermarkText{RASCUNHO}
+% \SetWatermarkScale{1.0}
+% \SetWatermarkColor[rgb]{0.9, 0.9, 0.9}
+
+% \setdefaultlanguage[babelshorthands]{brazilian}
+% \usepackage{fontspec}
+% Pra mostra codigo fonte
+\usepackage{listings}
+\usepackage{caption}
+\usepackage[most]{tcolorbox}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{%
+  \parbox{\textwidth}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}\vskip-4pt}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\lstset{frame=lrb,xleftmargin=\fboxsep,xrightmargin=-\fboxsep}
+
+%%%  Definiciao da sintaxe da linguagem jSmall para o hiligth
+\lstdefinelanguage{jSmall}{
+    keywords={numfi, numf, true, false, loop, return, if, in, while, then, else, elif},
+    keywordstyle=\color{blue}\bfseries,
+    ndkeywords={boot, export, boolean, throw, implements, import, this},
+    ndkeywordstyle=\color{darkgray}\bfseries,
+    identifierstyle=\color{black},
+    sensitive=false,
+    comment=[l]{~},
+    morecomment=[s]{~\{}{\}~},
+    commentstyle=\color{purple}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+    morestring=[b]',
+    morestring=[b]"
+}
+
+\lstset{language=C++,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+    commentstyle=\color{green}\ttfamily,
+    morecomment=[l][\color{magenta}]{\#}
+}
+
+\newtcblisting[auto counter]{sexylisting}[2][]{sharp corners, 
+    fonttitle=\bfseries, colframe=gray, listing only, 
+    listing options={basicstyle=\ttfamily,language=jSmall, numbers=left}, 
+    title=Listing \thetcbcounter: #2, #1}
+
+\newtcblisting[auto counter]{sexylistingjava}[2][]{sharp corners, 
+    fonttitle=\bfseries, colframe=gray, listing only, 
+    listing options={basicstyle=\ttfamily,language=java, numbers=left}, 
+    title=Listing \thetcbcounter: #2, #1}
+    
+\newtcblisting[auto counter]{sexylistingcpp}[2][]{sharp corners, 
+    fonttitle=\bfseries, colframe=gray, listing only, 
+    listing options={basicstyle=\ttfamily,language=C++, numbers=left}, 
+    title=Listing \thetcbcounter: #2, #1}
+
+% Automata packages
+\usepackage{tikz, graphicx}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\usetikzlibrary{tikzmark, shapes.callouts}
+\usetikzlibrary{automata, positioning, arrows}
+\usetikzlibrary{arrows.meta, % if the figure contains arrow-tips
+                bending,     % arrow tips on arcs are "bent," i.e., deformed a bit
+                patterns     % if the figure contains pattern fills
+               }
+
+\usepackage{tipa}
+
+% Hacking pra poder usar syntax package junto com o tikz
+\usepackage{etoolbox}
+\AtBeginEnvironment{tikzpicture}{\catcode`\_=8}
+
+\usepackage{ifthen,xcolor,xkeyval,calc}
+\newlength{\tabcont}
+
+\newcommand{\tab}[1]{%
+\settowidth{\tabcont}{#1}%
+\ifthenelse{\lengthtest{\tabcont < .25\linewidth}}%
+{\makebox[.25\linewidth][l]{#1}\ignorespaces}%
+{\makebox[.5\linewidth][l]{#1}\ignorespaces}%
+}%
+
+\frenchspacing
+
+% \title{
+%     \textbf{\Large UNIVERSIDADE FEDERAL DE ALAGOAS}\\
+%     \textbf{\Large INSTITUTO DE COMPUTAÇÃO}\\
+%     {\ }\\
+%     \textbf{\Large Slam Combinando}\\
+%     \textbf{\Large com Filtros de Kalman}\\
+%     \textbf{\Large para Robôs Móveis}\\
+%     % \line(1,0){250} \\
+% }
+\author{Joilnen Leite\\ 2017.2}
+
+% \usepackage[colorinlistoftodos]{todonotes}\setlength{\marginparwidth}{3cm}\reversemarginpar
+\usepackage {todonotes}\setlength{\marginparwidth}{3cm}\reversemarginpar
+
+% HACK: set length so that the paper can have better width for margin
+
+\usepackage{float}

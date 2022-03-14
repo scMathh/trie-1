@@ -1,0 +1,11 @@
+dentro do diretorio docs estão relatórios e arquivos
+relacionados ao processo de desenvolvimento
+
+executável será gerado no mesmo diretório dos fontes,
+src, através do comando, make
+dentro daquele diretorio, executável nomeado, rodeme
+comandos a ser utilizado 
+
+make # para criar o binario
+make clean # para limpar, apagar objetos e binario
+

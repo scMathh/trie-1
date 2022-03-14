@@ -1,0 +1,34 @@
+\hypertarget{checklist_8c_source}{}\doxysection{checklist.\+c}
+\label{checklist_8c_source}\index{src/checklist.c@{src/checklist.c}}
+\mbox{\hyperlink{checklist_8c}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00002}00002 \textcolor{comment}{ * aluno: joilnen leite, daniel morais, matheus silva}}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00003}00003 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00004}00004 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00005}00005 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{jcurses_8h}{jcurses.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{checklist_8h}{checklist.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00013}\mbox{\hyperlink{checklist_8c_a0c0bf6c726a38cefd94572e62c80a258}{00013}} \textcolor{keywordtype}{void} \mbox{\hyperlink{checklist_8c_a0c0bf6c726a38cefd94572e62c80a258}{tela\_checklist}}(\textcolor{keywordtype}{int} i)}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00015}00015     \textcolor{keywordtype}{int} l = 8, c = 24, bo = 1UL;}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00016}00016     \textcolor{keyword}{static} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} cklst\_estado = 0;}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00017}00017     cklst\_estado |= i ; }
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00019}00019     \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c + 11, 0, \mbox{\hyperlink{jcurses_8h_a63c0176df17ae85869575c0c7147d752}{S\_UNDERL}}\textcolor{stringliteral}{"{}avaliacao"{}}\mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{S\_NORM}});}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00020}00020     \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c, 0, \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00021}00021     \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c, cklst\_estado \& bo, \mbox{\hyperlink{checklist_8h_afef2ac30687ac07ba38250eca9de1e2a}{ITEM\_1}}); bo <<= 1;}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00022}00022     \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c, cklst\_estado \& bo, \mbox{\hyperlink{checklist_8h_a096feed0bd93e486216319b9bab6a797}{ITEM\_2}}); bo <<= 1;}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00023}00023     \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c, cklst\_estado \& bo, \mbox{\hyperlink{checklist_8h_a97a0328e7416773c347c087f18f623ee}{ITEM\_3}}); bo <<= 1;}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00024}00024     \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c, cklst\_estado \& bo, \mbox{\hyperlink{checklist_8h_aaff8b947902718fc09da8dd58a86b0e6}{ITEM\_4}}); bo <<= 1;}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00025}00025     \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c, cklst\_estado \& bo, \mbox{\hyperlink{checklist_8h_aa56cd59e54c121dd867c8ea3f5620e6c}{ITEM\_5}}); bo <<= 1;}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00026}00026     \mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{CKLSITEM}}(l++, c, cklst\_estado \& bo, \mbox{\hyperlink{checklist_8h_a1326b81d0126bf72c6ec2b3c64d9082c}{ITEM\_6}}); bo <<= 1;}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00028}00028     \mbox{\hyperlink{jcurses_8h_a58e254bd1b841f53f11027254e99d87c}{CMR1}};}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{checklist_8c_source_l00031}00031 }
+
+\end{DoxyCode}

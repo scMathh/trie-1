@@ -1,0 +1,64 @@
+\hypertarget{bm__noh_8h_source}{}\doxysection{bm\+\_\+noh.\+h}
+\label{bm__noh_8h_source}\index{src/bm\_noh.h@{src/bm\_noh.h}}
+\mbox{\hyperlink{bm__noh_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00002}00002 \textcolor{comment}{ * alunos: joilnen leite, daniel morais, matheus silva}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00003}00003 \textcolor{comment}{ * }}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00004}00004 \textcolor{comment}{ * }}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00005}00005 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef BM\_NOH\_}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00007}00007 \textcolor{preprocessor}{\#define BM\_NOH\_}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00010}\mbox{\hyperlink{bm__noh_8h_a0b29109e51bd9d379af7362b5fa04203}{00010}} \textcolor{preprocessor}{\#define NOME\_ARQ "{}bmais\_arquivo"{}}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00012}\mbox{\hyperlink{bm__noh_8h_a0a3e994d4dfa9846f485fa512c27323f}{00012}} \textcolor{preprocessor}{\#define SUFIXO\_BM "{}.bm"{}}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00014}\mbox{\hyperlink{structartigo}{00014}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structartigo}{artigo}}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00016}\mbox{\hyperlink{structartigo_a7441ef0865bcb3db9b8064dd7375c1ea}{00016}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structartigo_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00017}\mbox{\hyperlink{structartigo_ac404d93cbf0169fd9e89edc17d0c5572}{00017}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structartigo_ac404d93cbf0169fd9e89edc17d0c5572}{ano}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00018}\mbox{\hyperlink{structartigo_a2cae93d90b2d30414a0bb9b555533132}{00018}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{structartigo_a2cae93d90b2d30414a0bb9b555533132}{autor}}[200];}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00019}\mbox{\hyperlink{structartigo_accd7391acab7afc64e2914914bc2b5a9}{00019}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{structartigo_accd7391acab7afc64e2914914bc2b5a9}{titulo}}[200];}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00020}\mbox{\hyperlink{structartigo_a733e6a233500e88b1adeffe48ab63fc9}{00020}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{structartigo_a733e6a233500e88b1adeffe48ab63fc9}{revista}}[200];}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00021}\mbox{\hyperlink{structartigo_a5ff90a36cfc30e5f2207c6630aaeafed}{00021}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{structartigo_a5ff90a36cfc30e5f2207c6630aaeafed}{DOI}}[20];}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00022}\mbox{\hyperlink{structartigo_aca91f380519c2dce3a0a0ee466806c22}{00022}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{structartigo_aca91f380519c2dce3a0a0ee466806c22}{palavraChave}}[200];}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00023}\mbox{\hyperlink{structartigo_a400b97e24244eb18d7750ebf15b67721}{00023}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{structartigo_a400b97e24244eb18d7750ebf15b67721}{invalido}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00024}\mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{00024}} \} \mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\_artigo}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00026}\mbox{\hyperlink{structbm__noh}{00026}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structbm__noh}{bm\_noh}}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00027}00027 \{}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00028}\mbox{\hyperlink{structbm__noh_a0b7ef1a1628b235a59b5ac8d773e92c5}{00028}}     \textcolor{keywordtype}{int} *\mbox{\hyperlink{structbm__noh_a0b7ef1a1628b235a59b5ac8d773e92c5}{chaves}}, \mbox{\hyperlink{structbm__noh_a1551e7593259b48a2ee6e3b073febf37}{nchaves}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00029}\mbox{\hyperlink{structbm__noh_a842fb6b0598b910a1c8f1ba6491236fd}{00029}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structbm__noh_a842fb6b0598b910a1c8f1ba6491236fd}{mgrau}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00030}\mbox{\hyperlink{structbm__noh_a15429954bb4f0366b91e05dbffdf3212}{00030}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structbm__noh}{bm\_noh}} **\mbox{\hyperlink{structbm__noh_a15429954bb4f0366b91e05dbffdf3212}{filhos}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00031}\mbox{\hyperlink{structbm__noh_ad122cc995b60d27d7f0777001771a58c}{00031}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structbm__noh}{bm\_noh}} *\mbox{\hyperlink{structbm__noh_ad122cc995b60d27d7f0777001771a58c}{pai}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00032}\mbox{\hyperlink{structbm__noh_ab94855a79a98124a172736a233b3666b}{00032}}     \textcolor{keywordtype}{long} **\mbox{\hyperlink{structbm__noh_ab94855a79a98124a172736a233b3666b}{dfilhos}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00033}\mbox{\hyperlink{structbm__noh_a56e4c91256d02400f85ffa8ffa584471}{00033}}     \textcolor{keywordtype}{char} \mbox{\hyperlink{structbm__noh_a56e4c91256d02400f85ffa8ffa584471}{eh\_folha}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00034}\mbox{\hyperlink{bm__noh_8h_ae2f70cd3df1d1e70d374cc33370e78c5}{00034}} \} \mbox{\hyperlink{bm__noh_8h_ae2f70cd3df1d1e70d374cc33370e78c5}{bm\_noh}};}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00036}00036 \mbox{\hyperlink{structbm__noh}{bm\_noh}} *\mbox{\hyperlink{bm__noh_8h_a910ea280d4f81b32bfb6770e1ae2f794}{bm\_noh\_inic}}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{char} \mbox{\hyperlink{structbm__noh_a56e4c91256d02400f85ffa8ffa584471}{eh\_folha}});}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00038}00038 \textcolor{keywordtype}{void} \mbox{\hyperlink{bm__noh_8h_a793acf1dcba02ca01f65953f5262c87d}{bm\_noh\_split}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \mbox{\hyperlink{structbm__noh}{bm\_noh}} *y, \textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00039}00039 \mbox{\hyperlink{structbm__noh}{bm\_noh}} *\mbox{\hyperlink{bm__noh_8h_ace1b620c316100f158e6b7f3a2d44926}{bm\_noh\_split\_int}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \mbox{\hyperlink{structbm__noh}{bm\_noh}} *y, \mbox{\hyperlink{structbm__noh}{bm\_noh}} *z);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00041}00041 \textcolor{keywordtype}{void} \mbox{\hyperlink{bm__noh_8h_afa33a4e99c61b8c6303d02fbd9c0e4fd}{bm\_noh\_insere}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \textcolor{keywordtype}{int} chave);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00043}00043 \textcolor{keywordtype}{void} \mbox{\hyperlink{bm__noh_8h_a97a66ce5da4031f5f2cb542653e7e291}{padding}}(\textcolor{keywordtype}{char} ch, \textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00044}00044 \textcolor{keywordtype}{void} \mbox{\hyperlink{bm__noh_8h_a2c6a59bf622b9a95b17b423a51fbd4cd}{bm\_noh\_escrutina}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \textcolor{keywordtype}{int} nivel);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00046}00046 \mbox{\hyperlink{structbm__noh}{bm\_noh}} *\mbox{\hyperlink{bm__noh_8h_a40f50e021d6ecf63728aba5cfa489f80}{bm\_noh\_pesquisa}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \textcolor{keywordtype}{int} k);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00047}00047 \mbox{\hyperlink{structbm__noh}{bm\_noh}} *\mbox{\hyperlink{bm__noh_8h_aa4051fed089d3ce2921e11e4a411cbdc}{bm\_noh\_pesquisa\_folha}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \textcolor{keywordtype}{int} chave);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00048}00048 \textcolor{keywordtype}{int} \mbox{\hyperlink{bm__noh_8h_aa32d3f7213666234f2153a6ae3bf04d4}{bm\_noh\_contem}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \textcolor{keywordtype}{int} chave);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00050}00050 \textcolor{keywordtype}{void} \mbox{\hyperlink{bm__noh_8h_a219a566419f77040ddc3cc1b421da09a}{bm\_noh\_escrevedisc}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \mbox{\hyperlink{structartigo}{s\_artigo}} *art);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00051}00051 \mbox{\hyperlink{structartigo}{s\_artigo}} *\mbox{\hyperlink{bm__noh_8h_aa09822d7cea1a7c4153060ed908aa61f}{bm\_noh\_ledisc}}(\mbox{\hyperlink{structbm__noh}{bm\_noh}} *bmn, \textcolor{keywordtype}{int} chave);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00053}\mbox{\hyperlink{bm__noh_8h_a88245559a8aa89f2d22f01b21e782fc8}{00053}} \textcolor{keywordtype}{void} \mbox{\hyperlink{bm__noh_8h_a88245559a8aa89f2d22f01b21e782fc8}{bm\_noh\_populaart}}(\textcolor{keywordtype}{int} chave, \mbox{\hyperlink{structartigo}{s\_artigo}} *art);}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00057}\mbox{\hyperlink{bm__noh_8h_ae20b4a2c59c522ed11819aae87505df3}{00057}} \textcolor{preprocessor}{\#define MAXFILHOS(m) 2 * m}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00058}\mbox{\hyperlink{bm__noh_8h_ab478e043bd4994318b33f9728232c865}{00058}} \textcolor{preprocessor}{\#define MAXCHAVES(m) MAXFILHOS(m) -\/ 1}}
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{bm__noh_8h_source_l00060}00060 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

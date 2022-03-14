@@ -1,0 +1,77 @@
+\hypertarget{conjunto__ordenado_8h_source}{}\doxysection{conjunto\+\_\+ordenado.\+h}
+\label{conjunto__ordenado_8h_source}\index{src/conjunto\_ordenado.h@{src/conjunto\_ordenado.h}}
+\mbox{\hyperlink{conjunto__ordenado_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef CONJUNTO\_ORDENADO\_H}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00002}00002 \textcolor{preprocessor}{\#define CONJUNTO\_ORDENADO\_H}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00004}00004 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00005}00005 \textcolor{comment}{ * aluno: joilnen leite}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00006}00006 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{jcurses_8h}{jcurses.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{red__black_8h}{red\_black.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00020}\mbox{\hyperlink{structconjord}{00020}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structconjord}{conjord}} \{}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00021}\mbox{\hyperlink{structconjord_a32799fe7a89917f018abcc981d7e2279}{00021}}     \mbox{\hyperlink{structrb__n}{rb\_n}} *\mbox{\hyperlink{structconjord_a32799fe7a89917f018abcc981d7e2279}{pr}};}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00022}\mbox{\hyperlink{structconjord_aad9657edb0f84e2254025aecf781d166}{00022}}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{structconjord_aad9657edb0f84e2254025aecf781d166}{idx}};}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00023}\mbox{\hyperlink{structconjord_ae2a0f66178bb1c4d42e2b70ec9426ccb}{00023}}     \textcolor{keywordtype}{char} *\mbox{\hyperlink{structconjord_ae2a0f66178bb1c4d42e2b70ec9426ccb}{nome}};}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00024}\mbox{\hyperlink{structconjord_ae73fafa0b49e2c11b51ab6077525cb61}{00024}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{structconjord_ae73fafa0b49e2c11b51ab6077525cb61}{cardinalidade}};}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00025}\mbox{\hyperlink{conjunto__ordenado_8h_a5222b802c7c44ef47fa3b179e129cdb7}{00025}} \} \mbox{\hyperlink{conjunto__ordenado_8h_a5222b802c7c44ef47fa3b179e129cdb7}{conjord}};}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00030}00030 \mbox{\hyperlink{structconjord}{conjord}} *\mbox{\hyperlink{conjunto__ordenado_8h_a4009d4582b034535ddece2b5aa59b2f9}{conjord\_cria}}(\textcolor{keywordtype}{char} *nome);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00035}00035 \textcolor{keywordtype}{int} \mbox{\hyperlink{conjunto__ordenado_8h_ab4e6881f1576c10b85291df6ce78de9c}{conjord\_insere\_elemento}}(\mbox{\hyperlink{structconjord}{conjord}} *a, \textcolor{keywordtype}{int} chave, \textcolor{keywordtype}{void} *elemento);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00040}00040 \textcolor{keywordtype}{void} \mbox{\hyperlink{conjunto__ordenado_8h_a4b7588fc395444b79bd29ace9a70a3e2}{conjord\_deleta\_elemento}}(\mbox{\hyperlink{structconjord}{conjord}} *a, \textcolor{keywordtype}{int} chave);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00045}\mbox{\hyperlink{conjunto__ordenado_8h_a2adca4ff95d8631b1e767dfea06b6ec7}{00045}} \textcolor{keywordtype}{int} \mbox{\hyperlink{conjunto__ordenado_8h_a2adca4ff95d8631b1e767dfea06b6ec7}{conjord\_cardinalidade}}();}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00050}00050 \textcolor{keywordtype}{int} \mbox{\hyperlink{conjunto__ordenado_8h_abb54a1aff818316e42300953209bc4a9}{conjord\_eh\_vazio}}(\textcolor{keyword}{const} \mbox{\hyperlink{structconjord}{conjord}} *a);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00055}\mbox{\hyperlink{conjunto__ordenado_8h_a95607a344a0ebe6f643659e5a9fac57e}{00055}} \textcolor{keywordtype}{int} \mbox{\hyperlink{conjunto__ordenado_8h_a95607a344a0ebe6f643659e5a9fac57e}{conjord\_esvazia}}();}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00060}00060 \textcolor{keywordtype}{void} \mbox{\hyperlink{conjunto__ordenado_8h_aeaaf904aed505fc625864ccd86860317}{conjord\_destroi}}(\mbox{\hyperlink{structconjord}{conjord}} *a);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00066}\mbox{\hyperlink{conjunto__ordenado_8h_afd380eab9e6113457398bb9a57a06698}{00066}} \textcolor{keywordtype}{void} \mbox{\hyperlink{conjunto__ordenado_8h_afd380eab9e6113457398bb9a57a06698}{conjord\_exclui\_elemento}}(\mbox{\hyperlink{structconjord}{conjord}} *a, \textcolor{keywordtype}{int} chave);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00072}00072 \textcolor{keywordtype}{int} \mbox{\hyperlink{conjunto__ordenado_8h_a24293c7bb01f1fd405d267c5044b3006}{conjord\_existe\_elemento}}(\mbox{\hyperlink{structconjord}{conjord}} *a, \textcolor{keywordtype}{int} chave);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00079}00079 \mbox{\hyperlink{structconjord}{conjord}} *\mbox{\hyperlink{conjunto__ordenado_8h_a5fda25d72d7a732876b36e38c1bea11f}{conjord\_interseciona}}(\mbox{\hyperlink{structconjord}{conjord}} *a, \mbox{\hyperlink{structconjord}{conjord}} *b);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00086}00086 \mbox{\hyperlink{structconjord}{conjord}} *\mbox{\hyperlink{conjunto__ordenado_8h_a036a8a040f40a564c831aded812c2dd6}{conjord\_une}}(\mbox{\hyperlink{structconjord}{conjord}} *a, \mbox{\hyperlink{structconjord}{conjord}} *b);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00093}00093 \mbox{\hyperlink{structconjord}{conjord}} *\mbox{\hyperlink{conjunto__ordenado_8h_a056f87eaa191cd08f8095040bb5ac00b}{conjord\_subtrai}}(\mbox{\hyperlink{structconjord}{conjord}} *a, \mbox{\hyperlink{structconjord}{conjord}} *b);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00101}\mbox{\hyperlink{conjunto__ordenado_8h_a51831c52a05df110b4ae93e499d58e12}{00101}} \textcolor{keywordtype}{void} \mbox{\hyperlink{conjunto__ordenado_8h_a51831c52a05df110b4ae93e499d58e12}{conjord\_imprime\_rb}}(\mbox{\hyperlink{structrb__n}{rb\_n}} *t, \textcolor{keywordtype}{int} s, \textcolor{keywordtype}{int} e);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00111}00111 \textcolor{keywordtype}{void} \mbox{\hyperlink{conjunto__ordenado_8h_a4e83f1764e1220d5468892ed388d40b2}{conjord\_imprime\_arvore\_rb}}(\mbox{\hyperlink{structconjord}{conjord}} *c, \textcolor{keywordtype}{int} s);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00113}00113 \textcolor{keywordtype}{void} \mbox{\hyperlink{conjunto__ordenado_8h_a8c7da2e1394d9bb7881cf671ee32f34d}{conjord\_imprime\_lista}}(\textcolor{keywordtype}{int} *l, \textcolor{keywordtype}{int} s);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00115}00115 \textcolor{keyword}{extern} void (*\mbox{\hyperlink{conjunto__ordenado_8h_a730b152a7744bcd3c034b9f0ac3e0b04}{conjord\_imprime\_elemento}})(\textcolor{keywordtype}{void} *n);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00116}00116 \textcolor{keyword}{extern} \textcolor{keywordtype}{void}* (*conjord\_retorna\_elemento)(\textcolor{keywordtype}{void} *n);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00120}00120 \textcolor{keywordtype}{int} \mbox{\hyperlink{conjunto__ordenado_8h_a42f2aa61301fb48bd719ac4267ea6c96}{conjord\_seta\_imprime\_elemento}}(\textcolor{keywordtype}{void} (*i)(\textcolor{keywordtype}{void} *n));}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00122}00122 \textcolor{keywordtype}{void} \mbox{\hyperlink{conjunto__ordenado_8h_a117a9763ddf1f2fec032b40e433476aa}{conjord\_imprime\_conjunto}}(\mbox{\hyperlink{structconjord}{conjord}} *c);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00124}00124 \textcolor{keywordtype}{void} \mbox{\hyperlink{conjunto__ordenado_8h_a044912180d98e6551e826eca02f846fe}{conjord\_imprime\_venn}}(\mbox{\hyperlink{structconjord}{conjord}} *c);}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00136}\mbox{\hyperlink{conjunto__ordenado_8h_a129132bef90332011f2fcd3c0394bc19}{00136}} \textcolor{preprocessor}{\#define LTELA printf(LIMPA\_TELA)}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00137}\mbox{\hyperlink{conjunto__ordenado_8h_a9311f168d42752b9c850f2f24f21c1e3}{00137}} \textcolor{preprocessor}{\#define TIPO\_DE\_TERMINAL TCOLOR}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00138}\mbox{\hyperlink{conjunto__ordenado_8h_ab7e64333eba48090f444ec9f36fd23ef}{00138}} \textcolor{preprocessor}{\#define INFO(x) printf("{}\%s\%s\%s"{}}, S\_INFO, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00139}\mbox{\hyperlink{conjunto__ordenado_8h_af450835e839e911b04d2f98b01f95838}{00139}} \textcolor{preprocessor}{\#define INFO2(x) printf("{}\%s\%s\%s"{}}, S\_INFO2, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00140}\mbox{\hyperlink{conjunto__ordenado_8h_a2a52f232195c851f7fb64343f41463bf}{00140}} \textcolor{preprocessor}{\#define INFO\_ST(x) printf("{}\%s\%s\%s\%s"{}}, S\_INV, S\_INFO\_ST, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00141}\mbox{\hyperlink{conjunto__ordenado_8h_a86496c19c29b6c83337b300bfeef9c95}{00141}} \textcolor{preprocessor}{\#define CM printf("{}\%s"{}}, m); fflush(stdout); getc(stdin)}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00142}\mbox{\hyperlink{conjunto__ordenado_8h_a3478c274df03e821dd117a69ec2378c8}{00142}} \textcolor{preprocessor}{\#define CKLSITEM(l,c,b,x) \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00143}00143 \textcolor{preprocessor}{    if (b) printf(S\_CHKLST\_DONE, l, c, x); \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00144}00144 \textcolor{preprocessor}{    else printf(S\_CHKLST, l, c, x)}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00145}\mbox{\hyperlink{conjunto__ordenado_8h_a4b7602dea81a25f093571dc5bfed9a0f}{00145}} \textcolor{preprocessor}{\#define INFO\_FILE(x) printf("{}\%s\%s\%s"{}}, S\_INFO\_ST, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00146}\mbox{\hyperlink{conjunto__ordenado_8h_a301ea1db1848a8638f32d9963877d05f}{00146}} \textcolor{preprocessor}{\#define INFO\_CARD(x) printf("{}\%scardinalidade: \%d\%s"{}}, S\_CARD, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00148}00148 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{conjunto__ordenado_8h_source_l00150}00150 }
+
+\end{DoxyCode}

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Conjunto Ordenado: Código-Fonte de src/bm.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Conjunto Ordenado
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">bm.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bm_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * alunos: joilnen leite, daniel morais, matheus silva</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef BM_</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define BM_</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="bm__noh_8h.html">bm_noh.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structbm.html">   11</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structbm.html">bm</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structbm.html#ad44539e0483f8c831c3e60f14607df97">   13</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_variable" href="structbm.html#ad44539e0483f8c831c3e60f14607df97">raiz</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structbm.html#ad0329fc9bea1bc8e0202eccf352e6244">   14</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structbm.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>, *<a class="code hl_variable" href="structbm.html#ad0329fc9bea1bc8e0202eccf352e6244">felem</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="bm_8h.html#a40ebc7074ae691b0c2ac2236047a0554">   15</a></span>} <a class="code hl_typedef" href="bm_8h.html#a40ebc7074ae691b0c2ac2236047a0554">bm</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><a class="code hl_struct" href="structbm.html">bm</a> *<a class="code hl_function" href="bm_8h.html#aa052076c0fe9ae523ba40122679a4f1e">bm_inic</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> <a class="code hl_function" href="bm_8h.html#a373bcbcfa5572d795574759436c6a1cd">bm_escrutina</a>(<a class="code hl_struct" href="structbm.html">bm</a> *b);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm_8h.html#ad9fd03617507e84c379b79587c89d844">bm_pesquisa</a>(<a class="code hl_struct" href="structbm.html">bm</a> *b, <span class="keywordtype">int</span> chave);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">void</span> <a class="code hl_function" href="bm_8h.html#a4a333a430b2b96ecf8aa968ea9de5f2a">bm_insere</a>(<a class="code hl_struct" href="structbm.html">bm</a> *b, <span class="keywordtype">int</span> chave, <a class="code hl_struct" href="structartigo.html">s_artigo</a> *art);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm_8h.html#a86a4667c4f9ff23c684919e6ca1910a4">bm_insere_nahfolha</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *raiz, <span class="keywordtype">int</span> chave, <a class="code hl_struct" href="structartigo.html">s_artigo</a> *art);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> <a class="code hl_function" href="bm_8h.html#a5556a7c28bcb67fc5d10a65f5c93c295">bm_lista</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *aux, <span class="keywordtype">int</span> chave);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abm_8h_html_a373bcbcfa5572d795574759436c6a1cd"><div class="ttname"><a href="bm_8h.html#a373bcbcfa5572d795574759436c6a1cd">bm_escrutina</a></div><div class="ttdeci">void bm_escrutina(bm *b)</div><div class="ttdef"><b>Definition:</b> <a href="bm_8c_source.html#l00028">bm.c:28</a></div></div>
+<div class="ttc" id="abm_8h_html_a40ebc7074ae691b0c2ac2236047a0554"><div class="ttname"><a href="bm_8h.html#a40ebc7074ae691b0c2ac2236047a0554">bm</a></div><div class="ttdeci">struct bm bm</div></div>
+<div class="ttc" id="abm_8h_html_a4a333a430b2b96ecf8aa968ea9de5f2a"><div class="ttname"><a href="bm_8h.html#a4a333a430b2b96ecf8aa968ea9de5f2a">bm_insere</a></div><div class="ttdeci">void bm_insere(bm *b, int chave, s_artigo *art)</div><div class="ttdef"><b>Definition:</b> <a href="bm_8c_source.html#l00138">bm.c:138</a></div></div>
+<div class="ttc" id="abm_8h_html_a5556a7c28bcb67fc5d10a65f5c93c295"><div class="ttname"><a href="bm_8h.html#a5556a7c28bcb67fc5d10a65f5c93c295">bm_lista</a></div><div class="ttdeci">void bm_lista(bm_noh *aux, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm_8c_source.html#l00057">bm.c:57</a></div></div>
+<div class="ttc" id="abm_8h_html_a86a4667c4f9ff23c684919e6ca1910a4"><div class="ttname"><a href="bm_8h.html#a86a4667c4f9ff23c684919e6ca1910a4">bm_insere_nahfolha</a></div><div class="ttdeci">bm_noh * bm_insere_nahfolha(bm_noh *raiz, int chave, s_artigo *art)</div><div class="ttdef"><b>Definition:</b> <a href="bm_8c_source.html#l00085">bm.c:85</a></div></div>
+<div class="ttc" id="abm_8h_html_aa052076c0fe9ae523ba40122679a4f1e"><div class="ttname"><a href="bm_8h.html#aa052076c0fe9ae523ba40122679a4f1e">bm_inic</a></div><div class="ttdeci">bm * bm_inic(int i)</div><div class="ttdef"><b>Definition:</b> <a href="bm_8c_source.html#l00015">bm.c:15</a></div></div>
+<div class="ttc" id="abm_8h_html_ad9fd03617507e84c379b79587c89d844"><div class="ttname"><a href="bm_8h.html#ad9fd03617507e84c379b79587c89d844">bm_pesquisa</a></div><div class="ttdeci">bm_noh * bm_pesquisa(bm *b, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm_8c_source.html#l00039">bm.c:39</a></div></div>
+<div class="ttc" id="abm__noh_8h_html"><div class="ttname"><a href="bm__noh_8h.html">bm_noh.h</a></div></div>
+<div class="ttc" id="astructartigo_html"><div class="ttname"><a href="structartigo.html">artigo</a></div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00014">bm_noh.h:15</a></div></div>
+<div class="ttc" id="astructbm__noh_html"><div class="ttname"><a href="structbm__noh.html">bm_noh</a></div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00026">bm_noh.h:27</a></div></div>
+<div class="ttc" id="astructbm_html"><div class="ttname"><a href="structbm.html">bm</a></div><div class="ttdef"><b>Definition:</b> <a href="bm_8h_source.html#l00011">bm.h:12</a></div></div>
+<div class="ttc" id="astructbm_html_a842fb6b0598b910a1c8f1ba6491236fd"><div class="ttname"><a href="structbm.html#a842fb6b0598b910a1c8f1ba6491236fd">bm::mgrau</a></div><div class="ttdeci">int mgrau</div><div class="ttdef"><b>Definition:</b> <a href="bm_8h_source.html#l00014">bm.h:14</a></div></div>
+<div class="ttc" id="astructbm_html_ad0329fc9bea1bc8e0202eccf352e6244"><div class="ttname"><a href="structbm.html#ad0329fc9bea1bc8e0202eccf352e6244">bm::felem</a></div><div class="ttdeci">int * felem</div><div class="ttdef"><b>Definition:</b> <a href="bm_8h_source.html#l00014">bm.h:14</a></div></div>
+<div class="ttc" id="astructbm_html_ad44539e0483f8c831c3e60f14607df97"><div class="ttname"><a href="structbm.html#ad44539e0483f8c831c3e60f14607df97">bm::raiz</a></div><div class="ttdeci">struct bm_noh * raiz</div><div class="ttdef"><b>Definition:</b> <a href="bm_8h_source.html#l00013">bm.h:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

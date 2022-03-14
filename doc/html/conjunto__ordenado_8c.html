@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Conjunto Ordenado: Referência ao ficheiro src/conjunto_ordenado.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Conjunto Ordenado
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro conjunto_ordenado.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="conjunto__ordenado_8h_source.html">conjunto_ordenado.h</a>&quot;</code><br />
+</div>
+<p><a href="conjunto__ordenado_8c_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a4009d4582b034535ddece2b5aa59b2f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconjord.html">conjord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a4009d4582b034535ddece2b5aa59b2f9">conjord_cria</a> (char *nome)</td></tr>
+<tr class="separator:a4009d4582b034535ddece2b5aa59b2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2992bebc1ccf67d98169f229309c808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#ab2992bebc1ccf67d98169f229309c808">conjord_destroi</a> (<a class="el" href="structconjord.html">conjord</a> *c)</td></tr>
+<tr class="separator:ab2992bebc1ccf67d98169f229309c808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e6881f1576c10b85291df6ce78de9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#ab4e6881f1576c10b85291df6ce78de9c">conjord_insere_elemento</a> (<a class="el" href="structconjord.html">conjord</a> *a, int chave, void *elemento)</td></tr>
+<tr class="separator:ab4e6881f1576c10b85291df6ce78de9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7588fc395444b79bd29ace9a70a3e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a4b7588fc395444b79bd29ace9a70a3e2">conjord_deleta_elemento</a> (<a class="el" href="structconjord.html">conjord</a> *a, int chave)</td></tr>
+<tr class="separator:a4b7588fc395444b79bd29ace9a70a3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dbae38113926b9635572bd995953cbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a5dbae38113926b9635572bd995953cbd">conjord_cardinalidade</a> (<a class="el" href="structconjord.html">conjord</a> *c)</td></tr>
+<tr class="separator:a5dbae38113926b9635572bd995953cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb54a1aff818316e42300953209bc4a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#abb54a1aff818316e42300953209bc4a9">conjord_eh_vazio</a> (const <a class="el" href="structconjord.html">conjord</a> *a)</td></tr>
+<tr class="separator:abb54a1aff818316e42300953209bc4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ea0690882513882ce83d28383cb3fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a19ea0690882513882ce83d28383cb3fb">conjord_esvazia</a> (<a class="el" href="structconjord.html">conjord</a> *c)</td></tr>
+<tr class="separator:a19ea0690882513882ce83d28383cb3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e83f1764e1220d5468892ed388d40b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a4e83f1764e1220d5468892ed388d40b2">conjord_imprime_arvore_rb</a> (<a class="el" href="structconjord.html">conjord</a> *c, int s)</td></tr>
+<tr class="separator:a4e83f1764e1220d5468892ed388d40b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7da2e1394d9bb7881cf671ee32f34d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a8c7da2e1394d9bb7881cf671ee32f34d">conjord_imprime_lista</a> (int *l, int s)</td></tr>
+<tr class="separator:a8c7da2e1394d9bb7881cf671ee32f34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f2aa61301fb48bd719ac4267ea6c96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a42f2aa61301fb48bd719ac4267ea6c96">conjord_seta_imprime_elemento</a> (void(*i)(void *n))</td></tr>
+<tr class="separator:a42f2aa61301fb48bd719ac4267ea6c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117a9763ddf1f2fec032b40e433476aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a117a9763ddf1f2fec032b40e433476aa">conjord_imprime_conjunto</a> (<a class="el" href="structconjord.html">conjord</a> *c)</td></tr>
+<tr class="separator:a117a9763ddf1f2fec032b40e433476aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044912180d98e6551e826eca02f846fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a044912180d98e6551e826eca02f846fe">conjord_imprime_venn</a> (<a class="el" href="structconjord.html">conjord</a> *c)</td></tr>
+<tr class="separator:a044912180d98e6551e826eca02f846fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fda25d72d7a732876b36e38c1bea11f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconjord.html">conjord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a5fda25d72d7a732876b36e38c1bea11f">conjord_interseciona</a> (<a class="el" href="structconjord.html">conjord</a> *a, <a class="el" href="structconjord.html">conjord</a> *b)</td></tr>
+<tr class="separator:a5fda25d72d7a732876b36e38c1bea11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036a8a040f40a564c831aded812c2dd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconjord.html">conjord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a036a8a040f40a564c831aded812c2dd6">conjord_une</a> (<a class="el" href="structconjord.html">conjord</a> *a, <a class="el" href="structconjord.html">conjord</a> *b)</td></tr>
+<tr class="separator:a036a8a040f40a564c831aded812c2dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056f87eaa191cd08f8095040bb5ac00b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structconjord.html">conjord</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a056f87eaa191cd08f8095040bb5ac00b">conjord_subtrai</a> (<a class="el" href="structconjord.html">conjord</a> *a, <a class="el" href="structconjord.html">conjord</a> *b)</td></tr>
+<tr class="separator:a056f87eaa191cd08f8095040bb5ac00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24293c7bb01f1fd405d267c5044b3006"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a24293c7bb01f1fd405d267c5044b3006">conjord_existe_elemento</a> (<a class="el" href="structconjord.html">conjord</a> *a, int chave)</td></tr>
+<tr class="separator:a24293c7bb01f1fd405d267c5044b3006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:a730b152a7744bcd3c034b9f0ac3e0b04"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conjunto__ordenado_8c.html#a730b152a7744bcd3c034b9f0ac3e0b04">conjord_imprime_elemento</a> )(void *n)</td></tr>
+<tr class="separator:a730b152a7744bcd3c034b9f0ac3e0b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a5dbae38113926b9635572bd995953cbd" name="a5dbae38113926b9635572bd995953cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dbae38113926b9635572bd995953cbd">&#9670;&nbsp;</a></span>conjord_cardinalidade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int conjord_cardinalidade </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00075">75</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a4009d4582b034535ddece2b5aa59b2f9" name="a4009d4582b034535ddece2b5aa59b2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4009d4582b034535ddece2b5aa59b2f9">&#9670;&nbsp;</a></span>conjord_cria()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconjord.html">conjord</a> * conjord_cria </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>nome</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >cria conjunto ordenado e retorna o ponteiro para ele </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00012">12</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a4b7588fc395444b79bd29ace9a70a3e2" name="a4b7588fc395444b79bd29ace9a70a3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7588fc395444b79bd29ace9a70a3e2">&#9670;&nbsp;</a></span>conjord_deleta_elemento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conjord_deleta_elemento </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chave</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >insere elemento no conjunto ordenado </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00062">62</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="ab2992bebc1ccf67d98169f229309c808" name="ab2992bebc1ccf67d98169f229309c808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2992bebc1ccf67d98169f229309c808">&#9670;&nbsp;</a></span>conjord_destroi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conjord_destroi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >cria conjunto ordenado e retorna o ponteiro para ele </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00026">26</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="abb54a1aff818316e42300953209bc4a9" name="abb54a1aff818316e42300953209bc4a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb54a1aff818316e42300953209bc4a9">&#9670;&nbsp;</a></span>conjord_eh_vazio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int conjord_eh_vazio </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >testa se o conjunto estah vazio </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00086">86</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a19ea0690882513882ce83d28383cb3fb" name="a19ea0690882513882ce83d28383cb3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ea0690882513882ce83d28383cb3fb">&#9670;&nbsp;</a></span>conjord_esvazia()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int conjord_esvazia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >deleta todos os elementos do conjunto e zera a cardinalidade </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00105">105</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a24293c7bb01f1fd405d267c5044b3006" name="a24293c7bb01f1fd405d267c5044b3006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24293c7bb01f1fd405d267c5044b3006">&#9670;&nbsp;</a></span>conjord_existe_elemento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int conjord_existe_elemento </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chave</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >testa se existe elemento com a chave epecificado no conjunto ordenado </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00235">235</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a4e83f1764e1220d5468892ed388d40b2" name="a4e83f1764e1220d5468892ed388d40b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e83f1764e1220d5468892ed388d40b2">&#9670;&nbsp;</a></span>conjord_imprime_arvore_rb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conjord_imprime_arvore_rb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >item 3 da especificao "Imprime a arvore rubro negra
+nesta operacao, cada noh da arvore serah
+representado pela sua chave de identificacao seguida da sua cor" </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>ponteiro para o conjunto ordenado </td></tr>
+    <tr><td class="paramname">s</td><td>espaco entre os nohs na apresentacao da arvore </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00116">116</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a117a9763ddf1f2fec032b40e433476aa" name="a117a9763ddf1f2fec032b40e433476aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117a9763ddf1f2fec032b40e433476aa">&#9670;&nbsp;</a></span>conjord_imprime_conjunto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conjord_imprime_conjunto </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00146">146</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a8c7da2e1394d9bb7881cf671ee32f34d" name="a8c7da2e1394d9bb7881cf671ee32f34d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c7da2e1394d9bb7881cf671ee32f34d">&#9670;&nbsp;</a></span>conjord_imprime_lista()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conjord_imprime_lista </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00121">121</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a044912180d98e6551e826eca02f846fe" name="a044912180d98e6551e826eca02f846fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044912180d98e6551e826eca02f846fe">&#9670;&nbsp;</a></span>conjord_imprime_venn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conjord_imprime_venn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00163">163</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="ab4e6881f1576c10b85291df6ce78de9c" name="ab4e6881f1576c10b85291df6ce78de9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e6881f1576c10b85291df6ce78de9c">&#9670;&nbsp;</a></span>conjord_insere_elemento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int conjord_insere_elemento </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chave</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>elemento</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >insere elemento no conjunto ordenado </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00040">40</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a5fda25d72d7a732876b36e38c1bea11f" name="a5fda25d72d7a732876b36e38c1bea11f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fda25d72d7a732876b36e38c1bea11f">&#9670;&nbsp;</a></span>conjord_interseciona()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconjord.html">conjord</a> * conjord_interseciona </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >insersecciona dois conjuntos formando um terceiro como resultado desta operacao retornando seu ponteiro a seguir A intesec B = (A uniao B) - [(A - B) uniao (B - A)] </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00179">179</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a42f2aa61301fb48bd719ac4267ea6c96" name="a42f2aa61301fb48bd719ac4267ea6c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f2aa61301fb48bd719ac4267ea6c96">&#9670;&nbsp;</a></span>conjord_seta_imprime_elemento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int conjord_seta_imprime_elemento </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void *n)&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >seta a rotina de impressao do dado criado pelo cliente </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00130">130</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a056f87eaa191cd08f8095040bb5ac00b" name="a056f87eaa191cd08f8095040bb5ac00b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056f87eaa191cd08f8095040bb5ac00b">&#9670;&nbsp;</a></span>conjord_subtrai()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconjord.html">conjord</a> * conjord_subtrai </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >subtrai dois conjuntos formando um terceiro como resultado desta operacao retornando seu ponteiro a seguir </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00227">227</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<a id="a036a8a040f40a564c831aded812c2dd6" name="a036a8a040f40a564c831aded812c2dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036a8a040f40a564c831aded812c2dd6">&#9670;&nbsp;</a></span>conjord_une()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structconjord.html">conjord</a> * conjord_une </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structconjord.html">conjord</a> *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >une dois conjuntos formando um terceiro como resultado desta operacao retornando seu ponteiro a seguir </p>
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00204">204</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das variáveis</h2>
+<a id="a730b152a7744bcd3c034b9f0ac3e0b04" name="a730b152a7744bcd3c034b9f0ac3e0b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730b152a7744bcd3c034b9f0ac3e0b04">&#9670;&nbsp;</a></span>conjord_imprime_elemento</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* conjord_imprime_elemento) (void *n) </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="conjunto__ordenado_8c_source.html#l00128">128</a> do ficheiro <a class="el" href="conjunto__ordenado_8c_source.html">conjunto_ordenado.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>

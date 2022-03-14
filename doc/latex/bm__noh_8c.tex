@@ -1,0 +1,210 @@
+\hypertarget{bm__noh_8c}{}\doxysection{Referência ao ficheiro src/bm\+\_\+noh.c}
+\label{bm__noh_8c}\index{src/bm\_noh.c@{src/bm\_noh.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}bm\+\_\+noh.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}erro.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ \mbox{\hyperlink{bm__noh_8c_a910ea280d4f81b32bfb6770e1ae2f794}{bm\+\_\+noh\+\_\+inic}} (int i, char eh\+\_\+folha)
+\item 
+void \mbox{\hyperlink{bm__noh_8c_a793acf1dcba02ca01f65953f5262c87d}{bm\+\_\+noh\+\_\+split}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$y, int i)
+\item 
+\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ \mbox{\hyperlink{bm__noh_8c_ace1b620c316100f158e6b7f3a2d44926}{bm\+\_\+noh\+\_\+split\+\_\+int}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$y, \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$z)
+\item 
+void \mbox{\hyperlink{bm__noh_8c_afa33a4e99c61b8c6303d02fbd9c0e4fd}{bm\+\_\+noh\+\_\+insere}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, int chave)
+\item 
+void \mbox{\hyperlink{bm__noh_8c_a97a66ce5da4031f5f2cb542653e7e291}{padding}} (char ch, int n)
+\item 
+void \mbox{\hyperlink{bm__noh_8c_a2c6a59bf622b9a95b17b423a51fbd4cd}{bm\+\_\+noh\+\_\+escrutina}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, int nivel)
+\item 
+\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ \mbox{\hyperlink{bm__noh_8c_aa4051fed089d3ce2921e11e4a411cbdc}{bm\+\_\+noh\+\_\+pesquisa\+\_\+folha}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, int chave)
+\item 
+\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ \mbox{\hyperlink{bm__noh_8c_a05075105632f3754ec7c0e5b897d4aa1}{bm\+\_\+noh\+\_\+pesquisa}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, int chave)
+\item 
+int \mbox{\hyperlink{bm__noh_8c_aa32d3f7213666234f2153a6ae3bf04d4}{bm\+\_\+noh\+\_\+contem}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, int chave)
+\item 
+void \mbox{\hyperlink{bm__noh_8c_a219a566419f77040ddc3cc1b421da09a}{bm\+\_\+noh\+\_\+escrevedisc}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, \mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\+\_\+artigo}} $\ast$art)
+\item 
+\mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\+\_\+artigo}} $\ast$ \mbox{\hyperlink{bm__noh_8c_aa09822d7cea1a7c4153060ed908aa61f}{bm\+\_\+noh\+\_\+ledisc}} (\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$bmn, int chave)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{bm__noh_8c_aa32d3f7213666234f2153a6ae3bf04d4}\label{bm__noh_8c_aa32d3f7213666234f2153a6ae3bf04d4}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_contem@{bm\_noh\_contem}}
+\index{bm\_noh\_contem@{bm\_noh\_contem}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_contem()}{bm\_noh\_contem()}}
+{\footnotesize\ttfamily int bm\+\_\+noh\+\_\+contem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00248}{248}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_a219a566419f77040ddc3cc1b421da09a}\label{bm__noh_8c_a219a566419f77040ddc3cc1b421da09a}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_escrevedisc@{bm\_noh\_escrevedisc}}
+\index{bm\_noh\_escrevedisc@{bm\_noh\_escrevedisc}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_escrevedisc()}{bm\_noh\_escrevedisc()}}
+{\footnotesize\ttfamily void bm\+\_\+noh\+\_\+escrevedisc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{\mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\+\_\+artigo}} $\ast$}]{art }\end{DoxyParamCaption})}
+
+escreve conteúdo da página folha no disco 
+\begin{DoxyParams}{Parâmetros}
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & bmn página folha \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00260}{260}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_a2c6a59bf622b9a95b17b423a51fbd4cd}\label{bm__noh_8c_a2c6a59bf622b9a95b17b423a51fbd4cd}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_escrutina@{bm\_noh\_escrutina}}
+\index{bm\_noh\_escrutina@{bm\_noh\_escrutina}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_escrutina()}{bm\_noh\_escrutina()}}
+{\footnotesize\ttfamily void bm\+\_\+noh\+\_\+escrutina (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{int}]{nivel }\end{DoxyParamCaption})}
+
+faz a impressão das chaves na página 
+\begin{DoxyParams}{Parâmetros}
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & bmn página raiz \\
+\hline
+{\em int} & nivel nivel da arvore \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00185}{185}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_a910ea280d4f81b32bfb6770e1ae2f794}\label{bm__noh_8c_a910ea280d4f81b32bfb6770e1ae2f794}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_inic@{bm\_noh\_inic}}
+\index{bm\_noh\_inic@{bm\_noh\_inic}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_inic()}{bm\_noh\_inic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ bm\+\_\+noh\+\_\+inic (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{char}]{eh\+\_\+folha }\end{DoxyParamCaption})}
+
+faz a inicialização de um nó 
+\begin{DoxyParams}{Parâmetros}
+{\em int} & i grau da página \\
+\hline
+{\em char} & eh\+\_\+folha flag para saber se a página é interna ou externa \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00019}{19}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_afa33a4e99c61b8c6303d02fbd9c0e4fd}\label{bm__noh_8c_afa33a4e99c61b8c6303d02fbd9c0e4fd}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_insere@{bm\_noh\_insere}}
+\index{bm\_noh\_insere@{bm\_noh\_insere}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_insere()}{bm\_noh\_insere()}}
+{\footnotesize\ttfamily void bm\+\_\+noh\+\_\+insere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+faz a inseção de uma chave na página 
+\begin{DoxyParams}{Parâmetros}
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & bmn página \\
+\hline
+{\em int} & chave chave a ser inserida \\
+\hline
+\end{DoxyParams}
+for (j = 0; j \texorpdfstring{$<$}{<} bmn-\/\texorpdfstring{$>$}{>}nchaves; j++) printf(\char`\"{}\%d \char`\"{}, bmn-\/\texorpdfstring{$>$}{>}chaves\mbox{[}j\mbox{]}); printf(\char`\"{}\textbackslash{}n\char`\"{});
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00139}{139}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_aa09822d7cea1a7c4153060ed908aa61f}\label{bm__noh_8c_aa09822d7cea1a7c4153060ed908aa61f}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_ledisc@{bm\_noh\_ledisc}}
+\index{bm\_noh\_ledisc@{bm\_noh\_ledisc}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_ledisc()}{bm\_noh\_ledisc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{bm__noh_8h_a5c795c752d65a041b9e214779d8fd2bb}{s\+\_\+artigo}} $\ast$ bm\+\_\+noh\+\_\+ledisc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+ler conteúdo do disco 
+\begin{DoxyParams}{Parâmetros}
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & bmn página \\
+\hline
+{\em int} & chave chave para a identificação no disco \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00311}{311}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_a05075105632f3754ec7c0e5b897d4aa1}\label{bm__noh_8c_a05075105632f3754ec7c0e5b897d4aa1}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_pesquisa@{bm\_noh\_pesquisa}}
+\index{bm\_noh\_pesquisa@{bm\_noh\_pesquisa}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_pesquisa()}{bm\_noh\_pesquisa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ bm\+\_\+noh\+\_\+pesquisa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+pesquisa uma chave na árvore 
+\begin{DoxyParams}{Parâmetros}
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & bmn página raiz \\
+\hline
+{\em int} & chave chave a ser buscada \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00236}{236}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_aa4051fed089d3ce2921e11e4a411cbdc}\label{bm__noh_8c_aa4051fed089d3ce2921e11e4a411cbdc}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_pesquisa\_folha@{bm\_noh\_pesquisa\_folha}}
+\index{bm\_noh\_pesquisa\_folha@{bm\_noh\_pesquisa\_folha}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_pesquisa\_folha()}{bm\_noh\_pesquisa\_folha()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ bm\+\_\+noh\+\_\+pesquisa\+\_\+folha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{int}]{chave }\end{DoxyParamCaption})}
+
+pesquisa uma chave na árvore 
+\begin{DoxyParams}{Parâmetros}
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & bmn página raiz \\
+\hline
+{\em int} & chave chave a ser buscada \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00217}{217}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_a793acf1dcba02ca01f65953f5262c87d}\label{bm__noh_8c_a793acf1dcba02ca01f65953f5262c87d}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_split@{bm\_noh\_split}}
+\index{bm\_noh\_split@{bm\_noh\_split}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_split()}{bm\_noh\_split()}}
+{\footnotesize\ttfamily void bm\+\_\+noh\+\_\+split (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{y,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+realiza a partição de uma página folha 
+\begin{DoxyParams}{Parâmetros}
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & bmn \\
+\hline
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & y \\
+\hline
+{\em int} & i \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00039}{39}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_ace1b620c316100f158e6b7f3a2d44926}\label{bm__noh_8c_ace1b620c316100f158e6b7f3a2d44926}} 
+\index{bm\_noh.c@{bm\_noh.c}!bm\_noh\_split\_int@{bm\_noh\_split\_int}}
+\index{bm\_noh\_split\_int@{bm\_noh\_split\_int}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{bm\_noh\_split\_int()}{bm\_noh\_split\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$ bm\+\_\+noh\+\_\+split\+\_\+int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{bmn,  }\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{y,  }\item[{\mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}} $\ast$}]{z }\end{DoxyParamCaption})}
+
+realiza a partição de uma página interna 
+\begin{DoxyParams}{Parâmetros}
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & bmn \\
+\hline
+{\em \mbox{\hyperlink{structbm__noh}{bm\+\_\+noh}}} & y \\
+\hline
+{\em int} & i \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00078}{78}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+
+\mbox{\Hypertarget{bm__noh_8c_a97a66ce5da4031f5f2cb542653e7e291}\label{bm__noh_8c_a97a66ce5da4031f5f2cb542653e7e291}} 
+\index{bm\_noh.c@{bm\_noh.c}!padding@{padding}}
+\index{padding@{padding}!bm\_noh.c@{bm\_noh.c}}
+\doxysubsubsection{\texorpdfstring{padding()}{padding()}}
+{\footnotesize\ttfamily void padding (\begin{DoxyParamCaption}\item[{char}]{ch,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+faz a impressão de espaços para a função escrutina 
+
+Definido na linha \mbox{\hyperlink{bm__noh_8c_source_l00173}{173}} do ficheiro \mbox{\hyperlink{bm__noh_8c_source}{bm\+\_\+noh.\+c}}.
+

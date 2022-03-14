@@ -1,0 +1,15 @@
+TAD Conjunto Ordenado utilizando a estrutura árvore Rubro-Negra para tipos de dados genéricos.
+deve ser implementado para tipos de dados genéricos
+ o programador, usuário da biblioteca, define o tipo dos elementos do conjunto.
+ • Imprimir os elementos de um conjunto.
+ • Cardinalidade de um conjunto 
+ • Verificar se um conjunto é vazio.
+ • Esvaziar conjunto:
+ • Inserir um novo elemento em um conjunto (não deve existir elementos repetidos no conjunto).
+ • Excluir um elemento de um conjunto.
+ • Verificar se um elemento pertence ao conjunto.
+
+A intesec B
+A uniao B
+A menos B
+Impressao da arvore chave seguida da cor

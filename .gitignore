@@ -1,0 +1,16 @@
+*.sw*
+*~
+*.o
+*.d
+tags
+rodeme
+latex.out
+*.aux
+*.idx
+*.log
+*.out
+doc/latex
+doc/html
+*.bm
+*.bic
+*.exe

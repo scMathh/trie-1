@@ -1,0 +1,320 @@
+/**
+ * aluno: joilnen leite
+ */
+
+/**
+ * inclusao da bilioteca implementada baseada em arvores red black
+ */
+#include "conjunto_ordenado.h"
+#include <stdio.h>
+#include <string.h>
+
+void tela_testa_rb(const char *m)
+{
+    LTELA;
+    printf("Testa rb\n");
+    printf("\033[24d");
+    printf("%s", m);
+}
+
+/**
+ * funcao  de impressao do dipo especifico criado pelo o usuario da biblioteca
+ * @noh rb
+ */
+void imprime_meu_tipo(void *);
+
+/**
+ * funcao main de teste separada do codigo da biblioteca como especificado
+ */
+int testa_arvore_rb(const char *m)
+{
+    /**
+     * definicao de um tipo exemplo pelo o usuario
+     */
+    typedef struct {
+        char *nome;
+        char *telefone;
+    } meu_tipo;
+
+    /**
+     * criacao do dado para o tipo do usuario
+     */
+    meu_tipo mt0;
+    mt0.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt0.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt0.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt0.telefone, "999999999", sizeof("999999999") + 1);
+
+    /**
+     * seta a funcao para impressao utiliza aqui a tecnica de ponteiro para funcao
+     */
+    rb_seta_impr_elem(imprime_meu_tipo);
+
+    /**
+     * cria noh raiz, utiliza a tecnica de macro pois simplifica e deixa
+     * uma interface mais intuitiva ao usuario da biblioteca
+     * @parametro 0 nome variavel do noh raiz
+     * @parametro 1 chave do noh raiz
+     * @parametro 2 dado criado neste noh, pode ser de qqr tipo
+     */
+    rb_n *conjunto_a = rb_cr(10, &mt0);
+
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    meu_tipo mt8;
+    mt8.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt8.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt8.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt8.telefone, "999999999", sizeof("999999999") + 1);
+
+    rb_n *novo_noh = (rb_n *) malloc (sizeof(rb_n));
+    novo_noh->k = 9;
+    novo_noh->d = &mt8;
+
+    rb_insert(&conjunto_a, novo_noh);
+
+    meu_tipo mt1;
+    mt1.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt1.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt1.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt1.telefone, "999999999", sizeof("999999999") + 1);
+
+    novo_noh = (rb_n *) malloc (sizeof(rb_n));
+    novo_noh->k = 9;
+    novo_noh->d = &mt1;
+
+    rb_insert(&conjunto_a, novo_noh);
+
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    meu_tipo mt2;
+    mt2.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt2.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt2.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt2.telefone, "999999999", sizeof("999999999") + 1);
+
+    novo_noh = (rb_n *) malloc (sizeof(rb_n));
+    novo_noh->k = 11;
+    novo_noh->d = &mt2;
+    rb_insert(&conjunto_a, novo_noh);
+
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    meu_tipo mt3;
+    mt3.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt3.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt3.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt3.telefone, "999999999", sizeof("999999999") + 1);
+
+    novo_noh = (rb_n *) malloc (sizeof(rb_n));
+    novo_noh->k = 8;
+    novo_noh->d = &mt3;
+    rb_insert(&conjunto_a, novo_noh);
+
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    meu_tipo mt4;
+    mt4.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt4.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt4.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt4.telefone, "999999999", sizeof("999999999") + 1);
+
+    novo_noh = (rb_n *) malloc (sizeof(rb_n));
+    novo_noh->k = 6;
+    novo_noh->d = &mt4;
+    rb_insert(&conjunto_a, novo_noh);
+
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    meu_tipo mt5;
+    mt5.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt5.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt5.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt5.telefone, "999999999", sizeof("999999999") + 1);
+
+    novo_noh = (rb_n *) malloc (sizeof(rb_n));
+    novo_noh->k = 5;
+    novo_noh->d = &mt5;
+    rb_insert(&conjunto_a, novo_noh);
+
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+
+    meu_tipo mt6;
+    mt6.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt6.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt6.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt6.telefone, "999999999", sizeof("999999999") + 1);
+
+    novo_noh = (rb_n *) malloc (sizeof(rb_n));
+    novo_noh->k = 4;
+    novo_noh->d = &mt6;
+    rb_insert(&conjunto_a, novo_noh);
+
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    meu_tipo mt7;
+    mt7.nome = (char *) malloc(sizeof("nome para teste") + 1);
+    strncpy(mt7.nome, "nome para teste", sizeof("nome para teste") + 1);
+    mt7.telefone = (char *) malloc(sizeof("999999999") + 1);
+    strncpy(mt7.telefone, "999999999", sizeof("999999999") + 1);
+
+    novo_noh = (rb_n *) malloc (sizeof(rb_n));
+    novo_noh->k = 3;
+    novo_noh->d = &mt7;
+    rb_insert(&conjunto_a, novo_noh);
+
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    rb_delete(&conjunto_a, rb_search(conjunto_a, 3));
+    printf("\n");
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    rb_delete(&conjunto_a, rb_search(conjunto_a, 11));
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    rb_delete(&conjunto_a, rb_search(conjunto_a, 4));
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    rb_delete(&conjunto_a, rb_search(conjunto_a, 8));
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    rb_delete(&conjunto_a, rb_search(conjunto_a, 9));
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+
+    rb_delete(&conjunto_a, rb_search(conjunto_a, 5));
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    rb_delete(&conjunto_a, rb_search(conjunto_a, 10));
+    LTELA;
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    printf("%s", m);
+    getc(stdin);
+
+    rb_delete(&conjunto_a, rb_search(conjunto_a, 6));
+    LTELA;
+    printf("nada\n");
+    printf("= arvore ===================\n");
+    conjord_imprime_rb(conjunto_a, 1, TCOLOR);
+    printf("= ==========================\n");
+    rb_pr(conjunto_a, TCOLOR);
+    printf("\n");
+    /**
+     * testando apenas rb no momento
+    conjord *conj_a = conjord_cria();
+    printf("eh vazio %d", conjord_eh_vazio(conj_a));
+    */
+}
+
+/**
+ * definicao da funcao de impressao estipulado pelo cliente, aqui apenas um
+ * exemplo
+ */
+void imprime_meu_tipo(void *n)
+{
+
+}
+
+

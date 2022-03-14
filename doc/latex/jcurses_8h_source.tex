@@ -1,0 +1,64 @@
+\hypertarget{jcurses_8h_source}{}\doxysection{jcurses.\+h}
+\label{jcurses_8h_source}\index{src/jcurses.h@{src/jcurses.h}}
+\mbox{\hyperlink{jcurses_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef JOILNEN\_CURSES\_H}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00002}00002 \textcolor{preprocessor}{\#define JOILNEN\_CURSES\_H}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00004}00004 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00005}00005 \textcolor{comment}{ * aluno: joilnen}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00006}00006 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00017}\mbox{\hyperlink{jcurses_8h_a3fe1517958dd482f1205bf1f354f63d1}{00017}} \textcolor{preprocessor}{\#define S\_LTELA "{}\(\backslash\)033[H\(\backslash\)033[J"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00018}\mbox{\hyperlink{jcurses_8h_ab4a5d733b9944ff94a444925b856a359}{00018}} \textcolor{preprocessor}{\#define S\_CM "{}\(\backslash\)033[24;62H"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00019}\mbox{\hyperlink{jcurses_8h_a94b7242c65259d7d4080d75f97aa7b65}{00019}} \textcolor{preprocessor}{\#define S\_CMR "{}\(\backslash\)033[24;58H"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00020}\mbox{\hyperlink{jcurses_8h_a63c0176df17ae85869575c0c7147d752}{00020}} \textcolor{preprocessor}{\#define S\_UNDERL "{}\(\backslash\)033[1m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00021}\mbox{\hyperlink{jcurses_8h_a334fb0aa54e705cbbeafe975ad665736}{00021}} \textcolor{preprocessor}{\#define S\_PISCA "{}\(\backslash\)033[5m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00022}\mbox{\hyperlink{jcurses_8h_a90964bcd5877dff05e2dfe5b9aee1194}{00022}} \textcolor{preprocessor}{\#define S\_PISCARAP "{}\(\backslash\)033[6m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00023}\mbox{\hyperlink{jcurses_8h_a8dfe56077212debac1e5200c93fc3d82}{00023}} \textcolor{preprocessor}{\#define S\_MAGENTAB "{}\(\backslash\)033[45m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00024}\mbox{\hyperlink{jcurses_8h_a4d63e061a233bbc88d14c8caf2e019c1}{00024}} \textcolor{preprocessor}{\#define S\_PRETO "{}\(\backslash\)033[30m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00025}\mbox{\hyperlink{jcurses_8h_abb175f5a20e590b6a8ebfe86b6823c8f}{00025}} \textcolor{preprocessor}{\#define S\_PRETOB "{}\(\backslash\)033[40m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00026}\mbox{\hyperlink{jcurses_8h_acd5492b7c0ff666c7b59bc2697f74740}{00026}} \textcolor{preprocessor}{\#define S\_BRANCO "{}\(\backslash\)033[37m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00027}\mbox{\hyperlink{jcurses_8h_ad8180ab36842a6f3b1d92dda5b6023f3}{00027}} \textcolor{preprocessor}{\#define S\_BRANCOB "{}\(\backslash\)033[47m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00028}\mbox{\hyperlink{jcurses_8h_a87fd547e0c40b7e0098fe5791ddb7e8c}{00028}} \textcolor{preprocessor}{\#define S\_CINZA "{}\(\backslash\)033[36m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00029}\mbox{\hyperlink{jcurses_8h_aee352e52b382fba668f559c71266ebae}{00029}} \textcolor{preprocessor}{\#define S\_CINZAB "{}\(\backslash\)033[46m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00030}\mbox{\hyperlink{jcurses_8h_aaab212afea6879d65a18303cfca951d1}{00030}} \textcolor{preprocessor}{\#define S\_AZUL "{}\(\backslash\)033[34m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00031}\mbox{\hyperlink{jcurses_8h_a7e662808fce6db39bc3e0326ca4906ea}{00031}} \textcolor{preprocessor}{\#define S\_AZULB "{}\(\backslash\)033[44m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00032}\mbox{\hyperlink{jcurses_8h_aef00be5f3f7d9fbc9c625632c15d15a8}{00032}} \textcolor{preprocessor}{\#define S\_VERM "{}\(\backslash\)033[31m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00033}\mbox{\hyperlink{jcurses_8h_a53bd60b1c8df5c5e03e8c1b7eb473d14}{00033}} \textcolor{preprocessor}{\#define S\_VERMB "{}\(\backslash\)033[41m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00034}\mbox{\hyperlink{jcurses_8h_a6510e319e8981459d09547d8fefe32f6}{00034}} \textcolor{preprocessor}{\#define S\_VERD "{}\(\backslash\)033[32m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00035}\mbox{\hyperlink{jcurses_8h_a7294fb8a126e4e57ecc6c96e5e3a7aac}{00035}} \textcolor{preprocessor}{\#define S\_VERDB "{}\(\backslash\)033[42m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00036}\mbox{\hyperlink{jcurses_8h_ac7f401a0ffc7b7424ee435ed645eaf7c}{00036}} \textcolor{preprocessor}{\#define S\_INV  "{}\(\backslash\)033[7m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00037}\mbox{\hyperlink{jcurses_8h_a372757547280fc866db9bb8015b5c9e1}{00037}} \textcolor{preprocessor}{\#define S\_NORM "{}\(\backslash\)033[0m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00038}\mbox{\hyperlink{jcurses_8h_a872662eff62ce487f9e56fe0c7b8f5c7}{00038}} \textcolor{preprocessor}{\#define S\_INFO "{}\(\backslash\)033[24;0H\(\backslash\)033[7m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00039}\mbox{\hyperlink{jcurses_8h_ad47548202def62de6bd1c3633faf503b}{00039}} \textcolor{preprocessor}{\#define S\_INFO\_ST "{}\(\backslash\)033[1;65H"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00040}\mbox{\hyperlink{jcurses_8h_a47673f3227185240993f5f429be510a7}{00040}} \textcolor{preprocessor}{\#define S\_INFO\_ST\_1 "{}\(\backslash\)033[2;65H"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00041}\mbox{\hyperlink{jcurses_8h_a0c130a1608ac05676c0a44d8834a706d}{00041}} \textcolor{preprocessor}{\#define S\_CARD "{}\(\backslash\)033[0;60H"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00042}\mbox{\hyperlink{jcurses_8h_ad0669bbb06169b695e461e90ff2c163f}{00042}} \textcolor{preprocessor}{\#define S\_CHKLST "{}\(\backslash\)033[\%d;\%dH\%s\(\backslash\)033[0m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00043}\mbox{\hyperlink{jcurses_8h_a137954d7bcd2d04c0b814e4f81e82a3d}{00043}} \textcolor{preprocessor}{\#define S\_CHKLST\_DONE "{}\(\backslash\)033[46m\(\backslash\)033[30m\(\backslash\)033[\%d;\%dH\%s\(\backslash\)033[0m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00044}\mbox{\hyperlink{jcurses_8h_aed7e0ee8c88078c9b90fe9f08b51ec81}{00044}} \textcolor{preprocessor}{\#define S\_INFO2 "{}\(\backslash\)033[46m\(\backslash\)033[30m\(\backslash\)033[24;0H"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00045}\mbox{\hyperlink{jcurses_8h_a3a525e5e093d849fb1e48a21446515a3}{00045}} \textcolor{preprocessor}{\#define S\_LIST "{}\(\backslash\)033[\%d;78H\%d"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00046}\mbox{\hyperlink{jcurses_8h_a26f1c0781d7168951c50c9b0fd7247e9}{00046}} \textcolor{preprocessor}{\#define S\_FILEN "{}\(\backslash\)033[0;55H"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00047}\mbox{\hyperlink{jcurses_8h_af1076e29a7dd9ae48f16a5fe02745cfc}{00047}} \textcolor{preprocessor}{\#define S\_VENN S\_CHKLST}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00048}\mbox{\hyperlink{jcurses_8h_a70b4c23fb13bd296ceafc47cc68ae570}{00048}} \textcolor{preprocessor}{\#define S\_TEST "{}\(\backslash\)033[1m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00049}\mbox{\hyperlink{jcurses_8h_ac668a47e5660c3558c921f2c25f07abb}{00049}} \textcolor{preprocessor}{\#define S\_NADA "{}"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00051}\mbox{\hyperlink{jcurses_8h_a129132bef90332011f2fcd3c0394bc19}{00051}} \textcolor{preprocessor}{\#define LTELA printf(S\_LTELA)}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00052}\mbox{\hyperlink{jcurses_8h_a9311f168d42752b9c850f2f24f21c1e3}{00052}} \textcolor{preprocessor}{\#define TIPO\_DE\_TERMINAL TCOLOR}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00053}\mbox{\hyperlink{jcurses_8h_ab7e64333eba48090f444ec9f36fd23ef}{00053}} \textcolor{preprocessor}{\#define INFO(x) printf("{}\%s\%s\%s"{}}, S\_INFO, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00054}\mbox{\hyperlink{jcurses_8h_af450835e839e911b04d2f98b01f95838}{00054}} \textcolor{preprocessor}{\#define INFO2(x) printf("{}\%s\%s\%s"{}}, S\_INFO2, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00055}\mbox{\hyperlink{jcurses_8h_a2a52f232195c851f7fb64343f41463bf}{00055}} \textcolor{preprocessor}{\#define INFO\_ST(x) printf("{}\%s\%s\%s\%s"{}}, S\_INV, S\_INFO\_ST, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00056}\mbox{\hyperlink{jcurses_8h_a86496c19c29b6c83337b300bfeef9c95}{00056}} \textcolor{preprocessor}{\#define CM printf("{}\%s"{}}, m); fflush(stdout); getc(stdin)}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00057}\mbox{\hyperlink{jcurses_8h_a85cfd3b774618e2e57dab4f3a60a101e}{00057}} \textcolor{preprocessor}{\#define CMR(x) printf("{}\%s"{}}, S\_CMR"{}q + * tecle enter *"{}); fflush(stdout); x = getc(stdin)}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00058}\mbox{\hyperlink{jcurses_8h_a58e254bd1b841f53f11027254e99d87c}{00058}} \textcolor{preprocessor}{\#define CMR1 printf("{}\%s"{}}, S\_CMR"{}++ tecle enter *"{}); fflush(stdout); getc(stdin)}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00059}\mbox{\hyperlink{jcurses_8h_a3478c274df03e821dd117a69ec2378c8}{00059}} \textcolor{preprocessor}{\#define CKLSITEM(l,c,b,x) \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00060}00060 \textcolor{preprocessor}{    if (b) printf(S\_CHKLST\_DONE, l, c, x); \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00061}00061 \textcolor{preprocessor}{    else printf(S\_CHKLST, l, c, x)}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00062}\mbox{\hyperlink{jcurses_8h_af1415ebcc621762b0ec0c7626536c488}{00062}} \textcolor{preprocessor}{\#define INFO\_FILE printf("{}\%s\%s\%sf:\%s\%s"{}}, S\_INFO\_ST, \_\_FILE\_\_, S\_INFO\_ST\_1, \_\_FUNCTION\_\_, S\_NORM); fflush(stdout);}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00063}\mbox{\hyperlink{jcurses_8h_a301ea1db1848a8638f32d9963877d05f}{00063}} \textcolor{preprocessor}{\#define INFO\_CARD(x) printf("{}\%scardinalidade: \%d\%s"{}}, S\_CARD, x, S\_NORM)}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00064}\mbox{\hyperlink{jcurses_8h_aa9d0458c6bcfdce85a2611990e75dd28}{00064}} \textcolor{preprocessor}{\#define S\_FORMAT "{}\(\backslash\)033[\%d;\%dH\%s\%s\%s\(\backslash\)033[0m"{}}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00065}\mbox{\hyperlink{jcurses_8h_a333a7f29b3da2e8a9f4aac5e1975ae0a}{00065}} \textcolor{preprocessor}{\#define PNAPOS(l,c,a1,a2, m) printf(S\_FORMAT, l, c, a1, a2, m)}}
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{jcurses_8h_source_l00067}00067 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

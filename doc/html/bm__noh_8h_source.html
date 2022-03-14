@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Conjunto Ordenado: Código-Fonte de src/bm_noh.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Conjunto Ordenado
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Localizar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">bm_noh.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bm__noh_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * alunos: joilnen leite, daniel morais, matheus silva</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef BM_NOH_</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define BM_NOH_</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="bm__noh_8h.html#a0b29109e51bd9d379af7362b5fa04203">   10</a></span><span class="preprocessor">#define NOME_ARQ &quot;bmais_arquivo&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="bm__noh_8h.html#a0a3e994d4dfa9846f485fa512c27323f">   12</a></span><span class="preprocessor">#define SUFIXO_BM &quot;.bm&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structartigo.html">   14</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structartigo.html">artigo</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structartigo.html#a7441ef0865bcb3db9b8064dd7375c1ea">   16</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structartigo.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structartigo.html#ac404d93cbf0169fd9e89edc17d0c5572">   17</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structartigo.html#ac404d93cbf0169fd9e89edc17d0c5572">ano</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structartigo.html#a2cae93d90b2d30414a0bb9b555533132">   18</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structartigo.html#a2cae93d90b2d30414a0bb9b555533132">autor</a>[200];</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structartigo.html#accd7391acab7afc64e2914914bc2b5a9">   19</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structartigo.html#accd7391acab7afc64e2914914bc2b5a9">titulo</a>[200];</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structartigo.html#a733e6a233500e88b1adeffe48ab63fc9">   20</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structartigo.html#a733e6a233500e88b1adeffe48ab63fc9">revista</a>[200];</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structartigo.html#a5ff90a36cfc30e5f2207c6630aaeafed">   21</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structartigo.html#a5ff90a36cfc30e5f2207c6630aaeafed">DOI</a>[20];</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structartigo.html#aca91f380519c2dce3a0a0ee466806c22">   22</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structartigo.html#aca91f380519c2dce3a0a0ee466806c22">palavraChave</a>[200];</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structartigo.html#a400b97e24244eb18d7750ebf15b67721">   23</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structartigo.html#a400b97e24244eb18d7750ebf15b67721">invalido</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="bm__noh_8h.html#a5c795c752d65a041b9e214779d8fd2bb">   24</a></span>} <a class="code hl_typedef" href="bm__noh_8h.html#a5c795c752d65a041b9e214779d8fd2bb">s_artigo</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structbm__noh.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">   28</a></span>    <span class="keywordtype">int</span> *<a class="code hl_variable" href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">chaves</a>, <a class="code hl_variable" href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">nchaves</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">   29</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">mgrau</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">   30</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> **<a class="code hl_variable" href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">filhos</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">   31</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_variable" href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">pai</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">   32</a></span>    <span class="keywordtype">long</span> **<a class="code hl_variable" href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">dfilhos</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">   33</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="bm__noh_8h.html#ae2f70cd3df1d1e70d374cc33370e78c5">   34</a></span>} <a class="code hl_typedef" href="bm__noh_8h.html#ae2f70cd3df1d1e70d374cc33370e78c5">bm_noh</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm__noh_8h.html#a910ea280d4f81b32bfb6770e1ae2f794">bm_noh_inic</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">char</span> <a class="code hl_variable" href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">eh_folha</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8h.html#a793acf1dcba02ca01f65953f5262c87d">bm_noh_split</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *y, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm__noh_8h.html#ace1b620c316100f158e6b7f3a2d44926">bm_noh_split_int</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *y, <a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *z);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8h.html#afa33a4e99c61b8c6303d02fbd9c0e4fd">bm_noh_insere</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8h.html#a97a66ce5da4031f5f2cb542653e7e291">padding</a>(<span class="keywordtype">char</span> ch, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8h.html#a2c6a59bf622b9a95b17b423a51fbd4cd">bm_noh_escrutina</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> nivel);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm__noh_8h.html#a40f50e021d6ecf63728aba5cfa489f80">bm_noh_pesquisa</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> k);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *<a class="code hl_function" href="bm__noh_8h.html#aa4051fed089d3ce2921e11e4a411cbdc">bm_noh_pesquisa_folha</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">int</span> <a class="code hl_function" href="bm__noh_8h.html#aa32d3f7213666234f2153a6ae3bf04d4">bm_noh_contem</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8h.html#a219a566419f77040ddc3cc1b421da09a">bm_noh_escrevedisc</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <a class="code hl_struct" href="structartigo.html">s_artigo</a> *art);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><a class="code hl_struct" href="structartigo.html">s_artigo</a> *<a class="code hl_function" href="bm__noh_8h.html#aa09822d7cea1a7c4153060ed908aa61f">bm_noh_ledisc</a>(<a class="code hl_struct" href="structbm__noh.html">bm_noh</a> *bmn, <span class="keywordtype">int</span> chave);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="bm__noh_8h.html#a88245559a8aa89f2d22f01b21e782fc8">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="bm__noh_8h.html#a88245559a8aa89f2d22f01b21e782fc8">bm_noh_populaart</a>(<span class="keywordtype">int</span> chave, <a class="code hl_struct" href="structartigo.html">s_artigo</a> *art);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="bm__noh_8h.html#ae20b4a2c59c522ed11819aae87505df3">   57</a></span><span class="preprocessor">#define MAXFILHOS(m) 2 * m</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="bm__noh_8h.html#ab478e043bd4994318b33f9728232c865">   58</a></span><span class="preprocessor">#define MAXCHAVES(m) MAXFILHOS(m) - 1</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="abm__noh_8h_html_a219a566419f77040ddc3cc1b421da09a"><div class="ttname"><a href="bm__noh_8h.html#a219a566419f77040ddc3cc1b421da09a">bm_noh_escrevedisc</a></div><div class="ttdeci">void bm_noh_escrevedisc(bm_noh *bmn, s_artigo *art)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00260">bm_noh.c:260</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_a2c6a59bf622b9a95b17b423a51fbd4cd"><div class="ttname"><a href="bm__noh_8h.html#a2c6a59bf622b9a95b17b423a51fbd4cd">bm_noh_escrutina</a></div><div class="ttdeci">void bm_noh_escrutina(bm_noh *bmn, int nivel)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00185">bm_noh.c:185</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_a40f50e021d6ecf63728aba5cfa489f80"><div class="ttname"><a href="bm__noh_8h.html#a40f50e021d6ecf63728aba5cfa489f80">bm_noh_pesquisa</a></div><div class="ttdeci">bm_noh * bm_noh_pesquisa(bm_noh *bmn, int k)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00236">bm_noh.c:236</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_a5c795c752d65a041b9e214779d8fd2bb"><div class="ttname"><a href="bm__noh_8h.html#a5c795c752d65a041b9e214779d8fd2bb">s_artigo</a></div><div class="ttdeci">struct artigo s_artigo</div></div>
+<div class="ttc" id="abm__noh_8h_html_a793acf1dcba02ca01f65953f5262c87d"><div class="ttname"><a href="bm__noh_8h.html#a793acf1dcba02ca01f65953f5262c87d">bm_noh_split</a></div><div class="ttdeci">void bm_noh_split(bm_noh *bmn, bm_noh *y, int i)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00039">bm_noh.c:39</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_a88245559a8aa89f2d22f01b21e782fc8"><div class="ttname"><a href="bm__noh_8h.html#a88245559a8aa89f2d22f01b21e782fc8">bm_noh_populaart</a></div><div class="ttdeci">void bm_noh_populaart(int chave, s_artigo *art)</div></div>
+<div class="ttc" id="abm__noh_8h_html_a910ea280d4f81b32bfb6770e1ae2f794"><div class="ttname"><a href="bm__noh_8h.html#a910ea280d4f81b32bfb6770e1ae2f794">bm_noh_inic</a></div><div class="ttdeci">bm_noh * bm_noh_inic(int i, char eh_folha)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00019">bm_noh.c:19</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_a97a66ce5da4031f5f2cb542653e7e291"><div class="ttname"><a href="bm__noh_8h.html#a97a66ce5da4031f5f2cb542653e7e291">padding</a></div><div class="ttdeci">void padding(char ch, int n)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00173">bm_noh.c:173</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_aa09822d7cea1a7c4153060ed908aa61f"><div class="ttname"><a href="bm__noh_8h.html#aa09822d7cea1a7c4153060ed908aa61f">bm_noh_ledisc</a></div><div class="ttdeci">s_artigo * bm_noh_ledisc(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00311">bm_noh.c:311</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_aa32d3f7213666234f2153a6ae3bf04d4"><div class="ttname"><a href="bm__noh_8h.html#aa32d3f7213666234f2153a6ae3bf04d4">bm_noh_contem</a></div><div class="ttdeci">int bm_noh_contem(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00248">bm_noh.c:248</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_aa4051fed089d3ce2921e11e4a411cbdc"><div class="ttname"><a href="bm__noh_8h.html#aa4051fed089d3ce2921e11e4a411cbdc">bm_noh_pesquisa_folha</a></div><div class="ttdeci">bm_noh * bm_noh_pesquisa_folha(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00217">bm_noh.c:217</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_ace1b620c316100f158e6b7f3a2d44926"><div class="ttname"><a href="bm__noh_8h.html#ace1b620c316100f158e6b7f3a2d44926">bm_noh_split_int</a></div><div class="ttdeci">bm_noh * bm_noh_split_int(bm_noh *bmn, bm_noh *y, bm_noh *z)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00078">bm_noh.c:78</a></div></div>
+<div class="ttc" id="abm__noh_8h_html_ae2f70cd3df1d1e70d374cc33370e78c5"><div class="ttname"><a href="bm__noh_8h.html#ae2f70cd3df1d1e70d374cc33370e78c5">bm_noh</a></div><div class="ttdeci">struct bm_noh bm_noh</div></div>
+<div class="ttc" id="abm__noh_8h_html_afa33a4e99c61b8c6303d02fbd9c0e4fd"><div class="ttname"><a href="bm__noh_8h.html#afa33a4e99c61b8c6303d02fbd9c0e4fd">bm_noh_insere</a></div><div class="ttdeci">void bm_noh_insere(bm_noh *bmn, int chave)</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8c_source.html#l00139">bm_noh.c:139</a></div></div>
+<div class="ttc" id="astructartigo_html"><div class="ttname"><a href="structartigo.html">artigo</a></div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00014">bm_noh.h:15</a></div></div>
+<div class="ttc" id="astructartigo_html_a2cae93d90b2d30414a0bb9b555533132"><div class="ttname"><a href="structartigo.html#a2cae93d90b2d30414a0bb9b555533132">artigo::autor</a></div><div class="ttdeci">char autor[200]</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00018">bm_noh.h:18</a></div></div>
+<div class="ttc" id="astructartigo_html_a400b97e24244eb18d7750ebf15b67721"><div class="ttname"><a href="structartigo.html#a400b97e24244eb18d7750ebf15b67721">artigo::invalido</a></div><div class="ttdeci">char invalido</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00023">bm_noh.h:23</a></div></div>
+<div class="ttc" id="astructartigo_html_a5ff90a36cfc30e5f2207c6630aaeafed"><div class="ttname"><a href="structartigo.html#a5ff90a36cfc30e5f2207c6630aaeafed">artigo::DOI</a></div><div class="ttdeci">char DOI[20]</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00021">bm_noh.h:21</a></div></div>
+<div class="ttc" id="astructartigo_html_a733e6a233500e88b1adeffe48ab63fc9"><div class="ttname"><a href="structartigo.html#a733e6a233500e88b1adeffe48ab63fc9">artigo::revista</a></div><div class="ttdeci">char revista[200]</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00020">bm_noh.h:20</a></div></div>
+<div class="ttc" id="astructartigo_html_a7441ef0865bcb3db9b8064dd7375c1ea"><div class="ttname"><a href="structartigo.html#a7441ef0865bcb3db9b8064dd7375c1ea">artigo::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00016">bm_noh.h:16</a></div></div>
+<div class="ttc" id="astructartigo_html_ac404d93cbf0169fd9e89edc17d0c5572"><div class="ttname"><a href="structartigo.html#ac404d93cbf0169fd9e89edc17d0c5572">artigo::ano</a></div><div class="ttdeci">int ano</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00017">bm_noh.h:17</a></div></div>
+<div class="ttc" id="astructartigo_html_aca91f380519c2dce3a0a0ee466806c22"><div class="ttname"><a href="structartigo.html#aca91f380519c2dce3a0a0ee466806c22">artigo::palavraChave</a></div><div class="ttdeci">char palavraChave[200]</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00022">bm_noh.h:22</a></div></div>
+<div class="ttc" id="astructartigo_html_accd7391acab7afc64e2914914bc2b5a9"><div class="ttname"><a href="structartigo.html#accd7391acab7afc64e2914914bc2b5a9">artigo::titulo</a></div><div class="ttdeci">char titulo[200]</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00019">bm_noh.h:19</a></div></div>
+<div class="ttc" id="astructbm__noh_html"><div class="ttname"><a href="structbm__noh.html">bm_noh</a></div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00026">bm_noh.h:27</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a0b7ef1a1628b235a59b5ac8d773e92c5"><div class="ttname"><a href="structbm__noh.html#a0b7ef1a1628b235a59b5ac8d773e92c5">bm_noh::chaves</a></div><div class="ttdeci">int * chaves</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00028">bm_noh.h:28</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a15429954bb4f0366b91e05dbffdf3212"><div class="ttname"><a href="structbm__noh.html#a15429954bb4f0366b91e05dbffdf3212">bm_noh::filhos</a></div><div class="ttdeci">struct bm_noh ** filhos</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00030">bm_noh.h:30</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a1551e7593259b48a2ee6e3b073febf37"><div class="ttname"><a href="structbm__noh.html#a1551e7593259b48a2ee6e3b073febf37">bm_noh::nchaves</a></div><div class="ttdeci">int nchaves</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00028">bm_noh.h:28</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a56e4c91256d02400f85ffa8ffa584471"><div class="ttname"><a href="structbm__noh.html#a56e4c91256d02400f85ffa8ffa584471">bm_noh::eh_folha</a></div><div class="ttdeci">char eh_folha</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00033">bm_noh.h:33</a></div></div>
+<div class="ttc" id="astructbm__noh_html_a842fb6b0598b910a1c8f1ba6491236fd"><div class="ttname"><a href="structbm__noh.html#a842fb6b0598b910a1c8f1ba6491236fd">bm_noh::mgrau</a></div><div class="ttdeci">int mgrau</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00029">bm_noh.h:29</a></div></div>
+<div class="ttc" id="astructbm__noh_html_ab94855a79a98124a172736a233b3666b"><div class="ttname"><a href="structbm__noh.html#ab94855a79a98124a172736a233b3666b">bm_noh::dfilhos</a></div><div class="ttdeci">long ** dfilhos</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00032">bm_noh.h:32</a></div></div>
+<div class="ttc" id="astructbm__noh_html_ad122cc995b60d27d7f0777001771a58c"><div class="ttname"><a href="structbm__noh.html#ad122cc995b60d27d7f0777001771a58c">bm_noh::pai</a></div><div class="ttdeci">struct bm_noh * pai</div><div class="ttdef"><b>Definition:</b> <a href="bm__noh_8h_source.html#l00031">bm_noh.h:31</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>
