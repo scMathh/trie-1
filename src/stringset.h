@@ -9,6 +9,25 @@
 #include "trie.h"
 #include "erro.h"
 
+typedef struct trie_no{
+
+    struct trie_no **filhos;
+    int eh_palavra;
+
+}No;
+
+
+typedef struct Trie{
+
+    No *raiz;
+
+}Trie;
+
+void buscaDigital(No* noh, char* palavra, int l, int a);
+
+void insercao(No* raiz, char* palavra);
+
+
 typedef struct stringset
 {
     trie *raiz;
