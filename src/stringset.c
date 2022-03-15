@@ -54,7 +54,7 @@ void buscaDigital(No* noh, char* palavra, int l, int a){
         if(noh->filhos[j] != NULL){
             noh = noh->filhos[j];
             l++;
-            // busca(noh, palavra, l, a);
+            buscaDigital(noh, palavra, l, a);
         }
     }
     else{
